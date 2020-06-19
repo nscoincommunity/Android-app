@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/amountTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/trade_history_header_item_title_top_padding"
+        android:paddingBottom="@dimen/trade_history_header_item_title_bottom_padding"
+        android:textSize="@dimen/trade_history_header_item_title_text_size"
+        android:textStyle="bold"
+        tools:text="Amount"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <TextView
+        android:id="@+id/priceTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/trade_history_header_item_title_top_padding"
+        android:paddingBottom="@dimen/trade_history_header_item_title_bottom_padding"
+        android:textSize="@dimen/trade_history_header_item_title_text_size"
+        android:textStyle="bold"
+        tools:text="Price"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <TextView
+        android:id="@+id/timeTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/trade_history_header_item_title_top_padding"
+        android:paddingBottom="@dimen/trade_history_header_item_title_bottom_padding"
+        android:textSize="@dimen/trade_history_header_item_title_text_size"
+        android:textStyle="bold"
+        tools:text="Time"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trade_history_header_item_separator_view_height"
+        android:layout_below="@id/priceTitleTv"
+        android:layout_marginBottom="@dimen/trade_history_header_item_separator_view_bottom_margin"
+        android:alpha="0.5"
+        tools:background="@color/deepTealSecondaryTextColor"/>
+
+</RelativeLayout>

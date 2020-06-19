@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="isChartAnimationEnabled" format="boolean"/>
+    <attr name="isHighlightingEnabled" format="boolean"/>
+
+    <attr name="title" format="string"/>
+    <attr name="titleSize" format="dimension"/>
+    <attr name="titleColor" format="color"/>
+
+    <attr name="value" format="string"/>
+    <attr name="valueSize" format="dimension"/>
+    <attr name="valueColor" format="color"/>
+
+    <attr name="buttonDrawableColor" format="color"/>
+    <attr name="progressBarColor" format="color"/>
+    <attr name="infoViewColor" format="color"/>
+    <attr name="headerTitleTextColor" format="color"/>
+    <attr name="headerSeparatorColor" format="color"/>
+
+    <attr name="chartInfoFieldsDefaultTextColor" format="color"/>
+    <attr name="chartAxisGridColor" format="color"/>
+    <attr name="chartHighlighterColor" format="color"/>
+    <attr name="chartPositiveColor" format="color"/>
+    <attr name="chartNegativeColor" format="color"/>
+    <attr name="chartNeutralColor" format="color"/>
+
+    <attr name="tabBackgroundColor" format="color"/>
+    <attr name="tabBarTopPadding" format="dimension"/>
+    <attr name="tabBarBottomPadding" format="dimension"/>
+
+    <attr name="itemTitleColor" format="color"/>
+    <attr name="itemValueColor" format="color"/>
+    <attr name="itemSeparatorColor" format="color"/>
+
+    <attr name="hintTextColor" format="color"/>
+    <attr name="helpButtonTextColor" format="color"/>
+
+    <attr name="inputViewTextColor" format="color"/>
+    <attr name="inputViewHintTextColor" format="color"/>
+    <attr name="inputViewCursorColor" format="color"/>
+    <attr name="inputViewIconColor" format="color"/>
+
+    <attr name="labelText" format="string"/>
+    <attr name="labelTextColor" format="color"/>
+
+    <attr name="inputViewPasswordVisibleIcon" format="reference"/>
+    <attr name="inputViewPasswordHiddenIcon" format="reference"/>
+
+    <attr name="iconColor" format="color"/>
+    <attr name="icon" format="reference"/>
+
+    <attr name="mainViewTopPadding" format="dimension"/>
+    <attr name="chartHeight" format="dimension"/>
+
+    <attr name="rvHeight" format="dimension">
+
+        <enum name="match_parent" value="-1"/>
+        <enum name="wrap_content" value="-2"/>
+
+    </attr>
+
+    <attr name="rvItemBottomSpacing" format="dimension"/>
+
+    <attr name="priceMaxCharsLength" format="integer"/>
+    <attr name="amountMaxCharsLength" format="integer"/>
+
+    <attr name="itemHighlightDuration" format="integer"/>
+
+    <attr name="leftButtonDrawable" format="reference"/>
+    <attr name="infoViewIcon" format="reference"/>
+
+    <declare-styleable name="VerticalMapView">
+
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="subtitleSize" format="dimension"/>
+        <attr name="subtitleColor" format="color"/>
+
+        <attr name="progressBarColor"/>
+
+        <attr name="infoViewCaptionColor" format="color"/>
+
+        <attr name="verticalShadowSize" format="dimension"/>
+        <attr name="horizontalShadowSize" format="dimension"/>
+
+        <attr name="shadows">
+            <flag name="none" value="0"/>
+            <flag name="top" value="1"/>
+            <flag name="bottom" value="2"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="8"/>
+            <flag name="all" value="15"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="SimpleMapView">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="value"/>
+        <attr name="valueSize"/>
+        <attr name="valueColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DottedMapView">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="value"/>
+        <attr name="valueSize"/>
+        <attr name="valueColor"/>
+
+        <attr name="separatorColor" format="color"/>
+        <attr name="separatorVisibility" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SpaceMapView">
+
+        <attr name="title"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+
+        <attr name="value"/>
+        <attr name="valueSize"/>
+        <attr name="valueColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomToolbar">
+
+        <attr name="buttonDrawableColor"/>
+        <attr name="progressBarColor"/>
+        <attr name="titleColor"/>
+
+        <attr name="title"/>
+
+        <attr name="leftButtonDrawable"/>
+        <attr name="preRightButtonDrawable" format="reference"/>
+        <attr name="rightButtonDrawable" format="reference"/>
+
+        <attr name="inboxButtonVisible" format="boolean"/>
+        <attr name="alertPriceButtonDrawable" format="reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SearchToolbar">
+
+        <attr name="hintText" format="string"/>
+        <attr name="hintColor" format="color"/>
+
+        <attr name="textColor" format="color"/>
+
+        <attr name="leftButtonDrawable"/>
+        <attr name="clearInputButtonDrawable" format="reference"/>
+        <attr name="cursorDrawable" format="reference"/>
+
+        <attr name="buttonDrawableColor"/>
+        <attr name="progressBarColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ReferenceButtonView">
+
+        <attr name="subtitle"/>
+        <attr name="title"/>
+
+        <attr name="icon"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryKeypad">
+
+        <attr name="digitButtonTextColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SwitchOptionsView">
+
+        <attr name="leftOptionTitleText" format="string"/>
+        <attr name="rightOptionTitleText" format="string"/>
+
+        <attr name="optionsTitleTextColor" format="color"/>
+        <attr name="optionsTitleTextSize" format="dimension"/>
+
+        <attr name="switchColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PriceChartView">
+
+        <attr name="isChartAnimationEnabled"/>
+        <attr name="isChartZoomInEnabled" format="boolean"/>
+
+        <attr name="progressBarColor"/>
+        <attr name="infoViewColor"/>
+        <attr name="chartInfoFieldsDefaultTextColor"/>
+        <attr name="chartAxisGridColor"/>
+        <attr name="chartHighlighterColor"/>
+        <attr name="chartPositiveColor"/>
+        <attr name="chartNegativeColor"/>
+        <attr name="chartNeutralColor"/>
+        <attr name="chartVolumeBarColor" format="color"/>
+        <attr name="chartCandleStickShadowColor" format="color"/>
+        <attr name="tabBarTopPadding"/>
+        <attr name="tabBarBottomPadding"/>
+        <attr name="tabBackgroundColor"/>
+
+        <attr name="minCandleStickCountForZoomingIn" format="integer"/>
+
+        <attr name="chartHeight"/>
+        <attr name="mainViewTopPadding"/>
+
+        <attr name="infoViewIcon"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DepthChartView">
+
+        <attr name="isChartAnimationEnabled"/>
+
+        <attr name="progressBarColor"/>
+        <attr name="infoViewColor"/>
+        <attr name="chartInfoFieldsDefaultTextColor"/>
+        <attr name="chartAxisGridColor"/>
+        <attr name="chartHighlighterColor"/>
+        <attr name="chartPositiveColor"/>
+        <attr name="chartNegativeColor"/>
+        <attr name="chartNeutralColor"/>
+        <attr name="tabBarTopPadding"/>
+        <attr name="tabBarBottomPadding"/>
+        <attr name="tabBackgroundColor"/>
+
+        <attr name="depthLevel" format="integer"/>
+
+        <attr name="chartHeight"/>
+        <attr name="mainViewTopPadding"/>
+
+        <attr name="infoViewIcon"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MarketDetailsView">
+
+        <attr name="currencyNameCharacterLimit" format="integer"/>
+
+        <attr name="itemTitleColor"/>
+        <attr name="itemValueColor"/>
+        <attr name="itemSeparatorColor"/>
+
+        <attr name="positiveStatusColor" format="color"/>
+        <attr name="negativeStatusColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="OrderbookView">
+
+        <attr name="isHighlightingEnabled"/>
+        <attr name="shouldHideHeaderMoreButton" format="boolean"/>
+
+        <attr name="rvHeight"/>
+        <attr name="rvItemHorizontalSpacing" format="dimension"/>
+        <attr name="rvItemBottomSpacing"/>
+
+        <attr name="ordersOfTypeCountLimit" format="integer">
+
+            <enum name="no_limit" value="-1"/>
+
+        </attr>
+
+        <attr name="priceMaxCharsLength"/>
+        <attr name="amountMaxCharsLength"/>
+
+        <attr name="progressBarColor"/>
+        <attr name="infoViewColor"/>
+        <attr name="headerTitleTextColor"/>
+        <attr name="headerSeparatorColor"/>
+        <attr name="headerMoreButtonColor" format="color"/>
+        <attr name="sellOrderHighlightBackgroundColor" format="color"/>
+        <attr name="buyOrderHighlightBackgroundColor" format="color"/>
+        <attr name="askOrderPriceHighlightColor" format="color"/>
+        <attr name="bidOrderPriceHighlightColor" format="color"/>
+        <attr name="askOrderPriceColor" format="color"/>
+        <attr name="bidOrderPriceColor" format="color"/>
+        <attr name="orderAmountColor" format="color"/>
+        <attr name="askOrderBackgroundColor" format="color"/>
+        <attr name="bidOrderBackgroundColor" format="color"/>
+
+        <attr name="itemHighlightDuration"/>
+
+        <attr name="infoViewIcon"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TradeHistoryView">
+
+        <attr name="isHighlightingEnabled"/>
+        <attr name="isAdjustingToTargetCountEnabled" format="boolean"/>
+
+        <attr name="rvHeight"/>
+        <attr name="rvItemBottomSpacing"/>
+
+        <attr name="tradesLimit" format="integer"/>
+
+        <attr name="priceMaxCharsLength"/>
+        <attr name="amountMaxCharsLength"/>
+
+        <attr name="progressBarColor"/>
+        <attr name="infoViewColor"/>
+        <attr name="headerTitleTextColor"/>
+        <attr name="headerSeparatorColor"/>
+        <attr name="buyTradeHighlightBackgroundColor" format="color"/>
+        <attr name="sellTradeHighlightBackgroundColor" format="color"/>
+        <attr name="buyTradePriceHighlightColor" format="color"/>
+        <attr name="sellTradePriceHighlightColor" format="color"/>
+        <attr name="buyTradeColor" format="color"/>
+        <attr name="sellTradeColor" format="color"/>
+        <attr name="tradeAmountColor" format="color"/>
+        <attr name="tradeTimeColor" format="color"/>
+
+        <attr name="itemHighlightDuration"/>
+
+        <attr name="infoViewIcon"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="OrderbookDetailsView">
+
+        <attr name="itemTitleColor"/>
+        <attr name="itemValueColor"/>
+        <attr name="itemSeparatorColor"/>
+
+        <attr name="lowestAskValueColor" format="color"/>
+        <attr name="highestBidValueColor" format="color"/>
+
+        <attr name="progressBarColor"/>
+        <attr name="infoViewColor"/>
+
+        <attr name="baseCurrencySymbol" format="string"/>
+        <attr name="emptyPriceText" format="string"/>
+        <attr name="emptyVolumeText" format="string"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="LoginCredentialsView">
+
+        <attr name="inputViewTextColor"/>
+        <attr name="inputViewHintTextColor"/>
+        <attr name="inputViewCursorColor"/>
+        <attr name="inputViewIconColor"/>
+
+        <attr name="inputViewPasswordVisibleIcon"/>
+        <attr name="inputViewPasswordHiddenIcon"/>
+
+        <attr name="helpButtonTextColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="LoginConfirmationView">
+
+        <attr name="hintTextColor"/>
+        <attr name="helpButtonTextColor"/>
+
+        <attr name="inputViewTextColor"/>
+        <attr name="inputViewHintTextColor"/>
+        <attr name="inputViewCursorColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="RegistrationCredentialsView">
+
+        <attr name="inputViewTextColor"/>
+        <attr name="inputViewHintTextColor"/>
+        <attr name="inputViewCursorColor"/>
+        <attr name="inputViewIconColor"/>
+
+        <attr name="inputViewPasswordVisibleIcon"/>
+        <attr name="inputViewPasswordHiddenIcon"/>
+        <attr name="inputViewReferralCodeIcon" format="reference"/>
+
+        <attr name="checkBoxColor" format="color"/>
+        <attr name="checkBoxTextColor" format="color"/>
+        <attr name="checkBoxTextHighlightColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PasswordChangeCredentialsView">
+
+        <attr name="inputViewTextColor"/>
+        <attr name="inputViewHintTextColor"/>
+        <attr name="inputViewCursorColor"/>
+        <attr name="inputViewIconColor"/>
+
+        <attr name="inputViewPasswordVisibleIcon"/>
+        <attr name="inputViewPasswordHiddenIcon"/>
+
+        <attr name="helpButtonTextColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="InputView">
+
+        <attr name="etTextColor" format="color"/>
+        <attr name="etHintTextColor" format="color"/>
+        <attr name="etCursorColor" format="color"/>
+        <attr name="etHintText" format="string"/>
+
+        <attr name="normalBackground" format="reference"/>
+        <attr name="erroneousBackground" format="reference"/>
+
+        <attr name="icon"/>
+        <attr name="iconColor"/>
+
+        <attr name="labelText"/>
+        <attr name="labelTextColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="UserAdmissionButton">
+
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="buttonProgressBarColor" format="color"/>
+
+        <attr name="buttonText" format="string"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="InfoView">
+
+        <attr name="iconColor"/>
+        <attr name="iconSize" format="dimension"/>
+        <attr name="icon"/>
+
+        <attr name="captionColor" format="color"/>
+        <attr name="captionTextSize" format="dimension"/>
+        <attr name="caption" format="string"/>
+
+        <attr name="viewsVerticalDistance" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PasswordRecoveryEmailCredentialView">
+
+        <attr name="hintTextColor"/>
+
+        <attr name="inputViewTextColor"/>
+        <attr name="inputViewHintTextColor"/>
+        <attr name="inputViewCursorColor"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TradeFormView">
+
+        <attr name="labelTopMargin" format="dimension"/>
+        <attr name="customMargin" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TradeAmountLabelContainer">
+
+        <attr name="labelTextColor"/>
+        <attr name="labelText"/>
+
+    </declare-styleable>
+
+</resources>

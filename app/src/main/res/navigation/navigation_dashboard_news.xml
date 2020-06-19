@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationDashboardNews"
+    app:startDestination="@+id/newsDest">
+
+    <fragment
+        android:id="@+id/newsDest"
+        android:name="com.stocksexchange.android.ui.news.NewsContainerFragment"
+        tools:layout="@layout/news_container_fragment_layout"/>
+
+</navigation>

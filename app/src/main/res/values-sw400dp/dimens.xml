@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- (The same as in default dimens.xml) -->
+
+    <!-- TradeAmountLabelContainer -->
+    <dimen name="trade_amount_label_container_seek_bar_width">170dp</dimen>
+
+</resources>

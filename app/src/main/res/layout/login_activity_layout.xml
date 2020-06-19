@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/user_admission_app_horizontal_margin"
+    android:paddingEnd="@dimen/user_admission_app_horizontal_margin"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/icStexLogoIv"
+        android:layout_marginTop="@dimen/user_admission_app_title_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_stex_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appMottoTv"
+        style="@style/UserAdmissionAppMotto"
+        android:layout_below="@+id/icStexLogoIv"
+        tools:text="@string/app_motto"
+        tools:textColor="@color/deepTealPrimaryTextColor" />
+
+    <com.stocksexchange.android.ui.login.views.LoginCredentialsView
+        android:id="@+id/credentialsView"
+        app:inputViewPasswordVisibleIcon="@drawable/ic_eye_on"
+        app:inputViewPasswordHiddenIcon="@drawable/ic_eye_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/primaryBtn"
+        android:layout_below="@+id/appMottoTv"
+        tools:helpButtonTextColor="@color/deepTealPrimaryTextColor"
+        tools:inputViewHintTextColor="@color/colorLoginEditTextHintColor" />
+
+    <com.stocksexchange.android.ui.views.InfoView
+        android:id="@+id/accountVerificationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/primaryBtn"
+        android:gravity="center"
+        android:layout_below="@+id/appMottoTv"
+        app:captionTextSize="@dimen/user_admission_text_size"
+        app:icon="@drawable/ic_information_outline"
+        app:iconSize="@dimen/user_admission_info_view_icon_size"
+        app:viewsVerticalDistance="@dimen/user_admission_info_view_vertical_views_distance"
+        tools:caption="@string/user_admission_account_verification_view_caption"
+        tools:captionColor="@color/white"
+        tools:iconColor="@color/white" />
+
+    <com.stocksexchange.android.ui.login.views.confirmationviews.LoginEmailConfirmationView
+        android:id="@+id/emailConfirmationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/primaryBtn"
+        android:layout_below="@+id/appMottoTv"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        tools:inputViewHintTextColor="@color/colorLoginEditTextHintColor" />
+
+    <com.stocksexchange.android.ui.login.views.confirmationviews.LoginSmsConfirmationView
+        android:id="@+id/smsConfirmationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/primaryBtn"
+        android:layout_below="@+id/appMottoTv"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        tools:inputViewHintTextColor="@color/colorLoginEditTextHintColor" />
+
+    <com.stocksexchange.android.ui.login.views.confirmationviews.Login2FaConfirmationView
+        android:id="@+id/twoFactorAuthConfirmationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/primaryBtn"
+        android:layout_below="@+id/appMottoTv"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        tools:inputViewHintTextColor="@color/colorLoginEditTextHintColor" />
+
+    <com.stocksexchange.android.ui.views.UserAdmissionButton
+        android:id="@+id/primaryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/user_admission_app_horizontal_margin"
+        android:layout_marginBottom="@dimen/user_admission_button_vertical_margin"
+        tools:buttonText="@string/action_log_in"
+        tools:buttonTextColor="@color/white" />
+
+</RelativeLayout>

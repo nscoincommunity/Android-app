@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealPrimaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/protocol_selection_item_padding"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="@dimen/protocol_selection_item_icon_size"
+            android:layout_height="@dimen/protocol_selection_item_icon_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iconIv"
+            android:layout_marginTop="@dimen/protocol_selection_item_name_margin_top"
+            android:textStyle="bold"
+            android:textSize="@dimen/protocol_selection_item_name_text_size"
+            tools:text="Tether OMNI"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/leftOptionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/switch_options_view_option_horizontal_margin"
+        tools:text="Left"
+        tools:textColor="@android:color/white"
+        tools:textSize="18sp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:theme="@style/SwitchTheme"/>
+
+    <TextView
+        android:id="@+id/rightOptionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/switch_options_view_option_horizontal_margin"
+        tools:text="Right"
+        tools:textColor="@android:color/white"
+        tools:textSize="18sp"/>
+
+</merge>

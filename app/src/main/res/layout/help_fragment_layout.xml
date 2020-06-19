@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealContentContainerColor">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="@dimen/help_fragment_recycler_view_padding_top"
+        android:paddingBottom="@dimen/help_fragment_recycler_view_padding_bottom"
+        android:paddingStart="@dimen/help_fragment_recycler_view_horizontal_padding"
+        android:paddingEnd="@dimen/help_fragment_recycler_view_horizontal_padding"
+        android:overScrollMode="never"
+        android:clipToPadding="false"/>
+
+    <com.stocksexchange.android.ui.views.toolbars.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/toolbar_elevation"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        tools:title="@string/help"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

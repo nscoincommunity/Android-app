@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/toolbar_height"
+    android:layout_height="@dimen/toolbar_height"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <ImageView
+        android:id="@+id/inboxIv"
+        app:srcCompat="@drawable/ic_inbox_item"
+        style="@style/ToolbarIcon"/>
+
+    <RelativeLayout
+        android:id="@+id/inboxCountRL"
+        android:layout_width="@dimen/inbox_ring_view_green_circle_width_height"
+        android:layout_height="@dimen/inbox_ring_view_green_circle_width_height"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/inbox_ring_view_green_circle_margin_top"
+        android:layout_marginEnd="@dimen/inbox_ring_view_green_circle_margin_end"
+        android:background="@drawable/ic_inbox_green_circle">
+
+        <TextView
+            android:id="@+id/inboxCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/inbox_ring_view_green_circle_text_size"
+            android:textStyle="bold"
+            tools:text="9+" />
+
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    tools:paddingStart="@dimen/currency_markets_sort_panel_horizontal_padding"
+    tools:paddingEnd="@dimen/currency_markets_sort_panel_horizontal_padding"
+    tools:background="@color/deepTealSortPanelBackgroundColor">
+
+    <com.stocksexchange.android.ui.views.SortPanelTextView
+        android:id="@+id/nameTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingBottom="@dimen/currency_markets_sort_panel_vertical_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/separatorTv"
+        tools:text="@string/currency_markets_sort_panel_name_title"
+        tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"
+        style="@style/CurrencyMarketsSortPanelTitle"/>
+
+    <TextView
+        android:id="@+id/separatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingBottom="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingStart="@dimen/currency_markets_sort_panel_separator_horizontal_padding"
+        android:paddingEnd="@dimen/currency_markets_sort_panel_separator_horizontal_padding"
+        android:text="/"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nameTitleTv"
+        app:layout_constraintEnd_toStartOf="@+id/volumeTitleTv"
+        tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"
+        style="@style/CurrencyMarketsSortPanelTitle"/>
+
+    <com.stocksexchange.android.ui.views.SortPanelTextView
+        android:id="@+id/volumeTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingBottom="@dimen/currency_markets_sort_panel_vertical_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/separatorTv"
+        tools:text="@string/currency_markets_sort_panel_volume_title"
+        tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"
+        style="@style/CurrencyMarketsSortPanelTitle"/>
+
+    <com.stocksexchange.android.ui.views.SortPanelTextView
+        android:id="@+id/lastPriceTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingBottom="@dimen/currency_markets_sort_panel_vertical_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        tools:text="@string/currency_markets_sort_panel_last_price_title"
+        tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"
+        style="@style/CurrencyMarketsSortPanelTitle"/>
+
+    <com.stocksexchange.android.ui.views.SortPanelTextView
+        android:id="@+id/dailyPriceChangeTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/currency_markets_sort_panel_vertical_padding"
+        android:paddingBottom="@dimen/currency_markets_sort_panel_vertical_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/currency_markets_sort_panel_daily_price_change_title"
+        tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"
+        style="@style/CurrencyMarketsSortPanelTitle"/>
+
+</merge>

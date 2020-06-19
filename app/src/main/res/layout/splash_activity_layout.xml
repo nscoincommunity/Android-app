@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.splash.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/infoViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/splash_activity_info_view_container_margin_bottom"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/splash_activity_progress_bar_size"
+            android:layout_height="@dimen/splash_activity_progress_bar_size"
+            android:layout_marginEnd="@dimen/splash_activity_progress_bar_horizontal_margin"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/progressBar"
+            android:layout_alignTop="@id/progressBar"
+            android:layout_alignBottom="@id/progressBar"
+            android:textSize="@dimen/splash_activity_title_text_size"
+            tools:text="@string/connecting"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

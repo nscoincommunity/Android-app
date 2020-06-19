@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="recycler_view_padding_top">10dp</dimen>
+    <dimen name="recycler_view_padding_bottom">8dp</dimen>
+    <dimen name="recycler_view_horizontal_padding">6dp</dimen>
+    <dimen name="recycler_view_divider_size">6dp</dimen>
+
+    <dimen name="selectable_button_vertical_padding">14dp</dimen>
+    <dimen name="selectable_button_text_size">18sp</dimen>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <dimen name="currency_markets_sort_panel_vertical_padding">10dp</dimen>
+
+    <!-- TradeFormView -->
+    <dimen name="trade_form_view_label_text_size">16sp</dimen>
+
+    <!-- TradeAmountLabelContainer -->
+    <dimen name="trade_amount_label_container_seek_bar_width">300dp</dimen>
+    <dimen name="trade_amount_label_container_seek_bar_percent_label_width">36dp</dimen>
+    <dimen name="trade_amount_label_container_seek_bar_percent_label_text_size">14sp</dimen>
+
+    <!-- VerticalMapView -->
+    <dimen name="vertical_map_view_progress_bar_size">38dp</dimen>
+
+     <!-- InputView -->
+    <dimen name="input_view_edit_text_padding">14dp</dimen>
+    <dimen name="input_view_text_size">16sp</dimen>
+    <dimen name="input_view_label_text_size">16sp</dimen>
+
+    <!-- UserAdmission -->
+    <dimen name="user_admission_app_logo_margin_top">100dp</dimen>
+    <dimen name="user_admission_app_motto_text_size">18sp</dimen>
+    <dimen name="user_admission_hint_text_size">16sp</dimen>
+    <dimen name="user_admission_help_button_text_size">16sp</dimen>
+    <dimen name="user_admission_credentials_view_horizontal_margin">60dp</dimen>
+    <dimen name="user_admission_button_vertical_margin">100dp</dimen>
+    <dimen name="user_admission_button_vertical_padding">14dp</dimen>
+    <dimen name="user_admission_button_text_size">16sp</dimen>
+    <dimen name="user_admission_text_size">16sp</dimen>
+
+    <!-- AuthenticationActivity -->
+    <dimen name="authentication_activity_pin_entry_keypad_margin_bottom">80dp</dimen>
+    <dimen name="authentication_activity_help_button_margin_bottom">80dp</dimen>
+
+    <!-- TransactionItem -->
+    <dimen name="transaction_item_action_button_horizontal_padding">82dp</dimen>
+
+    <!-- HelpFragment -->
+    <dimen name="help_fragment_recycler_view_padding_top">6dp</dimen>
+    <dimen name="help_fragment_recycler_view_horizontal_padding">4dp</dimen>
+
+    <!-- ReferralFragment -->
+    <dimen name="referral_fragment_title_text_size">22sp</dimen>
+    <dimen name="referral_fragment_subtitle_text_size">18sp</dimen>
+    <dimen name="referral_fragment_referral_qr_code_image_size">250dp</dimen>
+    <dimen name="referral_fragment_referral_link_text_size">19sp</dimen>
+    <dimen name="referral_fragment_notice_text_size">18sp</dimen>
+
+    <!-- ProtocolSelectionFragment -->
+    <dimen name="protocol_selection_recycler_view_padding_bottom">8dp</dimen>
+
+    <!-- DepositCreationFragment -->
+    <dimen name="deposit_creation_fragment_main_container_margin_top">60dp</dimen>
+
+    <!-- WithdrawalCreationFragment -->
+    <dimen name="withdrawal_creation_fragment_main_view_top_margin">80dp</dimen>
+    <dimen name="withdrawal_creation_fragment_main_view_horizontal_margin">60dp</dimen>
+
+    <!-- TradeFragment -->
+    <dimen name="trade_user_balance_view_height">100dp</dimen>
+    <dimen name="trade_user_balance_view_title_size">14sp</dimen>
+    <dimen name="trade_user_balance_view_subtitle_size">21sp</dimen>
+    <dimen name="trade_trade_types_tab_layout_height">60dp</dimen>
+    <dimen name="trade_trade_types_tab_text_size">16sp</dimen>
+    <dimen name="trade_order_types_sov_title_text_size">16sp</dimen>
+    <dimen name="trade_form_view_horizontal_margin">100dp</dimen>
+
+    <!-- ChartViews -->
+    <dimen name="chart_view_tab_height">50dp</dimen>
+    <dimen name="chart_view_tab_text_size">14sp</dimen>
+
+    <!-- PriceChartView -->
+    <dimen name="price_chart_view_candle_stick_info_text_size">14sp</dimen>
+
+    <!-- DepthChartView -->
+    <dimen name="depth_chart_view_info_smv_text_size">@dimen/price_chart_view_candle_stick_info_text_size</dimen>
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_chart_view_height">300dp</dimen>
+    <dimen name="currency_market_preview_trading_list_view_height">894dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_vertical_padding">10dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_text_size">18sp</dimen>
+
+</resources>

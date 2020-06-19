@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/background">
+
+        <shape
+            android:shape="oval">
+
+            <solid android:color="@color/deepTealPinEntryKeypadEnabledButtonBackgroundColor"/>
+
+        </shape>
+
+    </item>
+
+    <item
+        android:id="@+id/foreground"
+        android:drawable="@drawable/ic_backspace"
+        android:top="@dimen/pin_entry_delete_button_drawable_vertical_padding"
+        android:bottom="@dimen/pin_entry_delete_button_drawable_vertical_padding"
+        android:left="@dimen/pin_entry_delete_button_drawable_left_padding"
+        android:right="@dimen/pin_entry_delete_button_drawable_right_padding"/>
+
+    <item
+        android:drawable="@drawable/pin_entry_button_selectable_bg_drawable"/>
+
+</layer-list>

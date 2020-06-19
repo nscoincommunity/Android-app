@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/appMottoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/about_fragment_app_logo_margin_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/about_fragment_horizontal_margin"
+                android:layout_marginEnd="@dimen/about_fragment_horizontal_margin"
+                android:textSize="@dimen/about_fragment_app_motto_text_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:text="@string/app_motto"
+                tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+            <ImageView
+                android:id="@+id/appLogoIv"
+                android:layout_width="@dimen/about_fragment_app_logo_width"
+                android:layout_height="@dimen/about_fragment_app_logo_height"
+                android:layout_below="@+id/appMottoTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_fragment_reference_button_view_margin_top"
+                app:srcCompat="@drawable/ic_logo"/>
+
+            <TextView
+                android:id="@+id/appVersionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appLogoIv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_activity_app_version_margin_top"
+                android:layout_marginStart="@dimen/about_activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/about_activity_horizontal_margin"
+                android:textSize="@dimen/about_activity_app_version_text_size"
+                tools:layout_marginTop="5dp"
+                tools:text="Version 1.17.0"
+                tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+
+
+            <com.stocksexchange.android.ui.views.ReferenceButtonView
+                android:id="@+id/visitWebsiteRbv"
+                android:layout_width="@dimen/about_fragment_reference_button_view_width"
+                android:layout_height="@dimen/about_fragment_reference_button_view_height"
+                android:layout_below="@id/appVersionTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_fragment_reference_button_visit_website_margin_top"
+                app:icon="@drawable/ic_stex_white"
+                tools:subtitle="@string/about_fragment_reference_button_visit_website_subtitle_text"
+                tools:title="@string/about_fragment_reference_button_visit_website_title_text"
+                tools:background="@drawable/reference_button_view_background"
+                tools:backgroundTint="@color/deepTealAboutRefButtonVisitWebsiteBackgroundColor"/>
+
+            <com.stocksexchange.android.ui.views.ReferenceButtonView
+                android:id="@+id/termsOfUseRbv"
+                android:layout_width="@dimen/about_fragment_reference_button_view_width"
+                android:layout_height="@dimen/about_fragment_reference_button_view_height"
+                android:layout_below="@id/visitWebsiteRbv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_fragment_reference_button_view_margin_top"
+                app:icon="@drawable/ic_terms_of_use_circle"
+                tools:subtitle="@string/about_fragment_reference_button_terms_of_use_subtitle_text"
+                tools:title="@string/about_fragment_reference_button_terms_of_use_title_text"
+                tools:background="@drawable/reference_button_view_background"
+                tools:backgroundTint="@color/deepTealAboutRefButtonTermsOfUseBackgroundColor"/>
+
+            <com.stocksexchange.android.ui.views.ReferenceButtonView
+                android:id="@+id/privacyPolicyRbv"
+                android:layout_width="@dimen/about_fragment_reference_button_view_width"
+                android:layout_height="@dimen/about_fragment_reference_button_view_height"
+                android:layout_below="@id/termsOfUseRbv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_fragment_reference_button_view_margin_top"
+                app:icon="@drawable/ic_privacy_policy_circle"
+                tools:subtitle="@string/about_fragment_reference_button_privacy_policy_subtitle_text"
+                tools:title="@string/about_fragment_reference_button_privacy_policy_title_text"
+                tools:background="@drawable/reference_button_view_background"
+                tools:backgroundTint="@color/deepTealAboutRefButtonPrivacyPolicyBackgroundColor"/>
+
+            <com.stocksexchange.android.ui.views.ReferenceButtonView
+                android:id="@+id/candyLinkRbv"
+                android:layout_width="@dimen/about_fragment_reference_button_view_width"
+                android:layout_height="@dimen/about_fragment_reference_button_view_height"
+                android:layout_below="@id/privacyPolicyRbv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/about_fragment_reference_button_view_margin_top"
+                app:icon="@drawable/ic_candy_link"
+                tools:subtitle="@string/about_fragment_reference_button_candy_link_subtitle_text"
+                tools:title="@string/about_fragment_reference_button_candy_link_title_text"
+                tools:background="@drawable/reference_button_view_background"
+                tools:backgroundTint="@color/deepTealAboutRefButtonCandyLinkBackgroundColor"/>
+
+            <LinearLayout
+                android:id="@+id/bottomContainerLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/candyLinkRbv"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="@dimen/about_fragment_bottom_container_padding_top"
+                android:paddingBottom="@dimen/about_fragment_bottom_container_padding_bottom"
+                android:paddingStart="@dimen/about_fragment_bottom_container_horizontal_padding"
+                android:paddingEnd="@dimen/about_fragment_bottom_container_horizontal_padding"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/about_fragment_social_media_buttons_container_margin_bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facebookBtnIv"
+                        android:layout_marginEnd="@dimen/about_fragment_bounded_buttons_horizontal_margin"
+                        style="@style/AboutFooterSocialMediaButton"
+                        tools:src="@drawable/ic_facebook_circle"
+                        tools:tint="@color/deepTealAboutSocialMediaButtonColor" />
+
+                    <ImageView
+                        android:id="@+id/twitterBtnIv"
+                        android:layout_marginEnd="@dimen/about_fragment_middle_buttons_horizontal_margin"
+                        style="@style/AboutFooterSocialMediaButton"
+                        tools:src="@drawable/ic_twitter_circle"
+                        tools:tint="@color/deepTealAboutSocialMediaButtonColor"/>
+
+                    <ImageView
+                        android:id="@+id/telegramBtnIv"
+                        android:layout_marginStart="@dimen/about_fragment_middle_buttons_horizontal_margin"
+                        style="@style/AboutFooterSocialMediaButton"
+                        tools:src="@drawable/ic_telegram_circle"
+                        tools:tint="@color/deepTealAboutSocialMediaButtonColor"/>
+
+                    <ImageView
+                        android:id="@+id/mediumBtnIv"
+                        android:layout_marginStart="@dimen/about_fragment_bounded_buttons_horizontal_margin"
+                        style="@style/AboutFooterSocialMediaButton"
+                        tools:src="@drawable/ic_medium_circle"
+                        tools:tint="@color/deepTealAboutSocialMediaButtonColor"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/companyNameIv"
+                    android:layout_width="@dimen/about_fragment_company_name_width"
+                    android:layout_height="@dimen/about_fragment_company_name_height"
+                    android:layout_marginBottom="@dimen/about_fragment_footer_margin_bottom"
+                    style="@style/AboutFooterTextView"
+                    tools:src="@drawable/ic_company_name"/>
+
+                <TextView
+                    android:id="@+id/companyAddressTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/about_fragment_footer_margin_bottom"
+                    style="@style/AboutFooterTextView"
+                    tools:text="@string/company_address"
+                    tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/copyrightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AboutFooterTextView"
+                    tools:text="2017-2019 All rights reserved"
+                    tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.stocksexchange.android.ui.views.toolbars.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/toolbar_elevation"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_share"
+        tools:title="@string/about"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

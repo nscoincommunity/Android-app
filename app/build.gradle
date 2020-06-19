@@ -1,0 +1,199 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'org.jetbrains.dokka-android'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+// Create a variable called keysPropertiesFile, and initialize it to your
+// keys.properties file, in the rootProject folder.
+def keysPropertiesFile = rootProject.file("keys.properties")
+
+// Initialize a new Properties() object called keysProperties.
+def keysProperties = new Properties()
+
+// Load your keys.properties file into the keysProperties object.
+keysProperties.load(new FileInputStream(keysPropertiesFile))
+
+android {
+    signingConfigs {
+        config {
+            keyAlias keysProperties['SIGNING_CONFIG_KEY_ALIAS']
+            keyPassword keysProperties['SIGNING_CONFIG_KEY_PASSWORD']
+            storeFile file(keysProperties['SIGNING_CONFIG_STORE_FILE'])
+            storePassword keysProperties['SIGNING_CONFIG_STORE_PASSWORD']
+        }
+    }
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        applicationId "com.stocksexchange.android"
+
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.releaseVersionCode
+        versionName rootProject.releaseVersionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        buildConfigField("String", "ENCRYPTION_KEY", "\"" + keysProperties['ENCRYPTION_KEY'] + "\"")
+        buildConfigField("String", "REMOTE_SERVICE_URL_GENERATOR_SECRET", "\"" + keysProperties['REMOTE_SERVICE_URL_GENERATOR_SECRET'] + "\"")
+
+        buildConfigField("String", "CERTIFICATE_PUBLIC_KEY_HASH_FIRST", "\"" + keysProperties['CERTIFICATE_PUBLIC_KEY_HASH_FIRST'] + "\"")
+        buildConfigField("String", "CERTIFICATE_PUBLIC_KEY_HASH_SECOND", "\"" + keysProperties['CERTIFICATE_PUBLIC_KEY_HASH_SECOND'] + "\"")
+        buildConfigField("String", "CERTIFICATE_PUBLIC_KEY_HASH_THIRD", "\"" + keysProperties['CERTIFICATE_PUBLIC_KEY_HASH_THIRD'] + "\"")
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+
+            multiDexEnabled false
+
+            buildConfigField("String", "INTERCOM_APP_ID", "\"" + keysProperties['TEST_INTERCOM_APP_ID'] + "\"")
+            buildConfigField("String", "INTERCOM_API_KEY", "\"" + keysProperties['TEST_INTERCOM_API_KEY'] + "\"")
+            buildConfigField("String", "INTERCOM_API_SECRET", "\"" + keysProperties['TEST_INTERCOM_API_SECRET'] + "\"")
+        }
+
+        release {
+            multiDexEnabled false
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+
+            buildConfigField("String", "INTERCOM_APP_ID", "\"" + keysProperties['PRODUCTION_INTERCOM_APP_ID'] + "\"")
+            buildConfigField("String", "INTERCOM_API_KEY", "\"" + keysProperties['PRODUCTION_INTERCOM_API_KEY'] + "\"")
+            buildConfigField("String", "INTERCOM_API_SECRET", "\"" + keysProperties['PRODUCTION_INTERCOM_API_SECRET'] + "\"")
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        normal {
+            dimension "version"
+
+            buildConfigField("boolean", "IS_NORMAL_FLAVOR", "true")
+            buildConfigField("boolean", "IS_CHINESE_FLAVOR", "false")
+
+            buildConfigField("String", "STEX_API_BASE_URL", "\"https://api3.stex.com\"")
+            buildConfigField("String", "STEX_TERMS_OF_USE_URL", "\"https://app.stex.com/en/terms-of-use\"")
+            buildConfigField("String", "STEX_PRIVACY_POLICY_URL", "\"https://app.stex.com/en/privacy-policy\"")
+            buildConfigField("String", "STEX_SOCKET_URL", "\"https://socket.stex.com\"")
+        }
+
+        chinese {
+            dimension "version"
+
+            applicationIdSuffix ".cn"
+
+            buildConfigField("boolean", "IS_CHINESE_FLAVOR", "true")
+            buildConfigField("boolean", "IS_NORMAL_FLAVOR", "false")
+
+            buildConfigField("String", "STEX_API_BASE_URL", "\"https://api3.bevolved.info\"")
+            buildConfigField("String", "STEX_TERMS_OF_USE_URL", "\"https://app.bevolved.info/en/terms-of-use\"")
+            buildConfigField("String", "STEX_PRIVACY_POLICY_URL", "\"https://app.bevolved.info/en/privacy-policy\"")
+            buildConfigField("String", "STEX_SOCKET_URL", "\"https://socket.bevolved.info\"")
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dokka {
+    outputFormat = 'javadoc'
+    outputDirectory = "$buildDir/docs"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion"
+    implementation "org.koin:koin-android:$koinVersion"
+
+    implementation "org.greenrobot:eventbus:$eventBusVersion"
+
+    implementation "androidx.constraintlayout:constraintlayout:$constraintVersion"
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+    implementation "androidx.cardview:cardview:$cardViewVersion"
+    implementation "androidx.browser:browser:$browserVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.core:core-ktx:$ktxVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+
+    implementation "com.google.firebase:firebase-core:$firebaseCoreVersion"
+    implementation "com.google.firebase:firebase-messaging:$firebaseMessagingVersion"
+    implementation "com.google.firebase:firebase-perf:$firebasePerformanceVersion"
+
+    implementation "com.google.android.play:core:$playCoreVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-simplexml:$retrofitVersion"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    implementation "com.github.PhilJay:MPAndroidChart:$mpAndroidChartVersion"
+    implementation "com.github.kenglxn.QRGen:android:$qrGenVersion"
+
+    implementation "com.crashlytics.sdk.android:crashlytics:$crashlyticsVersion"
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+    implementation "com.afollestad.material-dialogs:core:$materialDialogsVersion"
+    implementation "com.arthurivanets.adapster:adapster:$adapsterVersion"
+    implementation "com.getkeepsafe.taptargetview:taptargetview:$tapTargetViewVersion"
+
+    implementation ("io.socket:socket.io-client:$socketIoClientVersion") {
+        // Excluding org.json which is already provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation "io.intercom.android:intercom-sdk:$intercomVersion"
+    implementation "me.dm7.barcodescanner:zxing:$zxingVersion"
+    implementation "com.chauthai.swipereveallayout:swipe-reveal-layout:$swipeRevealLayoutVersion"
+
+    implementation "androidx.lifecycle:lifecycle-runtime:$androidxLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-extensions:$androidxLifecycleVersion"
+
+    implementation project(":core")
+    implementation project(":cache")
+    implementation project(":api")
+
+    kapt "androidx.room:room-compiler:$roomVersion"
+
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "org.robolectric:robolectric:$robolectricVersion"
+
+    androidTestImplementation "androidx.test:runner:$testRunnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+}
+
+apply plugin: 'com.google.gms.google-services'

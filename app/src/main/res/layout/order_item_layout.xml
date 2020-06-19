@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealCardViewBackgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/order_item_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_top_bar_margin_bottom">
+
+            <TextView
+                android:id="@+id/typeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                tools:text="BUY"
+                tools:textColor="@color/colorGreenAccent"
+                style="@style/SecondaryButton"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/typeTv">
+
+                <TextView
+                    android:id="@+id/marketNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/order_item_market_name_tv_margin_start"
+                    android:textSize="@dimen/order_item_market_name_tv_text_size"
+                    tools:text="DIX / NXT"
+                    tools:textColor="@color/deepTealDottedMapViewTitleColor" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/idDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/id"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="408402942"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/amountDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/amount"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="2800 DIX"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/initialAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/initial_amount"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="2800 DIX"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/filledAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/filled_amount"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="1500 DIX"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/stopPriceDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/stop_price"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.0000155 NXT"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/priceDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/price"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.0000205 NXT"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/resultDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/income"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.01199000 NXT"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/dateDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="@string/date"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="2018-04-18 07:09:17 PM"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor" />
+
+        <TextView
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/order_item_cancel_btn_margin_top"
+            android:paddingStart="@dimen/order_item_cancel_btn_horizontal_margin"
+            android:paddingEnd="@dimen/order_item_cancel_btn_horizontal_margin"
+            style="@style/CardViewButton"
+            tools:text="@string/action_cancel"
+            tools:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

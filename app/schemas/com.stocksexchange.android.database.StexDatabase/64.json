@@ -1,0 +1,1150 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 64,
+    "identityHash": "f4a8104de103fb94f043e4d59d240ac8",
+    "entities": [
+      {
+        "tableName": "settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `is_sound_enabled` INTEGER NOT NULL, `is_vibration_enabled` INTEGER NOT NULL, `is_phone_led_enabled` INTEGER NOT NULL, `is_grouping_enabled` INTEGER NOT NULL, `is_fingerprint_unlock_enabled` INTEGER NOT NULL, `is_force_authentication_on_app_startup_is_enabled` INTEGER NOT NULL, `is_real_time_data_streaming_enabled` INTEGER NOT NULL, `is_orderbook_real_time_updates_highlighting_enabled` INTEGER NOT NULL, `is_new_trades_real_time_addition_highlighting_enabled` INTEGER NOT NULL, `is_price_chart_zoom_in_enabled` INTEGER NOT NULL, `should_animate_charts` INTEGER NOT NULL, `should_keep_screen_on` INTEGER NOT NULL, `notification_ringtone` TEXT NOT NULL, `pin_code` TEXT NOT NULL, `bullish_candle_stick_style` TEXT NOT NULL, `bearish_candle_stick_style` TEXT NOT NULL, `depth_chart_line_style` TEXT NOT NULL, `decimal_separator` TEXT NOT NULL, `grouping_separator` TEXT NOT NULL, `authentication_session_duration` TEXT NOT NULL, `fiat_currency` TEXT NOT NULL, `theme_id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSoundEnabled",
+            "columnName": "is_sound_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isVibrationEnabled",
+            "columnName": "is_vibration_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPhoneLedEnabled",
+            "columnName": "is_phone_led_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isGroupingEnabled",
+            "columnName": "is_grouping_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFingerprintUnlockEnabled",
+            "columnName": "is_fingerprint_unlock_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isForceAuthenticationOnAppStartupEnabled",
+            "columnName": "is_force_authentication_on_app_startup_is_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isRealTimeDataStreamingEnabled",
+            "columnName": "is_real_time_data_streaming_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isOrderbookRealTimeUpdatesHighlightingEnabled",
+            "columnName": "is_orderbook_real_time_updates_highlighting_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isNewTradesRealTimeAdditionHighlightingEnabled",
+            "columnName": "is_new_trades_real_time_addition_highlighting_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPriceChartZoomInEnabled",
+            "columnName": "is_price_chart_zoom_in_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shouldAnimateCharts",
+            "columnName": "should_animate_charts",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shouldKeepScreenOn",
+            "columnName": "should_keep_screen_on",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notificationRingtone",
+            "columnName": "notification_ringtone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pinCode",
+            "columnName": "pin_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bullishCandleStickStyle",
+            "columnName": "bullish_candle_stick_style",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bearishCandleStickStyle",
+            "columnName": "bearish_candle_stick_style",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depthChartLineStyle",
+            "columnName": "depth_chart_line_style",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "decimalSeparator",
+            "columnName": "decimal_separator",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groupingSeparator",
+            "columnName": "grouping_separator",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "authenticationSessionDuration",
+            "columnName": "authentication_session_duration",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fiatCurrency",
+            "columnName": "fiat_currency",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "theme",
+            "columnName": "theme_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "candle_sticks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`currency_pair_id` INTEGER NOT NULL, `interval_name` TEXT NOT NULL, `open_price` REAL NOT NULL, `high_price` REAL NOT NULL, `low_price` REAL NOT NULL, `close_price` REAL NOT NULL, `volume` REAL NOT NULL, `timestamp` INTEGER NOT NULL, PRIMARY KEY(`currency_pair_id`, `interval_name`, `timestamp`))",
+        "fields": [
+          {
+            "fieldPath": "currencyPairId",
+            "columnName": "currency_pair_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalName",
+            "columnName": "interval_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "openPrice",
+            "columnName": "open_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highPrice",
+            "columnName": "high_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "low_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "closePrice",
+            "columnName": "close_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "volume",
+            "columnName": "volume",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "currency_pair_id",
+            "interval_name",
+            "timestamp"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "currencies",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `symbol` TEXT NOT NULL, `name` TEXT NOT NULL, `is_active` INTEGER NOT NULL, `is_delisted` INTEGER NOT NULL, `precision` INTEGER NOT NULL, `minimum_withdrawal_amount` REAL NOT NULL, `minimum_deposit_amount` REAL NOT NULL, `deposit_fee_currency_id` INTEGER NOT NULL, `deposit_fee_currency_symbol` TEXT NOT NULL, `deposit_fee` REAL NOT NULL, `deposit_fee_in_percentage` REAL NOT NULL, `withdrawal_fee_currency_id` INTEGER NOT NULL, `withdrawal_fee_currency_symbol` TEXT NOT NULL, `withdrawal_fee` REAL NOT NULL, `withdrawal_fee_in_percentage` REAL NOT NULL, `block_explorer_url` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "symbol",
+            "columnName": "symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isActive",
+            "columnName": "is_active",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDelisted",
+            "columnName": "is_delisted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "precision",
+            "columnName": "precision",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minimumWithdrawalAmount",
+            "columnName": "minimum_withdrawal_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minimumDepositAmount",
+            "columnName": "minimum_deposit_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositFeeCurrencyId",
+            "columnName": "deposit_fee_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositFeeCurrencySymbol",
+            "columnName": "deposit_fee_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositFee",
+            "columnName": "deposit_fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositFeeInPercentage",
+            "columnName": "deposit_fee_in_percentage",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "withdrawalFeeCurrencyId",
+            "columnName": "withdrawal_fee_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "withdrawalFeeCurrencySymbol",
+            "columnName": "withdrawal_fee_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "withdrawalFee",
+            "columnName": "withdrawal_fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "withdrawalFeeInPercentage",
+            "columnName": "withdrawal_fee_in_percentage",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blockExplorerUrl",
+            "columnName": "block_explorer_url",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "currency_pairs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `base_currency_id` INTEGER NOT NULL, `base_currency_symbol` TEXT NOT NULL, `base_currency_name` TEXT NOT NULL, `quote_currency_id` INTEGER NOT NULL, `quote_currency_symbol` TEXT NOT NULL, `quote_currency_name` TEXT NOT NULL, `name` TEXT NOT NULL, `group_name` TEXT NOT NULL, `group_id` INTEGER NOT NULL, `min_order_amount` REAL NOT NULL, `min_buy_price` REAL NOT NULL, `min_sell_price` REAL NOT NULL, `buy_fee_in_percentage` REAL NOT NULL, `sell_fee_in_percentage` REAL NOT NULL, `is_active` INTEGER NOT NULL, `is_delisted` INTEGER NOT NULL, `message` TEXT, `base_currency_precision` INTEGER NOT NULL, `quote_currency_precision` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseCurrencyId",
+            "columnName": "base_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseCurrencySymbol",
+            "columnName": "base_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseCurrencyName",
+            "columnName": "base_currency_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencyId",
+            "columnName": "quote_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencySymbol",
+            "columnName": "quote_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencyName",
+            "columnName": "quote_currency_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groupName",
+            "columnName": "group_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groupId",
+            "columnName": "group_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minOrderAmount",
+            "columnName": "min_order_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minBuyPrice",
+            "columnName": "min_buy_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minSellPrice",
+            "columnName": "min_sell_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "buyFeeInPercentage",
+            "columnName": "buy_fee_in_percentage",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sellFeeInPercentage",
+            "columnName": "sell_fee_in_percentage",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isActive",
+            "columnName": "is_active",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDelisted",
+            "columnName": "is_delisted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "baseCurrencyPrecision",
+            "columnName": "base_currency_precision",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencyPrecision",
+            "columnName": "quote_currency_precision",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "currency_pair_groups",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `position` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "favorite_currency_pairs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "deposits",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `currency_id` INTEGER NOT NULL, `currency_symbol` TEXT NOT NULL, `amount` REAL NOT NULL, `fee` REAL NOT NULL, `fee_currency_id` INTEGER NOT NULL, `fee_currency_symbol` TEXT NOT NULL, `status_str` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `transaction_explorer_id` TEXT, `confirmations_str` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencyId",
+            "columnName": "currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencySymbol",
+            "columnName": "currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fee",
+            "columnName": "fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "feeCurrencyId",
+            "columnName": "fee_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "feeCurrencySymbol",
+            "columnName": "fee_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statusStr",
+            "columnName": "status_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transactionExplorerId",
+            "columnName": "transaction_explorer_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "confirmationsStr",
+            "columnName": "confirmations_str",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "orderbooks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`currency_pair_id` INTEGER NOT NULL, `buy_orders` TEXT NOT NULL, `sell_orders` TEXT NOT NULL, PRIMARY KEY(`currency_pair_id`))",
+        "fields": [
+          {
+            "fieldPath": "currencyPairId",
+            "columnName": "currency_pair_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "buyOrders",
+            "columnName": "buy_orders",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sellOrders",
+            "columnName": "sell_orders",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "currency_pair_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "trading_fees",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`currency_pair_id` INTEGER NOT NULL, `buy_fee` REAL NOT NULL, `sell_fee` REAL NOT NULL, PRIMARY KEY(`currency_pair_id`))",
+        "fields": [
+          {
+            "fieldPath": "currencyPairId",
+            "columnName": "currency_pair_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "buyFee",
+            "columnName": "buy_fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sellFee",
+            "columnName": "sell_fee",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "currency_pair_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "orders",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `currency_pair_id` INTEGER NOT NULL, `price` REAL NOT NULL, `trigger_price` REAL NOT NULL, `initial_amount` REAL NOT NULL, `filled_amount` REAL NOT NULL, `type_str` TEXT NOT NULL, `original_type_str` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `status_str` TEXT NOT NULL, `trades` TEXT NOT NULL, `fees` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencyPairId",
+            "columnName": "currency_pair_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "triggerPrice",
+            "columnName": "trigger_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "initialAmount",
+            "columnName": "initial_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "filledAmount",
+            "columnName": "filled_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "typeStr",
+            "columnName": "type_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "originalTypeStr",
+            "columnName": "original_type_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statusStr",
+            "columnName": "status_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trades",
+            "columnName": "trades",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fees",
+            "columnName": "fees",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "profile_infos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `email` TEXT NOT NULL, `user_name` TEXT NOT NULL, `are_withdrawals_allowed` INTEGER NOT NULL, `verifications` TEXT NOT NULL, `trading_fee_levels` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "user_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "areWithdrawalsAllowed",
+            "columnName": "are_withdrawals_allowed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "verifications",
+            "columnName": "verifications",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tradingFeeLevels",
+            "columnName": "trading_fee_levels",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "ticker_items",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `base_currency_symbol` TEXT NOT NULL, `base_currency_name` TEXT NOT NULL, `quote_currency_symbol` TEXT NOT NULL, `quote_currency_name` TEXT NOT NULL, `name` TEXT NOT NULL, `best_ask_price` REAL NOT NULL, `best_bid_price` REAL NOT NULL, `last_price` REAL, `open_price` REAL, `low_price` REAL, `high_price` REAL, `daily_volume_in_base_currency` REAL, `daily_volume_in_quote_currency` REAL, `fiat_currency_rates` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseCurrencySymbol",
+            "columnName": "base_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseCurrencyName",
+            "columnName": "base_currency_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencySymbol",
+            "columnName": "quote_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteCurrencyName",
+            "columnName": "quote_currency_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestAskPrice",
+            "columnName": "best_ask_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestBidPrice",
+            "columnName": "best_bid_price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastPrice",
+            "columnName": "last_price",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openPrice",
+            "columnName": "open_price",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "low_price",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "highPrice",
+            "columnName": "high_price",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dailyVolumeInBaseCurrency",
+            "columnName": "daily_volume_in_base_currency",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dailyVolumeInQuoteCurrency",
+            "columnName": "daily_volume_in_quote_currency",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fiatCurrencyRates",
+            "columnName": "fiat_currency_rates",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "trades",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `currency_pair_id` INTEGER NOT NULL, `price` REAL NOT NULL, `amount` REAL NOT NULL, `type_str` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencyPairId",
+            "columnName": "currency_pair_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "typeStr",
+            "columnName": "type_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "wallets",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER, `currency_id` INTEGER NOT NULL, `is_delisted` INTEGER NOT NULL, `is_disabled` INTEGER NOT NULL, `is_depositing_disabled` INTEGER NOT NULL, `currency_name` TEXT NOT NULL, `currency_symbol` TEXT NOT NULL, `current_balance` REAL NOT NULL, `frozen_balance` REAL NOT NULL, `bonus_balance` REAL NOT NULL, `total_balance` REAL NOT NULL, `deposit_address_data` TEXT, `additional_withdrawal_parameter_name` TEXT, PRIMARY KEY(`currency_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currencyId",
+            "columnName": "currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDelisted",
+            "columnName": "is_delisted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDisabled",
+            "columnName": "is_disabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDepositingDisabled",
+            "columnName": "is_depositing_disabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencyName",
+            "columnName": "currency_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencySymbol",
+            "columnName": "currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentBalance",
+            "columnName": "current_balance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frozenBalance",
+            "columnName": "frozen_balance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bonusBalance",
+            "columnName": "bonus_balance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalBalance",
+            "columnName": "total_balance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depositAddressData",
+            "columnName": "deposit_address_data",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "additionalWithdrawalParameterName",
+            "columnName": "additional_withdrawal_parameter_name",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "currency_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "withdrawals",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `currency_id` INTEGER NOT NULL, `currency_symbol` TEXT NOT NULL, `amount` REAL NOT NULL, `fee` REAL NOT NULL, `fee_currency_id` INTEGER NOT NULL, `fee_currency_symbol` TEXT NOT NULL, `status_str` TEXT NOT NULL, `creation_timestamp` INTEGER NOT NULL, `update_timestamp` INTEGER NOT NULL, `transaction_explorer_id` TEXT, `address_data` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencyId",
+            "columnName": "currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currencySymbol",
+            "columnName": "currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fee",
+            "columnName": "fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "feeCurrencyId",
+            "columnName": "fee_currency_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "feeCurrencySymbol",
+            "columnName": "fee_currency_symbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "statusStr",
+            "columnName": "status_str",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creationTimestamp",
+            "columnName": "creation_timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updateTimestamp",
+            "columnName": "update_timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transactionExplorerId",
+            "columnName": "transaction_explorer_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "addressData",
+            "columnName": "address_data",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f4a8104de103fb94f043e4d59d240ac8')"
+    ]
+  }
+}

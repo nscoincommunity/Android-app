@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:paddingStart="@dimen/reference_button_view_horizontal_padding"
+    tools:paddingEnd="@dimen/reference_button_view_horizontal_padding"
+    tools:parentTag="android.widget.RelativeLayout"
+    tools:background="@drawable/reference_button_view_background"
+    tools:backgroundTint="@color/black">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="@dimen/reference_button_view_icon_size"
+        android:layout_height="@dimen/reference_button_view_icon_size"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iconIv"
+        android:layout_marginStart="@dimen/reference_button_view_text_container_margin_start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subtitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/reference_button_view_subtitle_text_size"
+            style="@style/SingleLineTextView"
+            tools:text="@string/about_fragment_reference_button_visit_website_subtitle_text"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/reference_button_view_title_text_size"
+            android:textStyle="bold"
+            style="@style/SingleLineTextView"
+            tools:text="@string/about_fragment_reference_button_visit_website_title_text"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PriceChartView -->
+    <integer name="price_chart_view_min_candle_stick_count_for_zooming_in">25</integer>
+
+    <!-- DepthChartView -->
+    <integer name="depth_chart_view_depth_level">35</integer>
+
+    <!-- OrderbookView -->
+    <integer name="orderbook_view_orders_of_type_count_limit">@integer/depth_chart_view_depth_level</integer>
+    <integer name="orderbook_view_amount_max_chars_length">23</integer>
+
+    <!-- TradeHistoryView -->
+    <integer name="trade_history_view_amount_max_chars_length">@integer/orderbook_view_amount_max_chars_length</integer>
+
+    <!-- CurrencyMarketPreview -->
+    <integer name="currency_market_preview_trade_history_view_item_limit">@integer/orderbook_view_orders_of_type_count_limit</integer>
+
+</resources>

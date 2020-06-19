@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorRedAccent">#cc2e4e</color>
+    <color name="colorRedAccentDark">#af2441</color>
+    <color name="colorGreenAccent">#00be75</color>
+    <color name="colorGreenAccentDark">#00a35d</color>
+    <color name="colorLightGreenAccent">#8BC34A</color>
+    <color name="colorLightGreenAccentDark">#7CB342</color>
+    <color name="colorTealAccent">#009688</color>
+    <color name="colorTealAccentDark">#00897B</color>
+    <color name="colorBlueAccent">#329ED5</color>
+    <color name="colorBlueAccentDark">#2f84af</color>
+    <color name="colorYellowAccent">#ddc040</color>
+    <color name="colorYellowAccentDark">#FCBD0D</color>
+    <color name="colorOrangeAccent">#f2992c</color>
+    <color name="colorOrangeAccentDark">#e08b23</color>
+    <color name="colorPurpleAccent">#a77dc2</color>
+    <color name="colorPurpleAccentDark">#966eaf</color>
+
+</resources>

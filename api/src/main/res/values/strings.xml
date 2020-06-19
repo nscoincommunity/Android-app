@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Fiat currencies -->
+    <string name="fiat_currency_aud">Australian Dollar (AUD)</string>
+    <string name="fiat_currency_brl">Brazilian Real (BRL)</string>
+    <string name="fiat_currency_cad">Canadian Dollar (CAD)</string>
+    <string name="fiat_currency_cny">Chinese Yuan (CNY)</string>
+    <string name="fiat_currency_eur">Euro (EUR)</string>
+    <string name="fiat_currency_inr">Indian Rupee (INR)</string>
+    <string name="fiat_currency_idr">Indonesian Rupiah (IDR)</string>
+    <string name="fiat_currency_jpy">Japanese Yen (JPY)</string>
+    <string name="fiat_currency_gbp">Pound Sterling (GBP)</string>
+    <string name="fiat_currency_rub">Russian Ruble (RUB)</string>
+    <string name="fiat_currency_krw">South Korean Won (KRW)</string>
+    <string name="fiat_currency_uah">Ukrainian Hryvnia (UAH)</string>
+    <string name="fiat_currency_usd">United States Dollar (USD)</string>
+    <string name="fiat_currency_vnd">Vietnamese Dong (VND)</string>
+
+    <!-- Coin Status -->
+    <string name="coin_status_enabled">Enabled</string>
+    <string name="coin_status_disabled">Disabled</string>
+    <string name="coin_status_delisted">Delisted</string>
+
+    <!-- Chart Intervals -->
+    <string name="chart_interval_one_day">1D</string>
+    <string name="chart_interval_twelve_hours">12HR</string>
+    <string name="chart_interval_four_hours">4HR</string>
+    <string name="chart_interval_sixty_minutes">60M</string>
+    <string name="chart_interval_thirty_minutes">30M</string>
+    <string name="chart_interval_five_minutes">5M</string>
+    <string name="chart_interval_one_minute">1M</string>
+
+    <!-- Verification types -->
+    <string name="verification_type_fractal_title">Instant Verification</string>
+    <string name="verification_type_fractal_description_template">
+        %s is an automatic verification service that allowed to verify account instantly.
+    </string>
+    <string name="verification_type_fractal_description_template_argument" translatable="false">Fractal</string>
+
+    <string name="verification_type_smart_id_title">Instant verification (Baltic Countries Only)</string>
+    <string name="verification_type_smart_id_description_template">
+        %s is an easy and safe way to identify yourself online.
+    </string>
+    <string name="verification_type_smart_id_description_template_argument" translatable="false">Smart-ID</string>
+
+    <string name="verification_type_stex_title">Regular Verification (video requirement, 1–4 days)</string>
+    <string name="verification_type_stex_description_template">
+        %s - a verification method provided by our platform. ID, selfie and video required.
+    </string>
+    <string name="verification_type_stex_description_template_argument" translatable="false">STEX</string>
+
+    <string name="verification_type_privatbank_title">Instant (PrivatBank Clients Only)</string>
+    <string name="verification_type_privatbank_description_template">
+        %s provides its clients with an opportunity to receive a free electronic key in Privat24 after passing KYC
+        verification by the bank.</string>
+    <string name="verification_type_privatbank_description_template_argument" translatable="false">PrivatBank</string>
+
+    <string name="verification_type_cryptonomica_title">Advanced Verification (Paid Service)</string>
+    <string name="verification_type_cryptonomica_description_template">
+        %s is an online and offline identity verification service and a global database of verified identities with keys for signing
+        electronic documents, blockchain transactions and KYC.
+    </string>
+    <string name="verification_type_cryptonomica_description_template_argument" translatable="false">Cryptonomica</string>
+
+    <!-- User Admission Errors -->
+    <string name="error_email_taken">The provided email address has already been taken!</string>
+    <string name="error_password_length">The password should be at least 8 and at most 32 characters!</string>
+    <string name="error_password_common">The provided password is way too common and is very easy to guess. Please use another one!</string>
+    <string name="error_invalid_verification_token">The provided verification token has already been used or is invalid.</string>
+    <string name="error_invalid_password_reset_token">The provided password reset token has already been used or is invalid.</string>
+    <string name="unknown_error">Unknown Error</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/deepTealCardViewBackgroundColor"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:id="@+id/titleTv"
+                style="@style/SingleLineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Title"
+                tools:textColor="@color/deepTealSecondaryTextColor"
+                tools:textSize="@dimen/inbox_item_card_details_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+
+            <TextView
+                android:id="@+id/valueTv"
+                style="@style/SingleLineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                tools:textColor="@color/deepTealPrimaryTextColor"
+                tools:textSize="@dimen/inbox_item_card_details_text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

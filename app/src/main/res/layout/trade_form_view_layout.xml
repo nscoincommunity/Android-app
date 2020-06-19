@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:orientation="vertical">
+
+    <TextView
+        android:id="@+id/stopPriceLabelTv"
+        android:freezesText="true"
+        style="@style/TradeFormViewLabel"
+        tools:text="Stop price ($155.249204)"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/stopPriceIv"
+        style="@style/TradeFormInputView"
+        tools:etHintText="@string/required"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorInputViewHintColor"/>
+
+    <TextView
+        android:id="@+id/priceLabelTv"
+        android:freezesText="true"
+        style="@style/TradeFormViewLabel"
+        tools:layout_marginTop="@dimen/trade_form_view_label_vertical_margin"
+        tools:text="Price ($150.249204)"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/priceIv"
+        style="@style/TradeFormInputView"
+        tools:etHintText="@string/required"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorInputViewHintColor"/>
+
+    <com.stocksexchange.android.ui.trade.views.TradeAmountLabelContainer
+        android:id="@+id/amountLabelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:labelText="@string/trade_form_view_amount_label"
+        tools:layout_marginTop="@dimen/trade_form_view_label_top_margin"
+        tools:labelTextColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/amountIv"
+        style="@style/TradeFormInputView"
+        tools:etHintText="@string/required"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorInputViewHintColor"/>
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trade_form_view_separator_height"
+        android:layout_marginTop="@dimen/trade_form_view_separator_top_margin"
+        android:layout_marginBottom="@dimen/trade_form_view_separator_bottom_margin"
+        android:background="@drawable/trade_form_view_separator_drawable"/>
+
+    <com.stocksexchange.android.ui.trade.views.TradeAmountLabelContainer
+        android:id="@+id/totalLabelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:labelText="@string/trade_form_view_total_label"
+        tools:labelTextColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/totalIv"
+        style="@style/TradeFormInputView"
+        tools:etHintText="@string/required"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorInputViewHintColor"/>
+
+</merge>

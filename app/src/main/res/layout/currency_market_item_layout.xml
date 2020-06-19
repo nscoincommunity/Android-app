@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerCl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/currency_market_item_height"
+    android:paddingStart="@dimen/currency_market_item_horizontal_padding"
+    android:paddingEnd="@dimen/currency_market_item_horizontal_padding"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <TextView
+        android:id="@+id/baseCurrencySymbolTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/currency_market_item_separator_horizontal_margin"
+        android:textSize="@dimen/currency_market_item_base_currency_symbol_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dailyVolumeTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/SingleLineTextView"
+        tools:text="ETH"
+        tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    <TextView
+        android:id="@+id/separatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/currency_market_item_separator_horizontal_margin"
+        android:layout_marginEnd="@dimen/currency_market_item_separator_horizontal_margin"
+        android:text="/"
+        android:textSize="@dimen/currency_market_item_quote_currency_symbol_text_size"
+        app:layout_constraintTop_toTopOf="@id/baseCurrencySymbolTv"
+        app:layout_constraintStart_toEndOf="@id/baseCurrencySymbolTv"
+        app:layout_constraintBottom_toTopOf="@+id/dailyVolumeTv"
+        style="@style/SingleLineTextView"
+        tools:textColor="@color/deepTealSecondaryDarkTextColor"/>
+
+    <TextView
+        android:id="@+id/quoteCurrencySymbolTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/currency_market_item_separator_horizontal_margin"
+        android:textSize="@dimen/currency_market_item_quote_currency_symbol_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/baseCurrencySymbolTv"
+        app:layout_constraintStart_toEndOf="@id/separatorTv"
+        app:layout_constraintBottom_toTopOf="@+id/dailyVolumeTv"
+        style="@style/SingleLineTextView"
+        tools:text="BTC"
+        tools:textColor="@color/deepTealSecondaryDarkTextColor"/>
+
+    <TextView
+        android:id="@+id/dailyVolumeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/currency_market_item_daily_volume_text_size"
+        app:layout_constraintTop_toBottomOf="@id/baseCurrencySymbolTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/SingleLineTextView"
+        tools:text="vol 25.4081"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <TextView
+        android:id="@+id/lastPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/currency_market_item_last_price_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lastPriceInFiatCurrencyTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/SingleLineTextView"
+        tools:text="0.00235924"
+        tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    <TextView
+        android:id="@+id/lastPriceInFiatCurrencyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/currency_market_item_last_price_in_fiat_currency_margin_top"
+        android:textSize="@dimen/currency_market_item_last_price_in_fiat_currency_text_size"
+        app:layout_constraintTop_toBottomOf="@id/lastPriceTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/SingleLineTextView"
+        tools:text="$154.082924"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <TextView
+        android:id="@+id/dailyPriceChangeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/currency_market_item_daily_price_change_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/SingleLineTextView"
+        tools:text="+110.39%"
+        tools:textColor="@color/colorGreenAccent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

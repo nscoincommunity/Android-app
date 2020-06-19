@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stocksexchange.android.ui.views.NavigationViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavView"/>
+
+    <View
+        android:id="@+id/bottomNavShadowView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_bottom_navigation_elevation"
+        android:layout_above="@+id/bottomNavView"
+        android:background="@drawable/bottom_navigation_shadow_drawable"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_bottom_navigation_height"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearanceInactive="@style/DashboardBottomNavigationView"
+        app:itemTextAppearanceActive="@style/DashboardBottomNavigationView.Active"
+        tools:background="@color/deepTealDashboardBottomNavBackgroundColor"/>
+
+</RelativeLayout>

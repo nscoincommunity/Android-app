@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="verification_type_default_icon_top_margin">12dp</dimen>
+    <dimen name="verification_type_default_icon_bottom_margin">10dp</dimen>
+
+    <dimen name="verification_type_cryptonomica_icon_top_margin">@dimen/verification_type_default_icon_top_margin</dimen>
+    <dimen name="verification_type_cryptonomica_icon_bottom_margin">4dp</dimen>
+
+</resources>

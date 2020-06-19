@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <FrameLayout
+        android:id="@+id/mainContainerFl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/chartContainerLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/openSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/price_chart_view_candle_stick_info_horizontal_margin"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_open"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/highSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/price_chart_view_candle_stick_info_horizontal_margin"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_high"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/lowSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/price_chart_view_candle_stick_info_horizontal_margin"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_low"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/closeSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_close"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/price_chart_view_candle_stick_info_margin_bottom"
+                android:orientation="horizontal">
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/volumeSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/price_chart_view_candle_stick_info_horizontal_margin"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_volume"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+                <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+                    android:id="@+id/timeSmv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:titleSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    app:valueSize="@dimen/price_chart_view_candle_stick_info_text_size"
+                    tools:title="@string/chart_candle_stick_info_time"
+                    tools:value="-"
+                    tools:titleColor="@color/deepTealSecondaryTextColor"
+                    tools:valueColor="@color/deepTealSecondaryTextColor"/>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/progress_bar_size"
+            android:layout_height="@dimen/progress_bar_size"
+            android:layout_gravity="center"
+            tools:visibility="gone"/>
+
+        <com.stocksexchange.android.ui.views.InfoView
+            android:id="@+id/infoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chart_view_tab_height"
+        android:layout_below="@id/mainContainerFl"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        style="@style/ChartViewTabLayout"/>
+
+</merge>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default window animations -->
+    <integer name="default_window_animation_duration">300</integer>
+
+    <item name="default_window_animation_min_scale" type="integer" format="float">0.90</item>
+    <item name="default_window_animation_max_scale" type="integer" format="float">1.0</item>
+    <item name="default_window_animation_min_alpha" type="integer" format="float">0.90</item>
+    <item name="default_window_animation_max_alpha" type="integer" format="float">1.0</item>
+
+    <!-- Fading animations -->
+    <integer name="fading_animation_duration">250</integer>
+
+    <!-- Kitkat scaling animations -->
+    <item name="kitkat_scaling_window_a_animation_min_scale" type="integer" format="float">1.0</item>
+    <item name="kitkat_scaling_window_a_animation_max_scale" type="integer" format="float">1.2</item>
+    <item name="kitkat_scaling_window_b_animation_min_scale" type="integer" format="float">0.8</item>
+    <item name="kitkat_scaling_window_b_animation_max_scale" type="integer" format="float">1.0</item>
+
+    <item name="kitkat_scaling_animation_min_alpha" type="integer" format="float">0.0</item>
+    <item name="kitkat_scaling_animation_max_alpha" type="integer" format="float">1.0</item>
+
+    <integer name="kitkat_scaling_animation_duration">200</integer>
+
+    <!-- Overshoot scaling animations -->
+    <item name="overshoot_scaling_window_a_min_scale" type="integer" format="float">0.9</item>
+    <item name="overshoot_scaling_window_a_max_scale" type="integer" format="float">1.0</item>
+    <item name="overshoot_scaling_window_b_min_scale" type="integer" format="float">1.0</item>
+    <item name="overshoot_scaling_window_b_max_scale" type="integer" format="float">1.1</item>
+
+    <item name="overshoot_scaling_window_a_min_alpha" type="integer" format="float">0.9</item>
+    <item name="overshoot_scaling_window_a_max_alpha" type="integer" format="float">1.0</item>
+
+    <item name="overshoot_scaling_window_b_enter_min_alpha" type="integer" format="float">0.9</item>
+    <item name="overshoot_scaling_window_b_enter_max_alpha" type="integer" format="float">1.0</item>
+
+    <item name="overshoot_scaling_window_b_exit_min_alpha" type="integer" format="float">0.0</item>
+    <item name="overshoot_scaling_window_b_exit_max_alpha" type="integer" format="float">1.0</item>
+
+    <integer name="overshoot_scaling_animation_scale_element_duration">300</integer>
+    <integer name="overshoot_scaling_animation_alpha_element_duration">100</integer>
+
+    <!-- Pop animations -->
+    <item name="pop_animation_min_alpha" type="integer" format="float">0.0</item>
+    <item name="pop_animation_max_alpha" type="integer" format="float">1.0</item>
+
+    <integer name="pop_animation_duration">300</integer>
+
+    <!-- Horizontal sliding animations -->
+    <item name="horizontal_sliding_animation_window_a_min_alpha" type="integer" format="float">0.80</item>
+    <item name="horizontal_sliding_animation_window_a_max_alpha" type="integer" format="float">1.0</item>
+
+    <integer name="horizontal_sliding_animation_duration">@integer/default_window_animation_duration</integer>
+
+    <!-- Vertical sliding animations -->
+    <item name="vertical_sliding_window_a_alpha" type="integer" format="float">1.0</item>
+
+    <integer name="vertical_sliding_animation_duration">@integer/default_window_animation_duration</integer>
+
+    <!-- Drawable animations -->
+    <item name="arrow_rotation_animation_min_degrees" type="integer" format="float">0</item>
+    <item name="arrow_rotation_animation_max_degrees" type="integer" format="float">180</item>
+
+    <!-- Expandable layout -->
+    <integer name="help_item_answer_tv_animation_duration">400</integer>
+
+    <!-- PriceChartView -->
+    <integer name="price_chart_view_min_candle_stick_count_for_zooming_in">15</integer>
+
+    <!-- DepthChartView -->
+    <integer name="depth_chart_view_depth_level">15</integer>
+
+    <!-- OrderbookView -->
+    <integer name="orderbook_view_orders_of_type_count_limit">@integer/depth_chart_view_depth_level</integer>
+    <integer name="orderbook_view_item_highlight_duration">3000</integer>
+    <integer name="orderbook_view_price_max_chars_length">10</integer>
+    <integer name="orderbook_view_amount_max_chars_length">10</integer>
+
+    <!-- TradeHistoryView -->
+    <integer name="trade_history_item_highlight_duration">@integer/orderbook_view_item_highlight_duration</integer>
+    <integer name="trade_history_view_price_max_chars_length">@integer/orderbook_view_price_max_chars_length</integer>
+    <integer name="trade_history_view_amount_max_chars_length">@integer/orderbook_view_amount_max_chars_length</integer>
+
+    <!-- CurrencyMarketPreview -->
+    <integer name="currency_market_preview_trade_history_view_item_limit">@integer/orderbook_view_orders_of_type_count_limit</integer>
+
+    <!-- TradeFormView -->
+    <integer name="trade_form_view_price_max_chars_length">@integer/orderbook_view_price_max_chars_length</integer>
+
+</resources>

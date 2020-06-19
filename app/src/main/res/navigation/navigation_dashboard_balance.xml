@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationDashboardBalance"
+    app:startDestination="@+id/balanceDest">
+
+    <fragment
+        android:id="@+id/balanceDest"
+        android:name="com.stocksexchange.android.ui.balance.BalanceContainerFragment"
+        tools:layout="@layout/balance_container_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/walletsSearchDest"
+        android:name="com.stocksexchange.android.ui.wallets.search.WalletsSearchFragment"
+        tools:layout="@layout/wallets_search_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/currencyMarketsSearchDest"
+        android:name="com.stocksexchange.android.ui.currencymarkets.search.CurrencyMarketsSearchFragment"
+        tools:layout="@layout/currency_markets_search_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/currencyMarketPreviewDest"
+        android:name="com.stocksexchange.android.ui.currencymarketpreview.CurrencyMarketPreviewFragment"
+        tools:layout="@layout/currency_market_preview_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/priceAlertCreationDest"
+        android:name="com.stocksexchange.android.ui.alertprice.additem.AlertPriceAddAFragment"
+        tools:layout="@layout/alert_price_add_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/inboxDest"
+        android:name="com.stocksexchange.android.ui.inbox.InboxFragment"
+        tools:layout="@layout/inbox_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/orderbookDest"
+        android:name="com.stocksexchange.android.ui.orderbook.OrderbookFragment"
+        tools:layout="@layout/orderbook_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/tradeDest"
+        android:name="com.stocksexchange.android.ui.trade.TradeFragment"
+        tools:layout="@layout/trade_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/transactionsSearchDest"
+        android:name="com.stocksexchange.android.ui.transactions.search.TransactionsSearchFragment"
+        tools:layout="@layout/transactions_search_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/protocolSelectionDest"
+        android:name="com.stocksexchange.android.ui.protocolselection.ProtocolSelectionFragment"
+        tools:layout="@layout/protocol_selection_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/depositCreationDest"
+        android:name="com.stocksexchange.android.ui.transactioncreation.depositcreation.DepositCreationFragment"
+        tools:layout="@layout/deposit_creation_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/withdrawalCreationDest"
+        android:name="com.stocksexchange.android.ui.transactioncreation.withdrawalcreation.WithdrawalCreationFragment"
+        tools:layout="@layout/withdrawal_creation_fragment_layout"/>
+
+</navigation>

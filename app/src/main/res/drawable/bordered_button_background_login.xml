@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+
+    <item android:id="@+id/main">
+
+        <shape android:shape="rectangle">
+
+            <corners android:radius="@dimen/user_admission_button_background_drawable_corners_radius" />
+
+            <stroke
+                android:width="@dimen/bordered_button_background_stroke_width"
+                android:color="@color/deepTealSecondaryTextColor" />
+
+        </shape>
+
+    </item>
+
+</ripple>

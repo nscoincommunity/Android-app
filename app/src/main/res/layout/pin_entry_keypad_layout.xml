@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/deepTealPrimaryColor"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <TextView
+        android:id="@+id/oneDigitBtnTv"
+        android:layout_toStartOf="@+id/twoDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="1"
+        android:tag="1"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/twoDigitBtnTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:layout_marginStart="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:text="2"
+        android:tag="2"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/threeDigitBtnTv"
+        android:layout_toEndOf="@id/twoDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="3"
+        android:tag="3"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/fourDigitBtnTv"
+        android:layout_toStartOf="@+id/fiveDigitBtnTv"
+        android:layout_below="@id/oneDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="4"
+        android:tag="4"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/fiveDigitBtnTv"
+        android:layout_below="@id/twoDigitBtnTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:layout_marginStart="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:text="5"
+        android:tag="5"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/sixDigitBtnTv"
+        android:layout_below="@id/threeDigitBtnTv"
+        android:layout_toEndOf="@+id/fiveDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="6"
+        android:tag="6"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/sevenDigitBtnTv"
+        android:layout_toStartOf="@+id/eightDigitBtnTv"
+        android:layout_below="@id/fourDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="7"
+        android:tag="7"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/eightDigitBtnTv"
+        android:layout_below="@id/fiveDigitBtnTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:layout_marginStart="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+        android:text="8"
+        android:tag="8"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <TextView
+        android:id="@+id/nineDigitBtnTv"
+        android:layout_below="@id/sixDigitBtnTv"
+        android:layout_toEndOf="@+id/eightDigitBtnTv"
+        android:layout_marginBottom="@dimen/pin_entry_keypad_digit_button_vertical_margin"
+        android:text="9"
+        android:tag="9"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/PinEntryDigitButton"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/eightDigitBtnTv">
+
+        <FrameLayout
+            android:id="@+id/fingerprintButtonContainerFl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/pin_entry_keypad_digit_button_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/fingerprintActionBtnIv"
+                android:background="@drawable/pin_entry_fingerprint_button_drawable"
+                style="@style/PinEntryActionButton"/>
+
+            <View
+                android:id="@+id/fingerprintOverlayView"
+                android:layout_width="@dimen/pin_entry_keypad_button_size"
+                android:layout_height="@dimen/pin_entry_keypad_button_size"
+                android:background="@drawable/pin_entry_button_selectable_bg_drawable"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/zeroDigitBtnTv"
+            android:text="0"
+            android:tag="0"
+            tools:textColor="@color/deepTealPrimaryTextColor"
+            style="@style/PinEntryDigitButton"/>
+
+        <ImageView
+            android:id="@+id/deleteActionBtnIv"
+            android:layout_marginStart="@dimen/pin_entry_keypad_digit_button_horizontal_margin"
+            android:background="@drawable/pin_entry_delete_button_drawable"
+            style="@style/PinEntryActionButton"/>
+
+    </LinearLayout>
+
+</merge>

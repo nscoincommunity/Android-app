@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/inbox_item_padding_start"
+    android:paddingEnd="@dimen/inbox_item_padding_end"
+    tools:background="@color/deepTealCardViewBackgroundColor">
+
+    <RelativeLayout
+        android:id="@+id/topBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/inbox_item_padding_top_bottom"
+        android:paddingBottom="@dimen/inbox_item_padding_top_bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventTitleTv"
+            style="@style/SingleLineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deepTealPrimaryTextColor"
+            android:textSize="@dimen/inbox_item_title_text_size"
+            android:textStyle="bold"
+            tools:text="Title"
+            tools:textColor="@color/deepTealPrimaryTextColor" />
+
+        <TextView
+            android:id="@+id/eventDateTv"
+            style="@style/SingleLineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventTitleTv"
+            android:paddingTop="@dimen/inbox_date_margin_top"
+            android:textColor="@color/deepTealPrimaryTextColor"
+            android:textSize="@dimen/inbox_item_description_text_size"
+            tools:text="2019-11-13 13:37:53"
+            tools:textColor="@color/deepTealPrimaryTextColor" />
+
+        <ImageView
+            android:id="@+id/itemDeleteIv"
+            android:layout_width="19.49dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/messageDetailsLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/inbox_item_padding_top_bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line1Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line1"
+            tools:value="value1"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line2Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line2"
+            tools:value="value3"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line3Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line3"
+            tools:value="value3"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line4Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line4"
+            tools:value="value4"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line5Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line5"
+            tools:value="value5"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line6Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line6"
+            tools:value="value6"
+            tools:visibility="visible" />
+
+        <com.stocksexchange.android.ui.views.mapviews.SpaceMapView
+            android:id="@+id/line7Dmv"
+            style="@style/SpaceMapViewDetails"
+            tools:title="line7"
+            tools:value="value7"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

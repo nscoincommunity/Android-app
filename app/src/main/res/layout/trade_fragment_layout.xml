@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.stocksexchange.android.ui.views.toolbars.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftButtonDrawable="@drawable/ic_arrow_left"
+            app:rightButtonDrawable="@drawable/ic_star"
+            app:inboxButtonVisible="true"
+            tools:title="CLO / BTC"
+            tools:background="@color/deepTealPrimaryColor"/>
+
+        <com.stocksexchange.android.ui.views.CurrencyMarketPriceInfoView
+            android:id="@+id/priceInfoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/trade_price_info_view_margin_bottom"/>
+
+        <LinearLayout
+            android:id="@+id/userBalanceContainerLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceInfoView"
+            android:orientation="horizontal">
+
+            <com.stocksexchange.android.ui.views.mapviews.VerticalMapView
+                android:id="@+id/baseCurrencyUserBalanceVmv"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/trade_user_balance_view_height"
+                android:background="?attr/selectableItemBackground"
+                app:titleSize="@dimen/trade_user_balance_view_title_size"
+                app:subtitleSize="@dimen/trade_user_balance_view_subtitle_size"
+                app:shadows="top|bottom|right"
+                app:verticalShadowSize="@dimen/trade_user_balance_view_vertical_shadow_size"
+                app:horizontalShadowSize="@dimen/trade_user_balance_view_horizontal_shadow_size"
+                tools:backgroundTint="@color/deepTealPrimaryColor"
+                tools:titleColor="@color/deepTealSecondaryTextColor"
+                tools:subtitleColor="@color/colorYellowAccent"/>
+
+            <com.stocksexchange.android.ui.views.mapviews.VerticalMapView
+                android:id="@+id/quoteCurrencyUserBalanceVmv"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/trade_user_balance_view_height"
+                android:background="?attr/selectableItemBackground"
+                app:titleSize="@dimen/trade_user_balance_view_title_size"
+                app:subtitleSize="@dimen/trade_user_balance_view_subtitle_size"
+                app:shadows="top|bottom|left"
+                app:verticalShadowSize="@dimen/trade_user_balance_view_vertical_shadow_size"
+                app:horizontalShadowSize="@dimen/trade_user_balance_view_horizontal_shadow_size"
+                tools:backgroundTint="@color/deepTealPrimaryColor"
+                tools:titleColor="@color/deepTealSecondaryTextColor"
+                tools:subtitleColor="@color/colorYellowAccent"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tradeTypesTl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trade_trade_types_tab_layout_height"
+            android:layout_below="@id/userBalanceContainerLl"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/TradeTabAppearance"
+            tools:background="@color/deepTealPrimaryColor"
+            tools:tabIndicatorColor="@color/deepTealTabIndicatorColor"/>
+
+        <com.stocksexchange.android.ui.views.SwitchOptionsView
+            android:id="@+id/orderTypesSov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tradeTypesTl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/trade_order_types_sov_margin_top"
+            app:optionsTitleTextSize="@dimen/trade_order_types_sov_title_text_size"
+            tools:leftOptionTitleText="@string/limit"
+            tools:rightOptionTitleText="@string/stop_limit"
+            tools:optionsTitleTextColor="@color/deepTealSecondaryTextColor"
+            tools:switchColor="@color/deepTealAccentColor"/>
+
+        <RelativeLayout
+            android:id="@+id/mainContainerRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/orderTypesSov"
+            android:layout_marginTop="@dimen/trade_main_container_margin_top">
+
+            <com.stocksexchange.android.ui.trade.views.TradeFormView
+                android:id="@+id/formView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customMargin="@dimen/trade_form_view_horizontal_margin"
+                app:labelTopMargin="@dimen/trade_form_view_label_view_top_margin"
+                tools:backgroundTint="@color/deepTealPrimaryColor"/>
+
+            <LinearLayout
+                android:id="@+id/bottomContainerLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formView"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tradeBtn"
+                    android:layout_marginTop="@dimen/trade_trade_button_margin_top"
+                    android:layout_marginBottom="@dimen/trade_trade_button_margin_bottom"
+                    android:layout_marginStart="@dimen/trade_trade_button_horizontal_margin"
+                    android:layout_marginEnd="@dimen/trade_trade_button_horizontal_margin"
+                    android:textSize="14sp"
+                    tools:text="Buy XBCN For BTC"
+                    tools:textColor="@color/deepTealPrimaryTextColor"
+                    tools:background="@drawable/selectable_button_background_drawable"
+                    tools:backgroundTint="@color/deepTealAccentColor"
+                    style="@style/SelectableButton"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

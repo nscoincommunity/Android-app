@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- View Tags -->
+    <string name="tag_is_visible" translatable="false">is_visible</string>
+    <string name="tag_is_animating" translatable="false">is_animating</string>
+
+</resources>

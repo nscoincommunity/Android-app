@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetTop="@dimen/dialog_inset_drawable_vertical_insert"
+    android:insetBottom="@dimen/dialog_inset_drawable_vertical_insert"
+    android:insetLeft="@dimen/dialog_inset_drawable_horizontal_insert"
+    android:insetRight="@dimen/dialog_inset_drawable_horizontal_insert"
+    android:drawable="@android:color/transparent"/>

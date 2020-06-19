@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- (The same as in default dimens.xml) -->
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_icon_width">@dimen/toolbar_height</dimen>
+    <dimen name="toolbar_title_text_size">20sp</dimen>
+    <dimen name="toolbar_title_horizontal_margin">16dp</dimen>
+
+    <!-- TabLayout -->
+    <dimen name="tab_layout_text_size">14sp</dimen>
+
+    <!-- InfoView -->
+    <dimen name="info_view_icon_size">100dp</dimen>
+    <dimen name="info_view_caption_text_size">18sp</dimen>
+
+    <!-- InputView -->
+    <dimen name="input_view_edit_text_padding">12dp</dimen>
+    <dimen name="input_view_text_size">14sp</dimen>
+
+    <!-- Secondary button -->
+    <dimen name="secondary_button_text_size">14sp</dimen>
+
+    <!-- CardViewButton -->
+    <dimen name="card_view_button_vertical_padding">6dp</dimen>
+    <dimen name="card_view_button_text_size">14sp</dimen>
+
+    <!-- UserAdmission -->
+    <dimen name="user_admission_app_logo_size">100dp</dimen>
+    <dimen name="user_admission_app_title_text_size">60sp</dimen>
+    <dimen name="user_admission_app_motto_text_size">16sp</dimen>
+    <dimen name="user_admission_button_vertical_padding">12dp</dimen>
+
+    <!-- AuthenticationActivity -->
+    <dimen name="authentication_activity_pin_entry_keypad_margin_top">40dp</dimen>
+    <dimen name="authentication_activity_pin_entry_keypad_margin_bottom">40dp</dimen>
+    <dimen name="authentication_activity_help_button_margin_top">30dp</dimen>
+    <dimen name="authentication_activity_help_button_margin_bottom">30dp</dimen>
+
+    <!-- WalletItem -->
+    <dimen name="wallet_item_currency_long_name_tv_text_size">17sp</dimen>
+    <dimen name="wallet_item_dmv_text_size">14sp</dimen>
+
+    <!-- OrderItem -->
+    <dimen name="order_item_market_name_tv_text_size">17sp</dimen>
+    <dimen name="order_item_dmv_text_size">14sp</dimen>
+
+    <!-- TransactionItem -->
+    <dimen name="transaction_item_currency_tv_text_size">17sp</dimen>
+    <dimen name="transaction_item_dmv_text_size">14sp</dimen>
+
+    <!-- AboutFragment -->
+    <dimen name="about_fragment_app_logo_width">@dimen/app_logo_width</dimen>
+    <dimen name="about_fragment_app_logo_height">@dimen/app_logo_height</dimen>
+    <dimen name="about_fragment_app_logo_margin_top">50dp</dimen>
+    <dimen name="about_fragment_app_motto_margin_top">33dp</dimen>
+    <dimen name="about_fragment_app_motto_text_size">17sp</dimen>
+    <dimen name="about_fragment_reference_button_visit_website_margin_top">26dp</dimen>
+    <dimen name="about_fragment_bottom_container_padding_top">30dp</dimen>
+
+    <!-- VerificationPromptActivity -->
+    <dimen name="verification_prompt_icon_width">140dp</dimen>
+    <dimen name="verification_prompt_icon_height">132dp</dimen>
+    <dimen name="verification_prompt_verify_later_btn_margin_bottom">35dp</dimen>
+
+    <!-- ReferralFragment -->
+    <dimen name="referral_fragment_app_logo_width">@dimen/app_logo_width</dimen>
+    <dimen name="referral_fragment_app_logo_height">@dimen/app_logo_height</dimen>
+    <dimen name="referral_fragment_bottom_container_padding_top">31dp</dimen>
+
+    <!-- DepositCreationView -->
+    <dimen name="deposit_creation_view_address_param_qr_code_image_size">200dp</dimen>
+
+    <!-- DepositCreationFragment -->
+    <dimen name="deposit_creation_fragment_currency_symbol_text_size">30sp</dimen>
+    <dimen name="deposit_creation_fragment_info_view_top_margin">25dp</dimen>
+    <dimen name="deposit_creation_fragment_info_view_icon_size">170dp</dimen>
+
+    <!-- ProtocolSelectionItem -->
+    <dimen name="protocol_selection_item_icon_size">120dp</dimen>
+
+    <!-- WithdrawalCreationFragment -->
+    <dimen name="withdrawal_creation_fragment_available_balance_value_text_size">30sp</dimen>
+    <dimen name="withdrawal_creation_fragment_info_view_icon_size">170dp</dimen>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/linear">
+
+    <translate
+        android:duration="@integer/pop_animation_duration"
+        android:fromYDelta="0.0"
+        android:toYDelta="-100%"/>
+
+    <alpha
+        android:duration="@integer/pop_animation_duration"
+        android:fromAlpha="@integer/pop_animation_max_alpha"
+        android:toAlpha="@integer/pop_animation_min_alpha"/>
+
+</set>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/background">
+
+        <shape android:shape="oval">
+
+            <solid android:color="@color/deepTealPinEntryKeypadEnabledButtonBackgroundColor"/>
+
+        </shape>
+
+    </item>
+
+    <item
+        android:drawable="@drawable/pin_entry_button_selectable_bg_drawable"/>
+
+</layer-list>

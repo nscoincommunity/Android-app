@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/deepTealPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/deepTealPrimaryDarkColor</item>
+        <item name="colorAccent">@color/deepTealAccentColor</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_activity_bg</item>
+    </style>
+
+    <style name="AuthenticationTheme" parent="AppTheme"/>
+
+    <style name="VerificationPromptTheme" parent="AppTheme"/>
+
+    <style name="QrCodeScannerTheme" parent="AppTheme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="BaseTextView">
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_drawable</item>
+    </style>
+
+    <style name="SingleLineTextView" parent="BaseTextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="SingleLineTextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ToolbarIcon">
+        <item name="android:layout_width">@dimen/toolbar_icon_width</item>
+        <item name="android:layout_height">@dimen/toolbar_icon_height</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ToolbarProgressBar">
+        <item name="android:layout_width">@dimen/toolbar_icon_width</item>
+        <item name="android:layout_height">@dimen/toolbar_icon_height</item>
+        <item name="android:padding">@dimen/toolbar_progress_bar_padding</item>
+    </style>
+
+    <style name="TabLayoutTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/tab_layout_text_size</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="tabTextAppearance">@style/TabLayoutTabAppearance</item>
+    </style>
+
+    <style name="UserAdmissionAppLogo">
+        <item name="android:layout_width">@dimen/user_admission_app_logo_size</item>
+        <item name="android:layout_height">@dimen/user_admission_app_logo_size</item>
+        <item name="android:layout_marginTop">@dimen/user_admission_app_logo_margin_top</item>
+        <item name="android:fitsSystemWindows">@bool/fitsSystemWindows</item>
+        <item name="android:src">@mipmap/ic_launcher_large</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="UserAdmissionAppMotto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/user_admission_app_motto_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/user_admission_app_motto_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/user_admission_app_motto_horizontal_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/user_admission_app_motto_text_size</item>
+    </style>
+
+    <style name="UserAdmissionButton" parent="SingleLineTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/user_admission_button_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/user_admission_button_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/user_admission_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/user_admission_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/user_admission_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/user_admission_button_horizontal_padding</item>
+        <item name="android:background">@drawable/user_admission_button_background_drawable</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">@dimen/user_admission_button_text_size</item>
+    </style>
+
+    <style name="UserAdmissionButtonDoNotHaveAcc" parent="SingleLineTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/user_admission_button_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/user_admission_button_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/user_admission_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/user_admission_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/user_admission_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/user_admission_button_horizontal_padding</item>
+        <item name="android:background">@drawable/bordered_button_background_login</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">@dimen/user_admission_button_text_size</item>
+    </style>
+
+    <style name="UserAdmissionButtonProgressBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/user_admission_progress_bar_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/user_admission_progress_bar_vertical_margin</item>
+        <item name="android:elevation">@dimen/user_admission_progress_bar_elevation</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="LoginHelpButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/user_admission_help_button_text_size</item>
+    </style>
+
+    <style name="RegistrationCredentialsContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="RegistrationCredentialsCheckBox" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/check_box_background_drawable</item>
+    </style>
+
+    <style name="RegistrationCredentialsTextView" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/registration_check_box_padding_start</item>
+        <item name="android:textSize">@dimen/registration_check_box_text_size</item>
+    </style>
+
+    <style name="CurrencyMarketsSortPanelTitle" parent="SingleLineTextView">
+        <item name="android:textSize">@dimen/currency_markets_sort_panel_title_size</item>
+    </style>
+
+    <style name="PrimaryButton" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/primary_button_height</item>
+        <item name="android:paddingStart">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/primary_button_horizontal_padding</item>
+        <item name="android:drawablePadding">@dimen/primary_button_drawable_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/primary_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minEms">10</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SecondaryButton" parent="SingleLineTextView">
+        <item name="android:paddingTop">@dimen/secondary_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/secondary_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/secondary_button_horizontal_padding</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/secondary_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NewsDate" parent="SingleLineTextView">
+        <item name="android:paddingTop">@dimen/news_date_padding</item>
+        <item name="android:paddingBottom">@dimen/news_date_padding</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PinEntryDigitButton">
+        <item name="android:layout_width">@dimen/pin_entry_keypad_button_size</item>
+        <item name="android:layout_height">@dimen/pin_entry_keypad_button_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pin_entry_keypad_digit_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/pin_entry_digit_button_drawable</item>
+    </style>
+
+    <style name="PinEntryActionButton">
+        <item name="android:layout_width">@dimen/pin_entry_keypad_button_size</item>
+        <item name="android:layout_height">@dimen/pin_entry_keypad_button_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PinBox">
+        <item name="android:layout_width">@dimen/authentication_activity_pin_box_size</item>
+        <item name="android:layout_height">@dimen/authentication_activity_pin_box_size</item>
+        <item name="android:layout_marginStart">@dimen/authentication_activity_pin_box_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/authentication_activity_pin_box_horizontal_margin</item>
+    </style>
+
+    <style name="Dialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <style name="DefaultDialogTheme" parent="Dialog">
+        <item name="colorPrimary">@color/deepTealPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/deepTealPrimaryDarkColor</item>
+        <item name="colorAccent">@color/deepTealAccentColor</item>
+
+        <item name="android:windowBackground">@drawable/dialog_inset_drawable</item>
+    </style>
+
+    <style name="DialogCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dialog_card_view_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_card_view_horizontal_margin</item>
+    </style>
+
+    <style name="DialogContentContainer">
+        <item name="android:id">@id/contentContainerRl</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dialog_content_container_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dialog_content_container_padding_bottom</item>
+    </style>
+
+    <style name="DialogMainContainer">
+        <item name="android:id">@id/mainContainerRl</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dialog_main_container_horizontal_margin</item>
+        <item name="android:paddingEnd">@dimen/dialog_main_container_horizontal_margin</item>
+    </style>
+
+    <style name="DialogTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dialog_subtitle_margin_top</item>
+        <item name="android:textSize">@dimen/dialog_subtitle_text_size</item>
+    </style>
+
+    <style name="DialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dialog_button_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/dialog_button_horizontal_margin</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingTop">@dimen/dialog_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/dialog_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/dialog_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/dialog_button_horizontal_padding</item>
+        <item name="android:textSize">@dimen/dialog_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SwitchTheme" parent="AppTheme">
+        <item name="colorControlActivated">@color/deepTealAccentColor</item>
+        <item name="colorSwitchThumbNormal">@color/deepTealAccentColor</item>
+        <item name="android:colorForeground">@color/deepTealAccentColor</item>
+    </style>
+
+    <style name="CurrencyMarketPreviewBottomBarButton" parent="SelectableButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:paddingTop">@dimen/currency_market_preview_bottom_bar_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/currency_market_preview_bottom_bar_button_vertical_padding</item>
+        <item name="android:textSize">@dimen/currency_market_preview_bottom_bar_button_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="CardViewButton" parent="SingleLineTextView">
+        <item name="android:paddingTop">@dimen/card_view_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/card_view_button_vertical_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/card_view_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="WalletDepositButton" parent="CardViewButton">
+        <item name="android:layout_marginEnd">@dimen/wallet_item_action_button_horizontal_margin</item>
+    </style>
+
+    <style name="TransactionItemButton" parent="CardViewButton">
+        <item name="android:layout_marginEnd">@dimen/order_item_action_button_horizontal_margin</item>
+    </style>
+
+    <style name="SelectableButton" parent="PrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/selectable_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/selectable_button_vertical_padding</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">@dimen/selectable_button_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="TradeFormViewLabel" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/trade_form_view_label_text_size</item>
+    </style>
+
+    <style name="TradeFormInputView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/trade_form_view_label_top_margin</item>
+    </style>
+
+    <style name="FloatingButton" parent="SingleLineTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/floating_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/floating_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/floating_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/floating_button_horizontal_padding</item>
+        <item name="android:textSize">@dimen/floating_button_text_size</item>
+        <item name="android:elevation">@dimen/floating_button_elevation</item>
+    </style>
+
+    <style name="AboutFooterSocialMediaButton">
+        <item name="android:layout_width">@dimen/about_fragment_social_media_button_size</item>
+        <item name="android:layout_height">@dimen/about_fragment_social_media_button_size</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AboutFooterTextView">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/about_fragment_footer_text_view_text_size</item>
+    </style>
+
+    <style name="NewPrimaryButton" parent="SingleLineTextView">
+        <item name="android:paddingTop">@dimen/new_primary_button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/new_primary_button_vertical_padding</item>
+        <item name="android:paddingStart">@dimen/new_primary_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/new_primary_button_horizontal_padding</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">@dimen/new_primary_button_text_size</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SpaceMapViewDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/inbox_details_view_dmv_bottom_margin</item>
+        <item name="android:visibility">gone</item>
+        <item name="titleSize">@dimen/inbox_item_description_text_size</item>
+        <item name="valueSize">@dimen/inbox_item_description_text_size</item>
+        <item name="titleColor">@color/deepTealSpaceMapViewTitleColor</item>
+    </style>
+
+    <style name="ChartViewTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/chart_view_tab_text_size</item>
+    </style>
+
+    <style name="ChartViewTabLayout">
+        <item name="tabRippleColor">@null</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabTextAppearance">@style/ChartViewTabAppearance</item>
+    </style>
+
+    <style name="CurrencyMarketPreviewTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/currency_market_preview_tab_layout_text_size</item>
+    </style>
+
+    <style name="TradeTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/trade_trade_types_tab_text_size</item>
+    </style>
+
+    <style name="DashboardBottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/dashboard_bottom_navigation_inactive_item_text_size</item>
+    </style>
+
+    <style name="DashboardBottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/dashboard_bottom_navigation_active_item_text_size</item>
+    </style>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealPrimaryColor"
+    tools:context=".ui.pinrecovery.PinRecoveryActivity">
+
+    <LinearLayout
+        android:id="@+id/topContainerLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/middleContainerLl"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/appLogoIv"
+            android:layout_width="@dimen/app_logo_width"
+            android:layout_height="@dimen/app_logo_height"
+            app:srcCompat="@drawable/ic_logo"/>
+
+        <TextView
+            android:id="@+id/appMottoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pin_recovery_app_motto_margin_top"
+            android:layout_marginStart="@dimen/pin_recovery_app_motto_horizontal_margin"
+            android:layout_marginEnd="@dimen/pin_recovery_app_motto_horizontal_margin"
+            android:textSize="@dimen/pin_recovery_app_motto_text_size"
+            android:gravity="center"
+            tools:text="@string/app_motto"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleContainerLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/pin_recovery_middle_container_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_recovery_middle_container_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pin_recovery_title_margin_top"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/pin_recovery_title_text_size"
+            android:textStyle="bold"
+            tools:text="@string/pin_recovery_title_text"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+        <TextView
+            android:id="@+id/subtitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/pin_recovery_subtitle_text_size"
+            tools:text="@string/pin_recovery_subtitle_text"
+            tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancellationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmationBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/pin_recovery_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_recovery_button_horizontal_margin"
+        style="@style/NewPrimaryButton"
+        tools:text="@string/action_cancel"
+        tools:textColor="@color/deepTealSecondaryTextColor"
+        tools:background="@drawable/bordered_button_background"/>
+
+    <Button
+        android:id="@+id/confirmationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pin_recovery_confirmation_btn_margin_top"
+        android:layout_marginBottom="@dimen/pin_recovery_confirmation_btn_margin_bottom"
+        android:layout_marginStart="@dimen/pin_recovery_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/pin_recovery_button_horizontal_margin"
+        style="@style/NewPrimaryButton"
+        tools:text="@string/action_sign_out"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        tools:background="@drawable/rounded_button_background"
+        tools:backgroundTint="@color/deepTealAccentColor"/>
+
+</RelativeLayout>

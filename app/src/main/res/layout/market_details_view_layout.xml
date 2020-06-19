@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <LinearLayout
+        android:id="@+id/mainContainerLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/market_details_view_padding"
+        android:orientation="vertical">
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/statusDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/pair_status"
+            tools:value="Active"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/colorGreenAccent"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/baseCurrencyDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/base_currency"
+            tools:value="Ethereum"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/quoteCurrencyDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/quote_currency"
+            tools:value="Bitcoin"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/dailyMinPriceDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/daily_min_price"
+            tools:value="0.02748134"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/dailyMaxPriceDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/daily_max_price"
+            tools:value="0.02862989"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/dailyVolumeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/daily_volume"
+            tools:value="1457.72 ETH"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/buyFeeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/market_details_view_dmv_bottom_margin"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/buy_fee_percent"
+            tools:value="0.05%"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/sellFeeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleSize="@dimen/market_details_view_dmv_text_size"
+            app:valueSize="@dimen/market_details_view_dmv_text_size"
+            tools:title="@string/sell_fee_percent"
+            tools:value="0.05%"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+    </LinearLayout>
+
+    <com.stocksexchange.android.ui.views.InfoView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/market_details_info_view_bottom_margin"
+        app:viewsVerticalDistance="@dimen/market_details_info_view_vertical_distance"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/market_details_progress_bar_margin_top"/>
+
+</merge>

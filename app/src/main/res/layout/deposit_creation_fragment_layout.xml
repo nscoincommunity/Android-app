@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            tools:background="@color/deepTealPrimaryColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/currencySymbolTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/deposit_creation_fragment_currency_symbol_margin_top"
+                    android:textSize="@dimen/deposit_creation_fragment_currency_symbol_text_size"
+                    tools:text="XRP"
+                    tools:textColor="@color/colorYellowAccent"
+                    style="@style/SecondaryButton"/>
+
+                <RelativeLayout
+                    android:id="@+id/mainContainerRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/currencySymbolTv"
+                    android:layout_marginTop="@dimen/deposit_creation_fragment_main_container_margin_top"
+                    android:layout_marginStart="@dimen/deposit_creation_fragment_horizontal_margin"
+                    android:layout_marginEnd="@dimen/deposit_creation_fragment_horizontal_margin">
+
+                    <com.stocksexchange.android.ui.transactioncreation.depositcreation.views.DepositCreationView
+                        android:id="@+id/depositCreationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="@dimen/progress_bar_size"
+                        android:layout_height="@dimen/progress_bar_size"
+                        android:layout_centerInParent="true"
+                        tools:visibility="gone"/>
+
+                    <com.stocksexchange.android.ui.views.InfoView
+                        android:id="@+id/infoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/deposit_creation_fragment_info_view_top_margin"
+                        app:iconSize="@dimen/deposit_creation_fragment_info_view_icon_size"
+                        app:captionTextSize="@dimen/deposit_creation_fragment_caption_text_size"
+                        tools:icon="@drawable/ic_transaction_creation"
+                        tools:caption="@string/error_no_data_available"
+                        tools:captionColor="@color/deepTealSecondaryTextColor"
+                        tools:visibility="invisible"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomContainerLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/mainContainerRl"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/deposit_creation_fragment_bottom_container_vertical_padding"
+                    android:paddingBottom="@dimen/deposit_creation_fragment_bottom_container_vertical_padding"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/warningTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/deposit_creation_fragment_warning_horizontal_margin"
+                        android:layout_marginEnd="@dimen/deposit_creation_fragment_warning_horizontal_margin"
+                        android:layout_marginBottom="@dimen/deposit_creation_fragment_warning_margin_bottom"
+                        android:textSize="@dimen/deposit_creation_fragment_warning_text_size"
+                        android:gravity="center_horizontal"
+                        tools:text="@string/deposit_creation_fragment_warning_template"
+                        tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+                    <LinearLayout
+                        android:id="@+id/buttonsContainerLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/deposit_creation_fragment_horizontal_margin"
+                        android:layout_marginEnd="@dimen/deposit_creation_fragment_horizontal_margin"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/copyBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/deposit_creation_fragment_button_horizontal_margin"
+                            style="@style/NewPrimaryButton"
+                            tools:text="@string/action_copy"
+                            tools:textColor="@color/deepTealPrimaryTextColor"
+                            tools:background="@drawable/rounded_button_background"
+                            tools:backgroundTint="@color/deepTealAccentColor"/>
+
+                        <Button
+                            android:id="@+id/createAddressBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/deposit_creation_fragment_button_horizontal_margin"
+                            style="@style/NewPrimaryButton"
+                            tools:text="@string/action_create_address"
+                            tools:textColor="@color/deepTealSecondaryTextColor"
+                            tools:background="@drawable/bordered_button_background"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.stocksexchange.android.ui.views.toolbars.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/toolbar_elevation"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        tools:title="@string/deposit"/>
+
+</RelativeLayout>

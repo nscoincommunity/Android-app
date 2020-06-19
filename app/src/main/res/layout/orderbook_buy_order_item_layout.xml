@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/orderbook_order_item_vertical_padding"
+    android:paddingBottom="@dimen/orderbook_order_item_vertical_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/priceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/orderbook_order_item_side_margin"
+        android:textSize="@dimen/orderbook_order_item_text_size"
+        tools:text="0.00000063"
+        tools:textColor="@color/colorGreenAccent"/>
+
+    <TextView
+        android:id="@+id/amountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/orderbook_order_item_side_margin"
+        android:textSize="@dimen/orderbook_order_item_text_size"
+        tools:text="982,002"
+        tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+</FrameLayout>

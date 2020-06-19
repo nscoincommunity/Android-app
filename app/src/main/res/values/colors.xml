@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="colorDropShadow">#51000000</color>
+    <color name="colorSemiTransparent">#9f000000</color>
+
+    <color name="colorFingerprintSuccess">@color/colorGreenAccent</color>
+    <color name="colorFingerprintError">@color/colorRedAccent</color>
+
+    <color name="colorBidOrderbookOrderBackground">#2100be75</color>
+    <color name="colorAskOrderbookOrderBackground">#41cc2e4e</color>
+
+    <color name="colorBidOrderbookOrderHighlightBackground">#8000be75</color>
+    <color name="colorAskOrderbookOrderHighlightBackground">#80cc2e4e</color>
+
+    <color name="colorBidOrderbookOrderPriceHighlight">#0cffa1</color>
+    <color name="colorAskOrderbookOrderPriceHighlight">#ff3f66</color>
+
+    <color name="colorBidTradeHighlightBackground">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="colorAskTradeHighlightBackground">@color/colorAskOrderbookOrderHighlightBackground</color>
+
+    <color name="colorBidTradePriceHighlight">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="colorAskTradePriceHighlight">@color/colorAskOrderbookOrderPriceHighlight</color>
+
+    <color name="colorInputViewNormalBackground">#33FFFFFF</color>
+    <color name="colorInputViewErroneousBackground">#66c64141</color>
+    <color name="colorInputViewHintColor">#77FFFFFF</color>
+    <color name="colorInputViewIconColor">#AAFFFFFF</color>
+
+    <color name="colorPinEntryKeypadDisabledButtonBackground">#66c64141</color>
+
+    <color name="colorDefaultAboutRefButtonVisitWebsiteBackgroundColor">@color/black</color>
+    <color name="colorDefaultAboutRefButtonVisitWebsiteTextColor">@color/white</color>
+    <color name="colorDefaultAboutRefButtonTermsOfUseBackgroundColor">#DDC040</color>
+    <color name="colorDefaultAboutRefButtonTermsOfUseTextColor">@color/black</color>
+    <color name="colorDefaultAboutRefButtonPrivacyPolicyBackgroundColor">#39505D</color>
+    <color name="colorDefaultAboutRefButtonPrivacyPolicyTextColor">@color/white</color>
+    <color name="colorDefaultAboutRefButtonCandyLinkBackgroundColor">#8E011E</color>
+    <color name="colorDefaultAboutRefButtonCandyLinkTextColor">@color/white</color>
+    <color name="colorDefaultAboutSocialMediaButtonColor">@color/colorDefaultAboutRefButtonPrivacyPolicyBackgroundColor</color>
+
+    <color name="colorVerticalMapViewShadow">#30000000</color>
+    <color name="colorCurrencyMarketPreviewShadow">@color/colorVerticalMapViewShadow</color>
+    <color name="colorDashboardBottomNavigationShadow">#20000000</color>
+
+
+
+
+    <!-- Deep Teal -->
+
+    <!-- General -->
+    <color name="deepTealPrimaryColor">#002e3c</color>
+    <color name="deepTealPrimaryLightColor">#063a4c</color>
+    <color name="deepTealPrimaryDarkColor">#00222d</color>
+    <color name="deepTealPrimaryTextColor">@color/white</color>
+    <color name="deepTealPrimaryDarkTextColor">#cad2d6</color>
+    <color name="deepTealSecondaryTextColor">#809aaf</color>
+    <color name="deepTealSecondaryDarkTextColor">#5d7182</color>
+    <color name="deepTealAccentColor">#00BE75</color>
+    <color name="deepTealDarkAccentColor">#02a868</color>
+    <color name="deepTealContentContainerColor">#001d26</color>
+    <color name="deepTealContentContainerLightColor">@color/deepTealPrimaryDarkColor</color>
+    <color name="deepTealContentContainerTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealTabIndicatorColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealInfoViewColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealProgressBarColor">@color/deepTealAccentColor</color>
+    <color name="deepTealGradientStartColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealGradientEndColor">@color/deepTealPrimaryLightColor</color>
+    <color name="deepTealLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="deepTealLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="deepTealEmailCardViewColor">@color/deepTealCardViewBackgroundColor</color>
+    <color name="deepTealEmailFooterButtonColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSettingsBackgroundColor">#002733</color>
+    <color name="deepTealTradeUserBalanceViewBackgroundColor">@color/deepTealContentContainerColor</color>
+    <color name="deepTealTradeFormViewBackgroundColor">@color/deepTealTradeUserBalanceViewBackgroundColor</color>
+    <color name="deepTealMarketPreviewHeadlineBackgroundColor">@color/deepTealAccentColor</color>
+    <color name="deepTealDashboardBottomNavBackgroundColor">#012734</color>
+
+    <!-- Button -->
+    <color name="deepTealButtonContentColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealButtonReleasedStateBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealButtonPressedStateBackgroundColor">#002633</color>
+
+    <!-- CardView -->
+    <color name="deepTealCardViewBackgroundColor">#002733</color>
+    <color name="deepTealCardViewPrimaryTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealCardViewPrimaryDarkTextColor">@color/deepTealSecondaryDarkTextColor</color>
+    <color name="deepTealCardViewButtonEnabledBackgroundColor">#39505D</color>
+    <color name="deepTealCardViewButtonDisabledBackgroundColor">#1C3F4C</color>
+    <color name="deepTealCardViewButtonEnabledTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealCardViewButtonDisabledTextColor">#80979D</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="deepTealSwitchOptionsViewTitleTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealSwitchOptionsViewSwitchColor">@color/deepTealAccentColor</color>
+
+    <!-- SpaceMapView -->
+    <color name="deepTealSpaceMapViewTitleColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealSpaceMapViewTextColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- PriceChartView -->
+    <color name="deepTealPriceChartViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealPriceChartViewProgressBarColor">@color/deepTealProgressBarColor</color>
+    <color name="deepTealPriceChartViewInfoViewColor">@color/deepTealInfoViewColor</color>
+    <color name="deepTealPriceChartViewInfoFieldsDefaultTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealPriceChartViewAxisGridColor">#1a4a58</color>
+    <color name="deepTealPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="deepTealPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="deepTealPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="deepTealPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="deepTealPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="deepTealPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="deepTealPriceChartViewTabBackgroundColor">@color/deepTealPriceChartViewBackgroundColor</color>
+    <color name="deepTealPriceChartViewTabNormalTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealPriceChartViewTabSelectedTextColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- DepthChartView -->
+    <color name="deepTealDepthChartViewBackgroundColor">@color/deepTealPriceChartViewBackgroundColor</color>
+    <color name="deepTealDepthChartViewProgressbarColor">@color/deepTealPriceChartViewProgressBarColor</color>
+    <color name="deepTealDepthChartViewInfoViewColor">@color/deepTealPriceChartViewInfoViewColor</color>
+    <color name="deepTealDepthChartViewInfoFieldsDefaultTextColor">@color/deepTealPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="deepTealDepthChartViewAxisGridColor">@color/deepTealPriceChartViewAxisGridColor</color>
+    <color name="deepTealDepthChartViewHighlighterColor">@color/deepTealPriceChartViewHighlighterColor</color>
+    <color name="deepTealDepthChartViewPositiveColor">@color/deepTealPriceChartViewPositiveColor</color>
+    <color name="deepTealDepthChartViewNegativeColor">@color/deepTealPriceChartViewNegativeColor</color>
+    <color name="deepTealDepthChartViewNeutralColor">@color/deepTealPriceChartViewNeutralColor</color>
+    <color name="deepTealDepthChartViewTabBackgroundColor">@color/deepTealPriceChartViewTabBackgroundColor</color>
+    <color name="deepTealDepthChartViewTabNormalTextColor">@color/deepTealPriceChartViewTabNormalTextColor</color>
+    <color name="deepTealDepthChartViewTabSelectedTextColor">@color/deepTealPriceChartViewTabSelectedTextColor</color>
+
+    <!-- OrderbookView -->
+    <color name="deepTealOrderbookViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealOrderbookViewHeaderTitleTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewHeaderMoreButtonColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewHeaderSeparatorColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="deepTealOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="deepTealOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="deepTealOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="deepTealOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="deepTealOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="deepTealOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="deepTealOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="deepTealOrderbookViewAmountColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealOrderbookViewProgressBarColor">@color/deepTealProgressBarColor</color>
+    <color name="deepTealOrderbookViewInfoViewColor">@color/deepTealInfoViewColor</color>
+
+    <!-- TradeHistoryView -->
+    <color name="deepTealTradeHistoryViewBackgroundColor">@color/deepTealOrderbookViewBackgroundColor</color>
+    <color name="deepTealTradeHistoryViewHeaderTitleTextColor">@color/deepTealOrderbookViewHeaderTitleTextColor</color>
+    <color name="deepTealTradeHistoryViewHeaderSeparatorColor">@color/deepTealOrderbookViewHeaderSeparatorColor</color>
+    <color name="deepTealTradeHistoryViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="deepTealTradeHistoryViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="deepTealTradeHistoryViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="deepTealTradeHistoryViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="deepTealTradeHistoryViewBuyPriceColor">@color/deepTealOrderbookViewBuyPriceColor</color>
+    <color name="deepTealTradeHistoryViewSellPriceColor">@color/deepTealOrderbookViewSellPriceColor</color>
+    <color name="deepTealTradeHistoryViewAmountColor">@color/deepTealOrderbookViewAmountColor</color>
+    <color name="deepTealTradeHistoryViewTradeTimeColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealTradeHistoryViewProgressBarColor">@color/deepTealOrderbookViewProgressBarColor</color>
+    <color name="deepTealTradeHistoryViewInfoViewColor">@color/deepTealOrderbookViewInfoViewColor</color>
+
+    <!-- Dialog -->
+    <color name="deepTealDialogBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealDialogTitleColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealDialogTextColor">@color/deepTealDialogTitleColor</color>
+    <color name="deepTealDialogWidgetColor">@color/deepTealAccentColor</color>
+    <color name="deepTealDialogButtonColor">@color/deepTealDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="deepTealDottedMapViewTitleColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealDottedMapViewTextColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- SortPanel -->
+    <color name="deepTealSortPanelBackgroundColor">@color/deepTealContentContainerColor</color>
+    <color name="deepTealSortPanelSelectedTitleColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealSortPanelUnselectedTitleColor">@color/deepTealSecondaryTextColor</color>
+
+    <!-- Switch -->
+    <color name="deepTealSwitchPointerActivatedColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="deepTealSwitchBackgroundActivatedColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSwitchBackgroundDeactivatedColor">@color/deepTealSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="deepTealPopupMenuBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealPopupMenuTitleColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="deepTealPinEntryKeypadDigitButtonTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealPinEntryKeypadEnabledButtonBackgroundColor">#39505D</color>
+    <color name="deepTealPinEntryKeypadDisabledButtonBackgroundColor">@color/colorPinEntryKeypadDisabledButtonBackground</color>
+    <color name="deepTealPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/deepTealAccentColor</color>
+    <color name="deepTealPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealPinEntryKeypadDisabledActionButtonForegroundColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- AboutTheme -->
+    <color name="deepTealAboutRefButtonVisitWebsiteBackgroundColor">@color/colorDefaultAboutRefButtonVisitWebsiteBackgroundColor</color>
+    <color name="deepTealAboutRefButtonVisitWebsiteTextColor">@color/colorDefaultAboutRefButtonVisitWebsiteTextColor</color>
+    <color name="deepTealAboutRefButtonTermsOfUseBackgroundColor">@color/colorDefaultAboutRefButtonTermsOfUseBackgroundColor</color>
+    <color name="deepTealAboutRefButtonTermsOfUseTextColor">@color/colorDefaultAboutRefButtonTermsOfUseTextColor</color>
+    <color name="deepTealAboutRefButtonPrivacyPolicyBackgroundColor">@color/colorDefaultAboutRefButtonPrivacyPolicyBackgroundColor</color>
+    <color name="deepTealAboutRefButtonPrivacyPolicyTextColor">@color/colorDefaultAboutRefButtonPrivacyPolicyTextColor</color>
+    <color name="deepTealAboutRefButtonCandyLinkBackgroundColor">@color/colorDefaultAboutRefButtonCandyLinkBackgroundColor</color>
+    <color name="deepTealAboutRefButtonCandyLinkTextColor">@color/colorDefaultAboutRefButtonCandyLinkTextColor</color>
+    <color name="deepTealAboutSocialMediaButtonColor">@color/colorDefaultAboutSocialMediaButtonColor</color>
+
+    <!-- Alert Price -->
+    <color name="alertPriceLessColor">#CE334F</color>
+
+
+</resources>

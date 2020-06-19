@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+
+    <item
+        android:id="@+id/background">
+
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:radius="@dimen/secondary_button_background_external_corner_radius"/>
+
+            <solid
+                android:color="@color/deepTealAccentColor"/>
+
+        </shape>
+
+    </item>
+
+
+    <!-- Foreground -->
+
+    <item
+        android:id="@+id/foreground"
+        android:top="@dimen/secondary_button_background_border_size"
+        android:bottom="@dimen/secondary_button_background_border_size"
+        android:left="@dimen/secondary_button_background_border_size"
+        android:right="@dimen/secondary_button_background_border_size">
+
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:radius="@dimen/secondary_button_background_internal_corner_radius"/>
+
+            <solid
+                android:color="@color/deepTealDarkAccentColor"/>
+
+        </shape>
+
+    </item>
+
+    <!-- Selectable Foreground -->
+
+    <item>
+
+        <ripple android:color="?attr/colorControlHighlight">
+
+            <item android:id="@android:id/mask">
+
+                <shape android:shape="rectangle">
+
+                    <corners
+                        android:radius="@dimen/secondary_button_background_internal_corner_radius"/>
+
+                    <solid
+                        android:color="@color/white"/>
+
+                </shape>
+
+            </item>
+
+        </ripple>
+
+    </item>
+
+
+</layer-list>

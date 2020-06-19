@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/deepTealCardViewBackgroundColor">
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alert_price_view_separator_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/alert_price_item_separator_drop_shadow"/>
+
+    <LinearLayout
+        android:id="@+id/contentContainerLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separatorView"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/alert_price_item_padding_start"
+        android:paddingTop="@dimen/alert_price_item_padding_top_bottom"
+        android:paddingEnd="@dimen/alert_price_item_padding_end"
+        android:paddingBottom="@dimen/alert_price_item_padding_top_bottom">
+
+        <TextView
+            android:id="@+id/pairNameTv"
+            style="@style/SingleLineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alert_price_pair_name_margin_bottom"
+            android:textColor="@color/deepTealPrimaryTextColor"
+            android:textSize="@dimen/alert_price_title_text_size"
+            tools:text="LTC/BTS"
+            tools:textColor="@color/deepTealSpaceMapViewTitleColor" />
+
+        <com.stocksexchange.android.ui.views.AlertPriceItemView
+            android:id="@+id/lessAlertPriceApiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alert_price_item_view_margin_top" />
+
+        <com.stocksexchange.android.ui.views.AlertPriceItemView
+            android:id="@+id/moreAlertPriceApiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alert_price_item_view_margin_top" />
+
+    </LinearLayout>
+
+</RelativeLayout>

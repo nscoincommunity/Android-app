@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fiat_currency_aud">Австралийский доллар (AUD)</string>
+    <string name="fiat_currency_brl">Бразильский реал (BRL)</string>
+    <string name="fiat_currency_cad">Канадский доллар (CAD)</string>
+    <string name="fiat_currency_cny">Китайский юань (CNY)</string>
+    <string name="fiat_currency_eur">Евро (EUR)</string>
+    <string name="fiat_currency_inr">Индийская рупия (INR)</string>
+    <string name="fiat_currency_idr">Индонезийская рупия (IDR)</string>
+    <string name="fiat_currency_jpy">Японская иена (JPY)</string>
+    <string name="fiat_currency_gbp">Фунт стерлингов (GBP)</string>
+    <string name="fiat_currency_rub">Российский рубль (RUB)</string>
+    <string name="fiat_currency_krw">Южнокорейская вона (KRW)</string>
+    <string name="fiat_currency_uah">Украинская гривна (UAH)</string>
+    <string name="fiat_currency_usd">Доллар США (USD)</string>
+    <string name="fiat_currency_vnd">Вьетнамский донг (VND)</string>
+    <string name="coin_status_enabled">Включена</string>
+    <string name="coin_status_disabled">Выключена</string>
+    <string name="coin_status_delisted">Изьята</string>
+    <string name="chart_interval_one_day">1Д</string>
+    <string name="chart_interval_twelve_hours">12Ч</string>
+    <string name="chart_interval_four_hours">4Ч</string>
+    <string name="chart_interval_sixty_minutes">60М</string>
+    <string name="chart_interval_thirty_minutes">30М</string>
+    <string name="chart_interval_five_minutes">5М</string>
+    <string name="chart_interval_one_minute">1М</string>
+    <string name="verification_type_fractal_title">Быстрая верификация</string>
+    <string name="verification_type_fractal_description_template">%s сервис автоматической верификации, позволяющий мгновенно проверить аккаунт.</string>
+    <string name="verification_type_smart_id_title">Быстрая верификация (только для граждан Латвии, Литвы и Эстонии)</string>
+    <string name="verification_type_smart_id_description_template">%s это простой и безопасный способ идентифицировать себя в Интернете.</string>
+    <string name="verification_type_stex_title">Простая верификация (видео подтверждения, 1–4 дня)</string>
+    <string name="verification_type_stex_description_template">%s - метод проверки, предоставляемый нашей платформой. Требуется удостоверение личности, селфи и видео.</string>
+    <string name="verification_type_privatbank_title">Быстрая верификация (только для клиентов ПриватБанка)</string>
+    <string name="verification_type_privatbank_description_template">%s предоставляет своим клиентам возможность бесплатно пройти верификацию с помощью электронного ключа который можно получить в Приват24.</string>
+    <string name="verification_type_cryptonomica_title">Расширенная верификация (платная услуга)</string>
+    <string name="verification_type_cryptonomica_description_template">%s это онлайн и оффлайн сервис проверки личности и глобальная база данных идентификации с ключами для подписи электронных документов, транзакций блокчейна и KYC.</string>
+    <string name="error_email_taken">Предоставленный адрес электронной почты уже зарегистрирован!</string>
+    <string name="error_password_length">Пароль должен быть не менее 8 и не более 32 символов!</string>
+    <string name="error_password_common">Предоставленный пароль есть слишком распространен и его очень легко отгадать. Пожалуйста, воспользуйтесь другим!</string>
+    <string name="error_invalid_verification_token">Предоставленный верификационный токен уже был использован или недействителен.</string>
+    <string name="error_invalid_password_reset_token">Предоставленный токен сброса пароля уже использовался или является недействительным.</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+</resources>

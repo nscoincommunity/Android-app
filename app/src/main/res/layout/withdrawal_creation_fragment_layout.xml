@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            tools:background="@color/deepTealPrimaryColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/availableBalanceTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/withdrawal_creation_fragment_available_balance_title_margin_top"
+                    android:textSize="@dimen/withdrawal_creation_fragment_available_balance_title_text_size"
+                    tools:text="@string/available_balance"
+                    tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/availableBalanceValueTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/availableBalanceTitleTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/withdrawal_creation_fragment_available_balance_value_margin_top"
+                    android:textSize="@dimen/withdrawal_creation_fragment_available_balance_value_text_size"
+                    tools:text="71.1705714 XRP"
+                    tools:textColor="@color/colorYellowAccent"
+                    style="@style/SecondaryButton"/>
+
+                <com.stocksexchange.android.ui.transactioncreation.withdrawalcreation.views.WithdrawalCreationView
+                    android:id="@+id/withdrawalCreationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/availableBalanceValueTv"
+                    android:layout_marginTop="@dimen/withdrawal_creation_fragment_main_view_top_margin"
+                    android:layout_marginBottom="@dimen/withdrawal_creation_fragment_main_view_bottom_margin"
+                    android:layout_marginStart="@dimen/withdrawal_creation_fragment_main_view_horizontal_margin"
+                    android:layout_marginEnd="@dimen/withdrawal_creation_fragment_main_view_horizontal_margin"/>
+
+                <ProgressBar
+                    android:id="@+id/mainProgressBar"
+                    android:layout_width="@dimen/progress_bar_size"
+                    android:layout_height="@dimen/progress_bar_size"
+                    android:layout_below="@+id/availableBalanceValueTv"
+                    android:layout_above="@+id/bottomContainerLl"
+                    android:layout_centerInParent="true"
+                    tools:visibility="gone"/>
+
+                <com.stocksexchange.android.ui.views.InfoView
+                    android:id="@+id/infoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/availableBalanceValueTv"
+                    android:layout_above="@+id/bottomContainerLl"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/withdrawal_creation_fragment_info_view_horizontal_margin"
+                    android:layout_marginEnd="@dimen/withdrawal_creation_fragment_info_view_horizontal_margin"
+                    android:gravity="center_vertical"
+                    app:iconSize="@dimen/withdrawal_creation_fragment_info_view_icon_size"
+                    app:captionTextSize="@dimen/withdrawal_creation_fragment_info_view_caption_text_size"
+                    tools:icon="@drawable/ic_transaction_creation"
+                    tools:caption="@string/error_no_data_available"
+                    tools:captionColor="@color/deepTealSecondaryTextColor"/>
+
+                <LinearLayout
+                    android:id="@+id/bottomContainerLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/withdrawalCreationView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/withdrawBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/withdrawal_creation_fragment_withdraw_button_horizontal_margin"
+                        android:layout_marginEnd="@dimen/withdrawal_creation_fragment_withdraw_button_horizontal_margin"
+                        android:layout_marginBottom="@dimen/withdrawal_creation_fragment_withdraw_button_bottom_margin"
+                        style="@style/NewPrimaryButton"
+                        tools:text="@string/action_withdraw"
+                        tools:textColor="@color/deepTealPrimaryTextColor"
+                        tools:background="@drawable/rounded_button_background"
+                        tools:backgroundTint="@color/deepTealAccentColor"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.stocksexchange.android.ui.views.toolbars.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/toolbar_elevation"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        tools:title="@string/withdrawal"/>
+
+</RelativeLayout>

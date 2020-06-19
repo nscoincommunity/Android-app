@@ -1,0 +1,870 @@
+<resources>
+
+    <!-- General -->
+    <string name="launcher_app_name" translatable="false">@string/app_name</string>
+    <string name="app_name" translatable="false">STEX</string>
+    <string name="app_motto">Trade anytime and anywhere with</string>
+
+    <string name="company_address" translatable="false">Pärnu mnt 158, Tallinn, 11317, Estonia</string>
+    <string name="copyright_template">2017-%d. All rights reserved.</string>
+
+    <string name="wallets">Wallets</string>
+    <string name="orders">Orders</string>
+    <string name="deposits">Deposits</string>
+    <string name="withdrawals">Withdrawals</string>
+    <string name="referral">Referral</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="faq">FAQ</string>
+    <string name="support">Support</string>
+    <string name="help">Help</string>
+    <string name="news">News</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="favorites">Favorites</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="balance">Balance</string>
+    <string name="profile">Profile</string>
+    <string name="markets">Markets</string>
+
+    <string name="terms_of_use">Terms of Use</string>
+
+    <string name="action_share_via">Share via…</string>
+    <string name="action_copy_link">Copy link</string>
+    <string name="action_buy">Buy</string>
+    <string name="action_sell">Sell</string>
+    <string name="action_ask">Ask</string>
+    <string name="action_bid">Bid</string>
+    <string name="action_deposit">Deposit</string>
+    <string name="action_withdraw">Withdraw</string>
+    <string name="action_spent">Spent</string>
+    <string name="action_received">Received</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_show_empty_wallets">Show empty wallets</string>
+    <string name="action_hide_empty_wallets">Hide empty wallets</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_use_pin">Use Pin</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="action_log_in">Log In</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_register">Register</string>
+    <string name="action_resend_verification_email">Resend Verification Email</string>
+    <string name="action_resend_password_reset_email">Resend Password Reset Email</string>
+    <string name="action_go_to_login">Go to Login</string>
+    <string name="action_confirm_new_password">Confirm New Password</string>
+    <string name="action_reset_password">Reset Password</string>
+    <string name="action_send_email">Send Email</string>
+    <string name="action_select">Select</string>
+    <string name="action_verify">Verify</string>
+    <string name="action_resend_confirmation_email">Resend Email</string>
+    <string name="action_verify_now">Verify Now</string>
+    <string name="action_verify_later">Verify Later</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_share">Share</string>
+    <string name="action_start">Start</string>
+    <string name="action_create_address">Create Address</string>
+    <string name="action_search_markets">Search markets</string>
+    <string name="action_sort_by">Sort By</string>
+
+    <string name="pair_state_active">Active</string>
+    <string name="pair_state_disabled">Disabled</string>
+
+    <string name="transaction_status_finished">FINISHED</string>
+    <string name="transaction_status_cancelled_by_user">CANCELLED BY USER</string>
+    <string name="transaction_status_awaiting_approval">AWAITING APPROVAL</string>
+    <string name="transaction_status_approved">APPROVED</string>
+    <string name="transaction_status_not_confirmed">NOT CONFIRMED</string>
+    <string name="transaction_status_processing">PROCESSING</string>
+    <string name="transaction_status_cancelled_by_admin">CANCELLED BY ADMIN</string>
+    <string name="transaction_status_awaiting">AWAITING</string>
+    <string name="transaction_status_hodl">HODL</string>
+    <string name="transaction_status_error">ERROR</string>
+    <string name="transaction_status_unknown">UNKNOWN STATUS</string>
+
+    <string name="preposition_of">of</string>
+
+    <string name="last_price">Last Price</string>
+    <string name="at_price">At Price</string>
+    <string name="fee">Fee</string>
+    <string name="confirmations">Confirmations</string>
+    <string name="address">Address</string>
+    <string name="id">ID</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total</string>
+    <string name="initial_amount">Initial Amount</string>
+    <string name="filled_amount">Filled Amount</string>
+    <string name="stop_price">Stop Price</string>
+    <string name="price">Price</string>
+    <string name="time">Time</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="date">Date</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="coin_status">Coin Status</string>
+    <string name="pair_status">Pair Status</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="quote_currency">Quote Currency</string>
+    <string name="daily_min_price">24hr Min Price</string>
+    <string name="daily_max_price">24hr Max Price</string>
+    <string name="daily_change">24hr Change</string>
+    <string name="daily_volume">24hr Volume</string>
+    <string name="buy_fee_percent">Buy Fee</string>
+    <string name="sell_fee_percent">Sell Fee</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="balance_in_orders">Balance In Orders</string>
+    <string name="bonus_balance">Bonus Balance</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="search_deposits">Search deposits</string>
+    <string name="search_withdrawals">Search withdrawals</string>
+    <string name="deposit_address">Deposit Address</string>
+    <string name="public_key">Public Key</string>
+    <string name="secret_key">Secret Key</string>
+    <string name="payment_id" translatable="false">Payment ID</string>
+    <string name="destination_tag" translatable="false">Destination Tag</string>
+    <string name="memo" translatable="false">Memo</string>
+    <string name="message">Message</string>
+    <string name="account">Account</string>
+    <string name="general">General</string>
+    <string name="data_streaming">Data Streaming</string>
+    <string name="stream_real_time_data">Stream real-time data</string>
+    <string name="appearance">Appearance</string>
+    <string name="animate_charts">Animate charts</string>
+    <string name="bullish_candle_stick_style">Bullish candle stick style</string>
+    <string name="bearish_candle_stick_style">Bearish candle stick style</string>
+    <string name="zoom_in_on_the_price_chart">Zoom in on the price chart</string>
+    <string name="depth_chart_line_style">Depth chart line style</string>
+    <string name="highlight_orderbook_real_time_updates">Highlight orderbook real-time updates</string>
+    <string name="highlight_new_trades_real_time_addition">Highlight real-time addition of new trades</string>
+    <string name="formatting">Formatting</string>
+    <string name="notifications">Notifications</string>
+    <string name="debug" translatable="false">Debug</string>
+    <string name="grouping">Grouping</string>
+    <string name="grouping_separator">Grouping separator</string>
+    <string name="decimal_separator">Decimal separator</string>
+    <string name="theme">Theme</string>
+    <string name="themes">Themes</string>
+    <string name="restore_defaults">Restore Defaults</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="fingerprint_unlock">Fingerprint Unlock</string>
+    <string name="force_authentication_on_app_startup">Force authentication on app startup</string>
+    <string name="authentication_session_duration">Authentication Session Duration</string>
+    <string name="sounds">Sounds</string>
+    <string name="vibration">Vibration</string>
+    <string name="phone_led">Phone LED</string>
+    <string name="notification_ringtone">Notification ringtone</string>
+    <string name="device_metrics" translatable="false">Device metrics</string>
+    <string name="device_metrics_description" translatable="false">Shows device specific metrics for debugging</string>
+    <string name="clear_user_data" translatable="false">Clear user data</string>
+    <string name="clear_user_data_description" translatable="false">Clears user\'s data without signing them out</string>
+    <string name="show_analytics_toasts" translatable="false">Show analytics toasts</string>
+    <string name="show_toasts_of_analytics_events" translatable="false">Show toasts of analytics events</string>
+    <string name="volume_template">vol %s</string>
+    <string name="sign_out_template">Sign out of @%s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="note">Note</string>
+    <string name="app_sharing_template">I\'m using STEX for trading cryptocurrencies! Try it out for yourself: %s</string>
+    <string name="period">Period</string>
+    <string name="comma">Comma</string>
+    <string name="twitter" translatable="false">Twitter</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="telegram" translatable="false">Telegram</string>
+    <string name="solid">Solid</string>
+    <string name="hollow">Hollow</string>
+    <string name="linear">Linear</string>
+    <string name="stepped">Stepped</string>
+    <string name="price_unavailable">Unavailable</string>
+    <string name="volume_unavailable">Unavailable</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="referral_code">Referral Code (optional)</string>
+    <string name="error">Error</string>
+    <string name="unknown_parameter">Unknown Parameter</string>
+    <string name="required">Required</string>
+    <string name="optional">Optional</string>
+    <string name="min_amount">Min. Amount</string>
+    <string name="final_amount">Final Amount</string>
+    <string name="all">ALL</string>
+    <string name="price_chart">Price Chart</string>
+    <string name="depth_chart">Depth Chart</string>
+    <string name="trade">Trade</string>
+    <string name="trades">Trades</string>
+    <string name="orderbook">Orderbook</string>
+    <string name="trade_history">Trade History</string>
+    <string name="all_trades">All Trades</string>
+    <string name="keep_screen_on">Keep the Screen On</string>
+    <string name="market">Market</string>
+    <string name="limit">Limit</string>
+    <string name="stop_limit">Stop-Limit</string>
+    <string name="warning">Warning</string>
+    <string name="currency">Currency</string>
+    <string name="order_history">Order History</string>
+    <string name="internal_transfer">Internal Transfer</string>
+    <string name="language">Language</string>
+    <string name="verification">Verification</string>
+    <string name="app_version_template">Version %s</string>
+    <string name="success">Success</string>
+    <string name="connecting">Connecting…</string>
+    <string name="verified">Verified</string>
+    <string name="blog">Blog</string>
+    <string name="currency_balance_template">%s Balance</string>
+    <string name="my_orders">My Orders</string>
+    <string name='my_history'>My History</string>
+    <string name="referral_program">Referral Program</string>
+    <string name="support_center">Support Center</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_code">Enter your code</string>
+    <string name="enter_code">Enter code</string>
+
+    <!-- Invalid Data Dialog -->
+    <string name="invalid_data_dialog_title">Invalid Data</string>
+    <string name="invalid_data_dialog_footer_text">Please fix all of the errors above and try again.</string>
+
+    <!-- Time periods -->
+    <string name="time_period_five_seconds" translatable="false">5 seconds (for debugging only)</string>
+    <string name="time_period_five_minutes">5 minutes</string>
+    <string name="time_period_ten_minutes">10 minutes</string>
+    <string name="time_period_fifteen_minutes">15 minutes</string>
+    <string name="time_period_thirty_minutes">30 minutes</string>
+    <string name="time_period_forty_five_minutes">45 minutes</string>
+    <string name="time_period_one_hour">1 hour</string>
+    <string name="time_period_two_hours">2 hours</string>
+    <string name="time_period_three_hours">3 hours</string>
+    <string name="time_period_six_hours">6 hours</string>
+    <string name="time_period_nine_hours">9 hours</string>
+    <string name="time_period_twelve_hours">12 hours</string>
+
+    <!-- App Update -->
+    <string name="app_update_state_up_to_date_version_text">Up-to-date version</string>
+    <string name="app_update_state_pending_update_text">Update available</string>
+    <string name="app_update_state_downloading_update_text">Downloading update…</string>
+    <string name="app_update_state_update_downloaded_text">Restart the app</string>
+
+    <!-- Languages -->
+    <string name="language_name_english">English</string>
+    <string name="language_name_russian">Russian</string>
+    <string name="language_name_ukrainian">Ukrainian</string>
+
+    <!-- Candle stick styles -->
+    <string name="candle_stick_style_solid" translatable="false">@string/solid</string>
+    <string name="candle_stick_style_hollow" translatable="false">@string/hollow</string>
+
+    <!-- Depth chart line styles -->
+    <string name="depth_chart_line_style_linear" translatable="false">@string/linear</string>
+    <string name="depth_chart_line_style_stepped" translatable="false">@string/stepped</string>
+
+    <!-- Decimal separators -->
+    <string name="decimal_separator_period" translatable="false">@string/period</string>
+    <string name="decimal_separator_comma" translatable="false">@string/comma</string>
+
+    <!-- Grouping separators -->
+    <string name="grouping_separator_period" translatable="false">@string/period</string>
+    <string name="grouping_separator_comma" translatable="false">@string/comma</string>
+    <string name="grouping_separator_space">Space</string>
+
+    <!-- Toasts -->
+    <string name="copied_to_clipboard">Copied to the clipboard</string>
+    <string name="deposit_address_copied_to_clipboard">The deposit address copied to the clipboard</string>
+    <string name="extra_parameter_value_copied_to_clipboard_template">The value of the \"%s\" parameter copied to the clipboard</string>
+    <string name="link_copied_to_clipboard">Link copied to the clipboard</string>
+    <string name="order_created">The order has been successfully created!</string>
+    <string name="order_cancelled">Your order has been successfully cancelled!</string>
+    <string name="qr_code_image_downloaded">The image has been successfully saved!</string>
+    <string name="pin_code_changed">The PIN code has been changed successfully!</string>
+    <string name="firebase_analytics_event_without_params_template" translatable="false">Analytics Event: %s</string>
+    <string name="firebase_analytics_event_with_params_template" translatable="false">Analytics Event: %1$s. Params: %2$s</string>
+    <string name="firebase_analytics_current_screen_template" translatable="false">Analytics Screen: %s</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_balance_short_label" translatable="false">@string/balance</string>
+    <string name="shortcut_balance_long_label" translatable="false">@string/balance</string>
+
+    <string name="shortcut_orders_short_label" translatable="false">@string/orders</string>
+    <string name="shortcut_orders_long_label" translatable="false">@string/orders</string>
+
+    <string name="shortcut_news_short_label" translatable="false">@string/news</string>
+    <string name="shortcut_news_long_label" translatable="false">@string/news</string>
+
+    <!-- Tips -->
+    <string name="tip_preview_order_cancellation_title">Order Cancellation</string>
+    <string name="tip_preview_order_cancellation_description">Swipe left to show a button to cancel an order</string>
+
+    <!-- Error messages -->
+    <string name="error_permissions_not_granted">Permissions not granted! Unable to proceed.</string>
+    <string name="error_server_not_responding">The server is not responding! Please try again later.</string>
+    <string name="error_too_many_requests">You are sending this request way too many times! Please try again in a minute.</string>
+    <string name="error_something_went_wrong">Oops! Something went wrong.</string>
+    <string name="error_check_network_connection">Please check your network connection.</string>
+    <string name="error_login_session_expired">Login session expired! Please re-login to renew the session.</string>
+    <string name="error_market_disabled">This market is currently disabled! Please try again later.</string>
+    <string name="error_min_total_amount">The total amount should be at least %s!</string>
+    <string name="error_not_enough_balance">You don\'t have enough %s on your balance!</string>
+    <string name="error_price_is_not_positive">The price should be positive</string>
+    <string name="error_no_chart_data_available">No chart data available</string>
+    <string name="error_no_active_orders_available">No active orders available</string>
+    <string name="error_no_completed_orders_available">No completed orders available</string>
+    <string name="error_no_cancelled_orders_available">No cancelled orders available</string>
+    <string name="error_no_deposits_available">No deposits available</string>
+    <string name="error_no_withdrawals_available">No withdrawals available</string>
+    <string name="error_no_data_available">No data available</string>
+    <string name="error_no_data_available_to_copy">No data available to copy</string>
+    <string name="error_invalid_currency">Can\'t get currency wallet information. Please try again later.</string>
+    <string name="error_deposits_disabled">The depositing is disabled for this currency. Please try again later.</string>
+    <string name="error_deposit_address_data_not_available">Cannot retrieve deposit address data. Please try again later.</string>
+    <string name="error_withdrawal_data_not_available">Cannot retrieve withdrawal data. Please try again later.</string>
+    <string name="error_nothing_to_withdraw">Nothing to withdraw since the balance is empty!</string>
+    <string name="error_no_withdraw_address">You must create a wallet address first, then the withdrawal will be available.</string>
+    <string name="error_no_markets_available">No %s markets</string>
+    <string name="error_no_orderbook_available">No orderbook available</string>
+    <string name="error_no_trades_available">No trades available</string>
+    <string name="error_no_favorite_markets_available">No favorite markets</string>
+    <string name="error_no_wallets_available">No wallets available</string>
+    <string name="error_amount_too_small">The entered amount is too small.</string>
+    <string name="error_pair_open_orders_limit_reached">The maximum number of open orders with the same price can not exceed 10!</string>
+    <string name="error_pins_mismatch">PINs do not match!</string>
+    <string name="error_invalid_pin">Invalid PIN! Please try again.</string>
+    <string name="error_invalid_new_pin">You cannot user your current PIN as your new PIN.</string>
+    <string name="error_fingerprint_not_recognized">Fingerprint not recognized. Try again.</string>
+    <string name="error_fingerprint_initialization_failed">Failed to initialize the fingerprint scanner. Please try again later.</string>
+    <string name="error_fingerprint_too_many_failed_attempts_template">There have been too many failed attempts. %s</string>
+    <string name="error_pin_code_too_many_attempts">You have incorrectly entered your PIN code %d times.\n\nTry again in 30 seconds.</string>
+    <string name="error_unable_to_proceed">Unable to proceed</string>
+    <string name="error_no_email_client_template">The email client was not found! %s.</string>
+    <string name="error_no_browser_client_template">The browser client was not found! %s.</string>
+    <string name="error_no_sharing_client_template">The sharing client was not found! %s.</string>
+    <string name="error_invalid_deep_link">The provided URL is either empty or malformed!</string>
+    <string name="error_no_information_available">No information available</string>
+    <string name="error_empty_email_address">The provided email address is empty!</string>
+    <string name="error_invalid_email_address">The provided email address is invalid!</string>
+    <string name="error_empty_password">The provided password is empty!</string>
+    <string name="error_empty_password_confirmation">The provided password confirmation is empty!</string>
+    <string name="error_passwords_do_not_match">The provided passwords do not match. Please check them and try again.</string>
+    <string name="error_empty_code">The provided code is empty!</string>
+    <string name="error_invalid_code">The provided code is invalid. Please double-check it and try again.</string>
+    <string name="error_invalid_credentials">The email or password is invalid. Please double-check them and try again.</string>
+    <string name="error_invalid_referral_code">The provided referral code is invalid!</string>
+    <string name="error_terms_of_use_not_accepted">Please accept STEX\'s terms of use!</string>
+    <string name="error_age_not_confirmed">Please confirm that you are over 21 years old!</string>
+    <string name="error_user_with_email_not_found">The user with the specified email address cannot be found. Please double-check the email and try again.</string>
+    <string name="error_wallets_retrieval">Oops! Something went wrong while fetching the wallets.</string>
+    <string name="error_invalid_amount">The provided amount is invalid!</string>
+    <string name="error_invalid_total">The provided total amount is invalid!</string>
+    <string name="error_invalid_address">The provided address is invalid!</string>
+    <string name="error_invalid_withdrawal_extra_parameter_template">The provided value of the \"%s\" parameter is invalid!</string>
+    <string name="error_min_withdrawal_amount">The withdrawal amount should be at least %s!</string>
+    <string name="error_max_withdrawal_amount">The withdrawal amount should be no more than %s!</string>
+    <string name="error_entered_amount_excess">The entered amount exceeds your current balance!</string>
+    <string name="error_withdrawal_deep_link_error">The withdrawal either has already been processed or the provided link is invalid!</string>
+    <string name="error_wallet_creation_delay">Oops! Something went wrong! Please try again.</string>
+    <string name="error_order_creation">Cannot create an order!</string>
+    <string name="error_invalid_price">The provided price is invalid!</string>
+    <string name="error_invalid_stop_price">The provided stop price is invalid!</string>
+    <string name="error_no_orders_available">No orders available</string>
+    <string name="error_withdrawal_invalid_state">The withdrawal either has already been confirmed or cancelled!</string>
+    <string name="error_invalid_withdrawal_address">The provided withdrawal address is invalid. Please double-check it and try again.</string>
+    <string name="error_not_enough_costs_to_pay_fee">You do not have enough %s on your balance to pay for a withdrawal fee.</string>
+    <string name="error_destination_tag_required">Looks like the system you are withdrawing to requires the destination tag parameter. Please fill it in and try again.</string>
+    <string name="error_no_address">No Address</string>
+
+    <!-- Splash -->
+    <string name="splash_could_not_connect_dialog_content">Unfortunately, the connection could not be established to the STEX servers. Please try again later.</string>
+
+    <!-- UserAdmission -->
+    <string name="user_admission_account_verification_view_caption">Please verify your account by following the instructions in the email we sent you</string>
+
+    <string name="user_admission_account_verification_email_resent_dialog_title">Verification Email</string>
+    <string name="user_admission_account_verification_email_resent_dialog_message">
+        The verification email has been successfully resent. Please check your inbox and follow the instructions in the message to verify your account.
+    </string>
+
+    <!-- Login -->
+    <string name="login_code_input_view_hint">Code</string>
+    <string name="login_help_button_text">Forgot your password?</string>
+    <string name="login_register_button_text">Don\'t have an account yet?</string>
+
+    <string name="login_confirmation_email_hint">
+        We sent you a one-time code to your email. Please check your inbox to get the code to enter below. Make sure to check the spam folder if you can’t see our email.
+    </string>
+    <string name="login_confirmation_sms_hint">
+        We sent you a one-time code to your mobile phone. Check the incoming SMS to get the code to enter below.
+    </string>
+    <string name="login_confirmation_sms_help_button_text">
+        Did not receive our SMS message?
+    </string>
+    <string name="login_confirmation_2fa_hint">
+        You have two-factor authentication enabled. Please enter your six-digit code provided by the authenticator you use.
+    </string>
+    <string name="login_confirmation_disable_2fa_text">Code</string>
+    <string name="login_confirmation_2fa_help_button_text">
+        I\'ve lost my device and want to disable the two-factor authentication?
+    </string>
+
+    <string name="login_2fa_help_dialog_title">Disabling 2FA</string>
+    <string name="login_2fa_help_dialog_message">
+        If you have lost your device and want to disable the two-factor authentication, please contact the support.
+    </string>
+    <string name="login_2fa_help_dialog_positive_button_text">Contact</string>
+
+    <string name="login_sms_help_dialog_title">SMS Message Delivery</string>
+    <string name="login_sms_help_dialog_message">
+        If you have not received our SMS message in 5 minutes, our system will automatically call you and spell you verification a code,
+        so be prepared to write down the code when the time comes.
+    </string>
+
+    <string name="login_account_verified_dialog_title">Account Verification</string>
+    <string name="login_account_verified_dialog_context">
+        Your account has been successfully verified. Please log in now.
+    </string>
+
+    <string name="login_session_expired_dialog_title">Login Session</string>
+    <string name="login_session_expired_dialog_content">The login session has expired. Please log in again.</string>
+
+    <string name="login_disable_2fa_email_subject" translatable="false">Disable 2Fa Authentication</string>
+    <string name="login_disable_2fa_email_text" translatable="false">
+        Hello. I\'ve lost my device and cannot provide two-factor authentication codes now during the login. Could you
+        help me by disabling it in my settings? The email of the STEX account is %s.
+    </string>
+
+    <!-- Registration -->
+    <string name="registration_referral_code_help_dialog_title">Referral Program</string>
+    <string name="registration_referral_code_help_dialog_message">
+        The referral program allows users to receive 25% discount of the trading fee forever. To achieve that, new users need to enter a referral code
+        during registration so that a user the referral code belongs to may receive the aforementioned discount.\n\nIf you do not have or do not wish
+        to enter one, then simply leave that field empty.
+    </string>
+
+    <string name="registration_terms_of_use_check_box_text_template">I agree to STEX\'s %s</string>
+    <string name="registration_terms_of_use_check_box_text_parameter">Terms of Use</string>
+    <string name="registration_age_check_box_text">I am over 18 years old</string>
+
+    <string name="registration_account_verification_dialog_title">Account Verification</string>
+    <string name="registration_account_verification_dialog_message">
+        An email with a confirmation link has been sent to your email address. Please check your inbox and follow the instructions to confirm your email
+    </string>
+
+    <!-- Password Recovery -->
+    <string name="password_recovery_email_credential_view_hint_text">
+        Please enter your email address and we\'ll send you an email with a link to reset your password.
+    </string>
+
+    <string name="password_recovery_reset_link_dialog_title">Password Reset Link</string>
+
+    <string name="password_recovery_reset_link_sent_dialog_content">
+        An email with a password reset link has been sent to your email address. Please check your inbox and follow the instructions in the
+        email to reset your password.
+    </string>
+    <string name="password_recovery_reset_link_resent_dialog_content">
+        An email with a password reset link has been successfully resent. Please check your inbox and follow the instructions in the message
+        to reset your password.
+    </string>
+
+    <string name="password_recovery_reset_dialog_title">Password Reset</string>
+    <string name="password_recovery_reset_dialog_content">
+        Your password has been successfully changed. Please log into your account.
+    </string>
+
+    <string name="password_recovery_reset_link_success_view_caption">
+        Please check your inbox and follow the instructions in the email to reset your password
+    </string>
+    <string name="password_recovery_password_change_success_view_caption" translatable="false">@string/password_recovery_reset_dialog_content</string>
+
+    <!-- Dashboard related -->
+    <string name="dashboard_toolbar_title" translatable="false">@string/markets</string>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <string name="currency_markets_sort_panel_name_title">Name</string>
+    <string name="currency_markets_sort_panel_last_price_title">Last Price</string>
+    <string name="currency_markets_sort_panel_volume_title">Vol</string>
+    <string name="currency_markets_sort_panel_daily_price_change_title">24h Chg%</string>
+
+    <!-- CurrencyMarketsFragment -->
+    <string name="currency_markets_fragment_search_initial_message">Search for specific markets</string>
+    <string name="currency_markets_fragment_search_no_markets_found_template">No markets found for\n\"%1$s\"</string>
+
+    <!-- CurrencyMarketItem -->
+    <string name="currency_market_item_volume_template" translatable="false">@string/volume_template</string>
+
+    <!-- Email -->
+    <string name="email_greeting_text">Hello!</string>
+    <string name="email_footer_new_email_title">New Email</string>
+    <string name="email_footer_send_button_text">Send</string>
+    <string name="email_footer_content_et_hint">Please enter your message here…</string>
+    <string name="email_feedback_detailed_message_text">
+        Noticed a bug or have a suggestion?\n\nPlease, let us know. We value
+        your feedback greatly and where possible will look to use it to improve
+        our app.\n\nHelp us make this app even better!
+    </string>
+    <string name="email_support_detailed_message_text">
+        Did not find the answer to your question in our FAQ? \n\nPlease, contact us.
+        We will do our best to answer your question.
+    </string>
+
+    <!-- AboutFragment -->
+    <string name="about_fragment_reference_button_visit_website_subtitle_text">Visit Our</string>
+    <string name="about_fragment_reference_button_visit_website_title_text">WEBSITE</string>
+    <string name="about_fragment_reference_button_terms_of_use_subtitle_text">Our Terms Of</string>
+    <string name="about_fragment_reference_button_terms_of_use_title_text">USE</string>
+    <string name="about_fragment_reference_button_privacy_policy_subtitle_text">Privacy</string>
+    <string name="about_fragment_reference_button_privacy_policy_title_text">POLICY</string>
+    <string name="about_fragment_reference_button_candy_link_subtitle_text">Trusted Partner VPN Service</string>
+    <string name="about_fragment_reference_button_candy_link_title_text" translatable="false">CandyLink</string>
+
+    <string name="about_fragment_header_description">
+        STEX is one of the most easy-to-use trading platforms worldwide.
+        Simplicity and comfort of our marketing platform allows you to invest in any
+        business all over the world. Just in one click buy or sell any your coins,
+        assets or tokens on major crypto platforms and do your business online.
+    </string>
+
+    <string name="about_fragment_feature_crypto_caption">Trade for any crypto</string>
+    <string name="about_fragment_feature_audit_caption">Strong internal audit</string>
+    <string name="about_fragment_feature_storage_caption">Secure storage</string>
+
+    <!-- Custom tabs related -->
+    <string name="menu_item_share_via" translatable="false">@string/action_share_via</string>
+    <string name="menu_item_copy_link" translatable="false">@string/action_copy_link</string>
+
+    <!-- Chart related -->
+    <string name="chart_candle_stick_info_open" translatable="false">O:</string>
+    <string name="chart_candle_stick_info_high" translatable="false">H:</string>
+    <string name="chart_candle_stick_info_low" translatable="false">L:</string>
+    <string name="chart_candle_stick_info_close" translatable="false">C:</string>
+    <string name="chart_candle_stick_info_volume" translatable="false">V:</string>
+    <string name="chart_candle_stick_info_time" translatable="false">T:</string>
+
+    <!-- Depth chart related -->
+    <string name="depth_chart_info_price">Price:</string>
+    <string name="depth_chart_info_amount">Amount:</string>
+    <string name="depth_chart_info_volume">Volume:</string>
+    <string name="depth_chart_info_highest_bid">Highest Bid:</string>
+    <string name="depth_chart_info_lowest_ask">Lowest Ask:</string>
+    <string name="depth_chart_info_spread">Spread:</string>
+
+    <string name="depth_chart_all_tab_title">ALL</string>
+
+    <!-- Wallets -->
+    <string name="wallets_sort_column_picker_dialog_item_current_balance">@string/available_balance</string>
+    <string name="wallets_sort_column_picker_dialog_item_frozen_balance">@string/balance_in_orders</string>
+    <string name="wallets_sort_column_picker_dialog_item_bonus_balance">@string/bonus_balance</string>
+    <string name="wallets_sort_column_picker_dialog_item_total_balance">@string/total_balance</string>
+
+    <!-- WalletsSearchFragment -->
+    <string name="wallets_search_fragment_input_hint_text">Search wallets</string>
+
+    <!-- WalletsFragment -->
+    <string name="wallets_fragment_search_initial_message">Search for specific wallets</string>
+    <string name="wallets_fragment_search_no_wallets_found_template">No wallets found for\n\"%1$s\"</string>
+
+    <string name="wallets_fragment_withdrawal_denied_dialog_message">
+        In order to be able to withdraw funds, please verify your account by Cryptonomica on our website. This offers protection from fraudulent activities,
+        reduction of trading fees, and simplifies the recovery of your account in case you lose access to it.
+    </string>
+
+    <string name="wallets_fragment_currency_transaction_denied_dialog_message">
+        Unfortunately, creating deposits and withdrawals for this currency is currently enabled only on our website.
+    </string>
+
+    <!-- TransactionsFragment -->
+    <string name="transactions_fragment_search_deposits_initial_message">Search for specific deposits</string>
+    <string name="transactions_fragment_search_withdrawals_initial_message">Search for specific withdrawals</string>
+    <string name="transactions_fragment_search_no_deposits_found_template">No deposits found for\n\"%1$s\"</string>
+    <string name="transactions_fragment_search_no_withdrawals_found_template">No withdrawals found for\n\"%1$s\"</string>
+
+    <string name="withdrawals_confirmation_email_resent_dialog_title">Withdrawal Confirmation Email</string>
+    <string name="withdrawals_confirmation_email_resent_dialog_message">
+        The withdrawal confirmation email has been successfully resent. Please check your inbox and follow the instructions in the message.
+    </string>
+
+    <string name="withdrawals_withdrawal_confirmed_dialog_title">Withdrawal Confirmation</string>
+    <string name="withdrawals_withdrawal_confirmed_dialog_message">
+        The withdrawal has been successfully confirmed.
+    </string>
+
+    <string name="withdrawals_withdrawal_cancellation_confirmation_dialog_title">Withdrawal Cancellation</string>
+    <string name="withdrawals_withdrawal_cancellation_confirmation_dialog_message">
+        Are you sure you want to cancel this withdrawal?
+    </string>
+
+    <string name="withdrawals_withdrawal_cancelled_dialog_title">Withdrawal Cancellation</string>
+    <string name="withdrawals_withdrawal_cancelled_dialog_message">
+        The withdrawal has been successfully cancelled.
+    </string>
+
+    <!-- DepositCreationFragment -->
+    <string name="deposit_creation_fragment_deposit_fee_template">Deposit Fee: %s</string>
+    <string name="deposit_creation_fragment_min_amount_template">Minimum Amount: %s</string>
+    <string name="deposit_creation_fragment_warning_template">Warning!\n\nSend only %s to this address. Sending any other currency to this address may result in the loss of your deposit.</string>
+    <string name="deposit_creation_fragment_hint_text">Hint: click to copy or long click to show QR code</string>
+
+    <!-- QrDialog -->
+    <string name="qr_dialog_copy_qr_code_text_btn_text">Copy</string>
+    <string name="qr_dialog_save_qr_code_image_btn_text">Save Image</string>
+
+    <!-- SettingsFragment -->
+    <string name="settings_fragment_sign_out_dialog_title_text" translatable="false">@string/action_sign_out</string>
+    <string name="settings_fragment_sign_out_dialog_text">Are you sure you want to sign out?</string>
+    <string name="settings_fragment_language_picker_dialog_item_template" translatable="false">%s (%s)</string>
+    <string name="settings_fragment_keep_screen_on_description">Prevents the screen from turning off</string>
+    <string name="settings_fragment_restore_defaults_dialog_title_text">Restore Default Settings</string>
+    <string name="settings_fragment_restore_defaults_dialog_text">Are you sure you want to restore to default settings?</string>
+    <string name="settings_fragment_no_fingerprints_available_dialog_title_text">No Fingerprints Registered</string>
+    <string name="settings_fragment_no_fingerprints_available_dialog_text">
+        No fingerprints have been registered to this device yet. Do you want to register a fingerprint now?
+    </string>
+    <string name="settings_fragment_disable_fingerprint_unlock_dialog_title_text">Fingerprint</string>
+    <string name="settings_fragment_disable_fingerprint_unlock_dialog_text">
+        Are you sure you want to disable fingerprint authentication?
+    </string>
+    <string name="settings_fragment_restore_defaults_description">Restores the default application settings</string>
+    <string name="settings_fragment_notification_more_options_on_site">More options on the site</string>
+    <string name="settings_fragment_stream_real_time_data_description">Downloads new data as soon as it is available</string>
+    <string name="settings_fragment_animate_charts_description">Allows you to enable or disable the animation of price and depth charts</string>
+    <string name="settings_fragment_zoom_in_on_the_price_chart_description">Zooms in on the latest candle sticks of the price chart instead of displaying them all at once</string>
+    <string name="settings_fragment_highlight_orderbook_real_time_updates_description">Emphasizes real-time updates of an orderbook by highlighting the changed data</string>
+    <string name="settings_fragment_highlight_new_trades_real_time_addition_description">Emphasizes real-time addition of new trades by highlighting them</string>
+    <string name="settings_fragment_change_pin_description">Allows you to replace your current PIN code with a new one</string>
+    <string name="settings_fragment_fingerprint_unlock_description">Allows you to authenticate using your fingerprint</string>
+    <string name="settings_fragment_force_authentication_description">Forces authentication to be performed when the app starts even if the session has not expired</string>
+    <string name="settings_fragment_grouping_section_description">Divides numbers with many digits into groups using the grouping separator</string>
+    <string name="settings_fragment_decimal_separator_automatic_change">
+        Your decimal separator was automatically updated to the %1$s since you have selected the %2$s as your new grouping separator.
+    </string>
+    <string name="settings_fragment_grouping_separator_automatic_change">
+        Your grouping separator was automatically updated to the %1$s since you have selected the %2$s as your new decimal separator.
+    </string>
+    <string name="settings_fragment_automatic_change_first_arg_comma">comma</string>
+    <string name="settings_fragment_automatic_change_second_arg_comma">comma</string>
+    <string name="settings_fragment_automatic_change_first_arg_period">period</string>
+    <string name="settings_fragment_automatic_change_second_arg_period">period</string>
+
+    <!-- OrdersContainerFragment -->
+    <string name="orders_container_orders_title" translatable="false">@string/orders</string>
+    <string name="orders_container_order_history_title" translatable="false">@string/order_history</string>
+    <string name="orders_container_tab_active_orders_title">ACTIVE</string>
+    <string name="orders_container_tab_completed_orders_title">COMPLETED</string>
+    <string name="orders_container_tab_cancelled_orders_title">CANCELLED</string>
+
+    <!-- OrdersSearchFragment -->
+    <string name="orders_search_fragment_active_orders_hint">Search active orders</string>
+    <string name="orders_search_fragment_completed_orders_hint">Search completed orders</string>
+    <string name="orders_search_fragment_cancelled_orders_hint">Search cancelled orders</string>
+
+    <!-- OrdersFragment -->
+    <string name="orders_fragment_search_no_orders_found_template">No orders found for\n\"%1$s\"</string>
+    <string name="orders_fragment_search_initial_message">Search for specific orders</string>
+    <string name="orders_fragment_order_cancellation_dialog_title">Order Cancellation</string>
+    <string name="orders_fragment_order_cancellation_dialog_content">Are you sure you want to cancel this order?</string>
+    <string name="orders_fragment_order_cancellation_error_dialog_content">
+        Looks like your order has already been processed and, therefore, could not be cancelled. Please double-check
+        the status of the order and try again.
+    </string>
+
+    <!-- AuthenticationActivity -->
+    <string name="authentication_activity_hint_create_pin">Create PIN</string>
+    <string name="authentication_activity_hint_confirm_pin">Confirm PIN</string>
+    <string name="authentication_activity_hint_enter_pin">Enter PIN</string>
+
+    <string name="authentication_activity_help_button_text">Forgot your PIN?</string>
+
+    <string name="authentication_activity_common_pin_codes_dialog_title" translatable="false">@string/warning</string>
+    <string name="authentication_activity_common_pin_codes_dialog_message">
+        The PIN you have selected is extremely common and may be easily guessed by someone with access
+        to your phone. Would you like to use this PIN anyway?
+    </string>
+    <string name="authentication_activity_common_pin_codes_dialog_negative_button_text">Try Again</string>
+    <string name="authentication_activity_common_pin_codes_dialog_positive_button_text">Continue</string>
+    <string name="authentication_activity_count_down_timer_one_template">Try again in %d second.</string>
+    <string name="authentication_activity_count_down_timer_few_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_count_down_timer_many_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_count_down_timer_other_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_fingerprint_exhausted_message">
+        Please authenticate by entering your PIN code instead.
+    </string>
+
+    <!-- FingerprintDialog -->
+    <string name="fingerprint_dialog_title">Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_introduction_message">Use your fingerprint for faster and easier authentication</string>
+    <string name="fingerprint_dialog_setup_attempts_used_up_message">Please attempt setup again later.</string>
+    <string name="fingerprint_dialog_scan_attempts_used_up_message">Please authenticate using your PIN instead.</string>
+    <string name="fingerprint_dialog_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_dialog_default_status_text">Touch the sensor</string>
+    <string name="fingerprint_dialog_success_status_text">Fingerprint recognized</string>
+
+    <!-- OrderbookDetailsView -->
+    <string name="orderbook_details_view_highest_bid_dmv_title">Highest Bid</string>
+    <string name="orderbook_details_view_lowest_ask_dmv_title">Lowest Ask</string>
+    <string name="orderbook_details_view_buy_volume_dmv_title">Buy Volume</string>
+    <string name="orderbook_details_view_sell_volume_dmv_title">Sell Volume</string>
+
+    <!-- OrderbookFragment -->
+    <string name="orderbook_fragment_toolbar_title_template">%s orderbook</string>
+
+    <!-- WithdrawalCreationFragment -->
+    <string name="withdrawal_creation_fragment_success_dialog_title">Withdrawal Creation</string>
+    <string name="withdrawal_creation_fragment_success_dialog_message">An email with a confirmation link has been sent to your email address</string>
+    <string name="withdrawal_creation_fragment_success_dialog_positive_button_text">OK, got it!</string>
+    <string name="withdrawal_creation_fragment_success_dialog_neutral_button_text">Track</string>
+
+    <!-- TradeTab -->
+    <string name="trade_tab_trade_title">TRADE</string>
+    <string name="trade_tab_orderbook_title">ORDERBOOK</string>
+    <string name="trade_tab_my_orders_title">MY ORDERS</string>
+    <string name="trade_tab_my_trade_history_title">MY TRADE HISTORY</string>
+
+    <!-- TradeFormView -->
+    <string name="trade_form_view_stop_price_label">Stop price</string>
+    <string name="trade_form_view_price_label" translatable="false">@string/price</string>
+    <string name="trade_form_view_amount_label" translatable="false">@string/amount</string>
+    <string name="trade_form_view_total_label" translatable="false">@string/total</string>
+
+    <!-- TradeFragment -->
+    <string name="trade_fragment_order_fee_title_text">Fee (%s)</string>
+    <string name="trade_fragment_order_expense_title_text">You Give</string>
+    <string name="trade_fragment_order_income_title_text">You Get</string>
+    <string name="trade_fragment_buy_button_template">Buy %1$s For %2$s</string>
+    <string name="trade_fragment_sell_button_template">Sell %1$s For %2$s</string>
+    <string name="trade_fragment_buy_stop_limit_order_warning_dialog_text">
+        You are creating a stop-limit order, but the lowest asking price %1$s is above the stop-price %2$s you specified, meaning
+        that the order will be processed immediately after creation. Do you want to proceed?
+    </string>
+    <string name="trade_fragment_sell_stop_limit_order_warning_dialog_text">
+        You are creating a stop-limit order, but the highest bidding price %1$s is below the stop-price %2$s you specified, meaning
+        that the order will be processed immediately after creation. Do you want to proceed?
+    </string>
+
+    <!-- HelpFragment -->
+    <string name="help_item_faq_subtitle">Find answers to your technical questions.</string>
+    <string name="help_item_support_subtitle">Please, provide full information about a problem in your request.</string>
+
+    <!-- PinRecoveryActivity -->
+    <string name="pin_recovery_title_text">Do you want to sign out?</string>
+    <string name="pin_recovery_subtitle_text">
+        If you forgot your PIN and want to reset it, you will have to re-login and create a new PIN.
+    </string>
+
+    <!-- VerificationPromptActivity -->
+    <string name="verification_prompt_title_text" translatable="false">@string/verification</string>
+    <string name="verification_prompt_long_description_template">
+        Make sure to familiarize yourself with %s.\n\tDue to AMLD 5 since January 1, 2020 verification will be required for
+        all the Customers.\n\tYou can still use the platform without verification until December 31, 2019.\n\n\tDo not delay
+        verification till the last day, make it on time.
+    </string>
+    <string name="verification_prompt_short_description" >
+        Make sure to familiarize yourself with amendment 5 to the Directive (EU) 2018/843 of the European Parliament and of the Council\n\t
+        Due to AMLD 5 since January 1, 2020 verification is mandatory for all the Customers.
+        Verification is also required for anti-fraud protection measures for STEX and its Customers. \n\t
+        Verify your account to unlock trading and withdrawal functions.\n\t
+    </string>
+    <string name="verification_prompt_long_description_link_text" translatable="false">
+        2018/843
+    </string>
+    <string name="verification_prompt_not_yet_implemented_dialog_content" translatable="false">
+        Unfortunately, this feature is currently in development. Sorry for temporary inconveniences.
+    </string>
+
+    <!-- ReferralFragment -->
+    <string name="referral_fragment_title_text">Invite your friend and get 25% of his trading fee forever.</string>
+    <string name="referral_fragment_subtitle_text_first_part_template">Referral bonus is credited once a day. %s</string>
+    <string name="referral_fragment_subtitle_text_second_part_zero_template">You have %d referrals.</string>
+    <string name="referral_fragment_subtitle_text_second_part_one_template">You have %d referral.</string>
+    <string name="referral_fragment_subtitle_text_second_part_few_template">You have %d referrals.</string>
+    <string name="referral_fragment_subtitle_text_second_part_many_template">You have %d referrals.</string>
+    <string name="referral_fragment_subtitle_text_second_part_other_template">You have %d referrals.</string>
+    <string name="referral_fragment_notice_text">
+        IMPORTANT: STEX reserves the right to change the terms of the referral program at any time at its sole discretion.
+    </string>
+    <string name="referral_fragment_referral_code_iv_hint_text">Insert referral code your friend provided to you</string>
+    <string name="referral_fragment_referral_provision_success_dialog_title" translatable="false">@string/success</string>
+    <string name="referral_fragment_referral_provision_success_dialog_content">The referral code has been successfully processed!</string>
+
+    <!-- DepositCreationFragment -->
+    <string name="deposit_creation_fragment_deposit_fee_smv_title">Deposit Fee: </string>
+    <string name="deposit_creation_fragment_minimum_amount_smv_title">Minimum Amount: </string>
+    <string name="deposit_creation_fragment_new_address_creation_dialog_content">Are you sure you want to create a new deposit address?</string>
+
+    <!-- WithdrawalCreationView -->
+    <string name="withdrawal_creation_view_minimum_amount">Minimum Amount:</string>
+    <string name="withdrawal_creation_view_fee">Fee:</string>
+    <string name="withdrawal_creation_view_final_amount">Final Amount:</string>
+
+    <!-- QrCodeScannerActivity -->
+    <string name="qr_code_scanner_activity_hint_text">Place a QR image inside the square</string>
+
+    <!-- VerificationSelectionFragment -->
+    <string name="verification_selection_currently_in_development_dialog_content">
+        This function is currently under development. At the moment it is only available through the website (desktop mode).
+    </string>
+
+    <!-- Firebase -->
+    <string name="notification_channel_id">Stex Notification</string>
+
+    <!-- Inbox -->
+    <!--todo: add translations-->
+    <string name="inbox_coin">Coin</string>
+    <string name="inbox_coin_full_name">Coin full name</string>
+    <string name="inbox_amount">Amount</string>
+    <string name="inbox_order_id">Order Id</string>
+    <string name="inbox_currency_pair">Currency pair</string>
+    <string name="inbox_type">Type</string>
+    <string name="inbox_order_amount">Order amount</string>
+    <string name="inbox_price">Price</string>
+    <string name="inbox_expected_amount">Expected amount</string>
+    <string name="inbox_description">Description</string>
+    <string name="inbox_date">Date</string>
+
+    <string name="inbox_notification_report">Notification report</string>
+    <string name="inbox_no_notifications">There are no notifications</string>
+    <string name="inbox_new_notifications">%s New notifications</string>
+    <string name="inbox_no_available">You have no notifications</string>
+
+    <!-- News -->
+    <string name="news_no_available">You did not have any news</string>
+
+    <!-- PriceAlerts -->
+    <string name="alert_price_title">Price Alerts</string>
+    <string name="alert_price_short_title">Price Alerts</string>
+    <string name="alert_price_no_available">You have no alerts</string>
+    <string name="alert_price_clear">Clear</string>
+    <string name="alert_price_create">Accept</string>
+    <string name="alert_price_incorrect_price">Incorrect price</string>
+    <string name="alert_price_less_than">Less than price</string>
+    <string name="alert_price_more_than">More than price</string>
+    <string name="alert_price_should_positive">Price should be a positive number</string>
+    <string name="alert_price_already_have_less">You can have only one alert that has a lower price than the current price</string>
+    <string name="alert_price_already_have_greater">You can have only one alert that has a higher price than the current price</string>
+    <string name="alert_price_current_price">Current price:</string>
+    <string name="alert_price_already_less">Currency price %s is already less than or equal to the requested alert price</string>
+    <string name="alert_price_already_more">Currency price %s is already greater than or equal to the requested alert price</string>
+    <string name="alert_price_already_exist">An alert for a given currency and a comparison already exists. You can create only one.</string>
+
+    <!-- Notifications-->
+    <string name="notification_title">Allow notifications</string>
+    <string name="notification_body">Push notifications sent by STEX are currently disabled in your settings. Allow enabling to send you Notifications?</string>
+    <string name="notification_allow">Allow</string>
+
+    <!-- ProfileFragment -->
+    <string name="profile_fragment_item_login_title" translatable="false">@string/login</string>
+    <string name="profile_fragment_item_login_description">Log in to your account</string>
+    <string name="profile_fragment_item_registration_title" translatable="false">@string/registration</string>
+    <string name="profile_fragment_item_registration_description">Create a new account</string>
+    <string name="profile_fragment_item_settings_title" translatable="false">@string/settings</string>
+    <string name="profile_fragment_item_settings_description">Manage your account</string>
+    <string name="profile_fragment_item_referral_program_title" translatable="false">@string/referral_program</string>
+    <string name="profile_fragment_item_referral_program_description">Simple start and easy to share with everyone</string>
+    <string name="profile_fragment_item_verification_title" translatable="false">@string/verification</string>
+    <string name="profile_fragment_item_verification_description">User\'s account verification is mandatory on STEX</string>
+    <string name="profile_fragment_item_support_center_title" translatable="false">@string/support_center</string>
+    <string name="profile_fragment_item_support_center_description">Advice and answers from our support team</string>
+    <string name="profile_fragment_item_about_title" translatable="false">@string/about</string>
+    <string name="profile_fragment_item_about_description">All the power of STEX services is always with you</string>
+
+</resources>

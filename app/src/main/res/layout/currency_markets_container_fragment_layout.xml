@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <com.stocksexchange.android.ui.views.toolbars.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:rightButtonDrawable="@drawable/ic_search"
+            app:alertPriceButtonDrawable="@drawable/ic_alert_price_white"
+            app:inboxButtonVisible="true"
+            tools:background="@color/deepTealPrimaryColor"
+            tools:title="@string/markets"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_gravity="center_horizontal"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            style="@style/TabLayout"/>
+
+        <com.stocksexchange.android.ui.views.CurrencyMarketsSortPanel
+            android:id="@+id/currencyMarketsSortPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/currency_markets_sort_panel_horizontal_padding"
+            android:paddingEnd="@dimen/currency_markets_sort_panel_horizontal_padding"
+            tools:background="@color/deepTealSortPanelBackgroundColor"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

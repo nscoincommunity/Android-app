@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="authentication_activity_count_down_timer_template">
+        <item quantity="one">@string/authentication_activity_count_down_timer_one_template</item>
+        <item quantity="few">@string/authentication_activity_count_down_timer_few_template</item>
+        <item quantity="many">@string/authentication_activity_count_down_timer_many_template</item>
+        <item quantity="other">@string/authentication_activity_count_down_timer_other_template</item>
+    </plurals>
+    
+    <plurals name="referral_fragment_subtitle_text_second_part_template">
+        <item quantity="zero">@string/referral_fragment_subtitle_text_second_part_zero_template</item>
+        <item quantity="one">@string/referral_fragment_subtitle_text_second_part_one_template</item>
+        <item quantity="few">@string/referral_fragment_subtitle_text_second_part_few_template</item>
+        <item quantity="many">@string/referral_fragment_subtitle_text_second_part_many_template</item>
+        <item quantity="other">@string/referral_fragment_subtitle_text_second_part_other_template</item>
+    </plurals>
+
+</resources>

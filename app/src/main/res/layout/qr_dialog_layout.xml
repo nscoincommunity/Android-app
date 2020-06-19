@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/qr_dialog_padding"
+    tools:background="@color/deepTealDialogBackgroundColor">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/qr_dialog_title_text_size"
+        android:textStyle="bold"
+        tools:text="BTC Deposit Address"
+        tools:textColor="@color/deepTealDialogTitleColor"/>
+
+    <ImageView
+        android:id="@+id/qrCodeImageIv"
+        android:layout_width="@dimen/qr_dialog_qr_code_image_iv_size"
+        android:layout_height="@dimen/qr_dialog_qr_code_image_iv_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_qr_code_image_iv_margin_top"
+        tools:srcCompat="@drawable/ic_check"
+        tools:tint="@color/deepTealInfoViewColor"/>
+
+    <TextView
+        android:id="@+id/qrCodeTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_qr_code_text_tv_margin_top"
+        android:textColor="@color/deepTealDialogTextColor"
+        android:textSize="@dimen/qr_dialog_qr_code_text_tv_text_size"
+        android:gravity="center"
+        tools:text="SkkdSldoewuSDljld922ljDLSdsld2023DSloODopumumuDOdosSkkdSldoewuSDljld922ljDLSdsld2023DSloODopumumuDOdos"/>
+
+    <TextView
+        android:id="@+id/copyQrCodeTextBtnTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qr_dialog_button_tv_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_copy_qr_code_text_btn_tv_margin_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/qr_dialog_button_text_size"
+        android:textAllCaps="false"
+        style="@style/PrimaryButton"
+        tools:text="@string/qr_dialog_copy_qr_code_text_btn_text"/>
+
+    <TextView
+        android:id="@+id/saveQrCodeImageBtnTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qr_dialog_button_tv_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qr_dialog_save_qr_code_image_btn_tv_margin_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/qr_dialog_button_text_size"
+        android:textAllCaps="false"
+        style="@style/PrimaryButton"
+        tools:text="@string/qr_dialog_save_qr_code_image_btn_text"/>
+
+</LinearLayout>

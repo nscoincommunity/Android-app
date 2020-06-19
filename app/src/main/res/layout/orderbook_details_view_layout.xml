@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/mainContainerLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/lowestAskDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/orderbook_details_view_dmv_vertical_margin"
+            app:separatorVisibility="true"
+            app:titleSize="@dimen/orderbook_details_view_dmv_text_size"
+            app:valueSize="@dimen/orderbook_details_view_dmv_text_size"
+            tools:title="@string/orderbook_details_view_lowest_ask_dmv_title"
+            tools:value="0.00904921"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/colorRedAccent"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/highestBidDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/orderbook_details_view_dmv_vertical_margin"
+            app:separatorVisibility="true"
+            app:titleSize="@dimen/orderbook_details_view_dmv_text_size"
+            app:valueSize="@dimen/orderbook_details_view_dmv_text_size"
+            tools:title="@string/orderbook_details_view_highest_bid_dmv_title"
+            tools:value="0.00910042"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/colorGreenAccent"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/sellVolumeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/orderbook_details_view_dmv_vertical_margin"
+            app:separatorVisibility="true"
+            app:titleSize="@dimen/orderbook_details_view_dmv_text_size"
+            app:valueSize="@dimen/orderbook_details_view_dmv_text_size"
+            tools:title="@string/orderbook_details_view_sell_volume_dmv_title"
+            tools:value="84.39184 LTC"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+        <com.stocksexchange.android.ui.views.mapviews.DottedMapView
+            android:id="@+id/buyVolumeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:separatorVisibility="true"
+            app:titleSize="@dimen/orderbook_details_view_dmv_text_size"
+            app:valueSize="@dimen/orderbook_details_view_dmv_text_size"
+            tools:title="@string/orderbook_details_view_buy_volume_dmv_title"
+            tools:value="135.0162 LTC"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/orderbook_details_view_progress_bar_size"
+        android:layout_height="@dimen/orderbook_details_view_progress_bar_size"
+        android:layout_gravity="center"/>
+
+    <com.stocksexchange.android.ui.views.InfoView
+        android:id="@+id/infoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</merge>

@@ -1,0 +1,5 @@
+package com.stocksexchange.android.data.repositories.freshdatahandlers.interfaces
+
+import com.stocksexchange.api.model.rest.parameters.OrderbookParameters
+
+interface OrderbookFreshDataHandler : AdvancedFreshDataHandler<OrderbookParameters>

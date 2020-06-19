@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/appLogoIv"
+                android:layout_width="@dimen/referral_fragment_app_logo_width"
+                android:layout_height="@dimen/referral_fragment_app_logo_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/referral_fragment_app_logo_margin_top"
+                app:srcCompat="@drawable/ic_logo"/>
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appLogoIv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/referral_fragment_title_margin_top"
+                android:layout_marginStart="@dimen/referral_fragment_title_horizontal_margin"
+                android:layout_marginEnd="@dimen/referral_fragment_title_horizontal_margin"
+                android:textSize="@dimen/referral_fragment_title_text_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:text="@string/referral_fragment_title_text"
+                tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+            <TextView
+                android:id="@+id/subtitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/referral_fragment_subtitle_margin_top"
+                android:layout_marginStart="@dimen/referral_fragment_subtitle_horizontal_margin"
+                android:layout_marginEnd="@dimen/referral_fragment_subtitle_horizontal_margin"
+                android:textSize="@dimen/referral_fragment_subtitle_text_size"
+                android:gravity="center"
+                tools:text="Referral bonus is credited once a day. You have 0 referrals."
+                tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+            <ImageView
+                android:id="@+id/referralQrCodeIv"
+                android:layout_width="@dimen/referral_fragment_referral_qr_code_image_size"
+                android:layout_height="@dimen/referral_fragment_referral_qr_code_image_size"
+                android:layout_below="@id/subtitleTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/referral_fragment_referral_qr_code_image_margin_top"
+                tools:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/referralLinkTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/referralQrCodeIv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/referral_fragment_referral_link_margin_top"
+                android:textSize="@dimen/referral_fragment_referral_link_text_size"
+                android:gravity="center"
+                android:textStyle="bold"
+                tools:text="https://app.stex.com/?ref=89695096"
+                android:textColor="@color/deepTealAccentColor"/>
+
+            <LinearLayout
+                android:id="@+id/bottomContainerLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/referralLinkTv"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="@dimen/referral_fragment_bottom_container_padding_top"
+                android:paddingBottom="@dimen/referral_fragment_bottom_container_padding_bottom"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/noticeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/referral_fragment_notice_horizontal_margin"
+                        android:layout_marginEnd="@dimen/referral_fragment_notice_horizontal_margin"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/referral_fragment_notice_text_size"
+                        android:gravity="center"
+                        tools:text="@string/referral_fragment_notice_text"
+                        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+                    <com.stocksexchange.android.ui.views.InputView
+                        android:id="@+id/referralCodeIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/referral_fragment_referral_code_iv_horizontal_margin"
+                        android:layout_marginEnd="@dimen/referral_fragment_referral_code_iv_horizontal_margin"
+                        android:layout_gravity="bottom"
+                        tools:etHintText="@string/referral_fragment_referral_code_iv_hint_text"
+                        tools:etTextColor="@color/white"
+                        tools:etHintTextColor="@color/colorUserAdmissionInputViewHintColor"
+                        tools:visibility="gone"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonsContainerLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/referral_fragment_buttons_container_margin_top"
+                    android:layout_marginStart="@dimen/referral_fragment_buttons_container_horizontal_margin"
+                    android:layout_marginEnd="@dimen/referral_fragment_buttons_container_horizontal_margin"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/leftBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/referral_fragment_button_horizontal_margin"
+                        style="@style/NewPrimaryButton"
+                        tools:text="@string/action_copy"
+                        tools:textColor="@color/deepTealPrimaryTextColor"
+                        tools:background="@drawable/rounded_button_background"
+                        tools:backgroundTint="@color/deepTealAccentColor"/>
+
+                    <Button
+                        android:id="@+id/rightBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/referral_fragment_button_horizontal_margin"
+                        style="@style/NewPrimaryButton"
+                        tools:text="@string/action_confirm"
+                        tools:textColor="@color/deepTealSecondaryTextColor"
+                        tools:background="@drawable/bordered_button_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.stocksexchange.android.ui.views.toolbars.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/toolbar_elevation"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_share"
+        tools:title="@string/referral"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

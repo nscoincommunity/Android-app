@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealPrimaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/help_item_padding"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="@dimen/help_item_icon_size"
+            android:layout_height="@dimen/help_item_icon_size"
+            android:layout_alignParentTop="true"
+            tools:src="@mipmap/ic_faq"
+            tools:tint="@color/deepTealSecondaryTextColor"/>
+
+        <ImageView
+            android:id="@+id/arrowIv"
+            android:layout_width="@dimen/help_item_arrow_icon_width"
+            android:layout_height="@dimen/help_item_arrow_icon_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/help_item_arrow_margin_top"
+            android:layout_marginEnd="@dimen/help_item_icon_margin_end"
+            tools:src="@mipmap/ic_arrow_right"
+            tools:tint="@color/deepTealPrimaryTextColor"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconIv"
+            android:layout_marginTop="@dimen/help_item_title_margin_top"
+            android:textSize="@dimen/help_item_title_text_size"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="@string/faq"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+        <TextView
+            android:id="@+id/subtitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_marginTop="@dimen/help_item_subtitle_margin_top"
+            android:textSize="@dimen/help_item_subtitle_text_size"
+            tools:text="@string/help_item_faq_subtitle"
+            tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

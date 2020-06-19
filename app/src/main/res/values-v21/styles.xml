@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/deepTealPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/deepTealPrimaryDarkColor</item>
+        <item name="colorAccent">@color/deepTealAccentColor</item>
+
+        <item name="android:windowBackground">@color/deepTealPrimaryDarkColor</item>
+    </style>
+
+    <style name="TranslucentStatusBarTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="TranslucentNavigationBarTheme" parent="AppTheme">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="TranslucentSystemBarsTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="TranslucentSystemBarsTheme">
+        <item name="android:windowBackground">@drawable/splash_activity_bg</item>
+    </style>
+
+    <style name="AuthenticationTheme" parent="TranslucentSystemBarsTheme"/>
+
+    <style name="VerificationPromptTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="QrCodeScannerTheme" parent="TranslucentSystemBarsTheme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+</resources>

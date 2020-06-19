@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:background="@drawable/particles_gradient_port_bg"
+    tools:context=".ui.auth.AuthenticationActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/messageTv"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/appLogoIv"
+            android:layout_width="@dimen/app_logo_width"
+            android:layout_height="@dimen/app_logo_height"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_logo"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pinBoxContainerLl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/authentication_activity_message_margin_bottom"
+        android:textSize="@dimen/authentication_activity_message_text_size"
+        tools:text="@string/authentication_activity_hint_enter_pin"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <LinearLayout
+        android:id="@+id/pinBoxContainerLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/pinEntryKeypad"
+        android:layout_marginStart="@dimen/authentication_activity_pin_box_container_horizontal_margin"
+        android:layout_marginEnd="@dimen/authentication_activity_pin_box_container_horizontal_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/firstPinBox"
+            tools:background="@drawable/pin_box_border_drawable"
+            style="@style/PinBox"/>
+
+        <ImageView
+            android:id="@+id/secondPinBox"
+            tools:background="@drawable/pin_box_border_drawable"
+            style="@style/PinBox"/>
+
+        <ImageView
+            android:id="@+id/thirdPinBox"
+            tools:background="@drawable/pin_box_border_drawable"
+            style="@style/PinBox"/>
+
+        <ImageView
+            android:id="@+id/fourthPinBox"
+            tools:background="@drawable/pin_box_border_drawable"
+            style="@style/PinBox"/>
+
+    </LinearLayout>
+
+    <com.stocksexchange.android.ui.views.PinEntryKeypad
+        android:id="@+id/pinEntryKeypad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/helpBtnTv"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginTop="@dimen/authentication_activity_pin_entry_keypad_margin_top"/>
+
+    <TextView
+        android:id="@+id/helpBtnTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/authentication_activity_help_button_margin_top"
+        android:layout_marginBottom="@dimen/authentication_activity_help_button_margin_bottom"
+        android:textSize="@dimen/authentication_activity_help_button_text_size"
+        android:textStyle="bold"
+        tools:text="@string/authentication_activity_help_button_text"
+        tools:textColor="@color/deepTealAccentColor"/>
+
+</RelativeLayout>

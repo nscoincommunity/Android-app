@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <FrameLayout
+        android:id="@+id/topContainerFl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/middleContainerLl"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="@dimen/verification_prompt_icon_width"
+            android:layout_height="@dimen/verification_prompt_icon_height"
+            android:layout_gravity="center_vertical"
+            tools:src="@mipmap/ic_verification_prompt"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/middleContainerLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/verification_prompt_middle_container_horizontal_margin"
+        android:layout_marginEnd="@dimen/verification_prompt_middle_container_horizontal_margin"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/verification_prompt_title_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:text="@string/verification_prompt_title_text"
+            tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verification_prompt_description_margin_top"
+            android:gravity="center"
+            android:textSize="@dimen/verification_prompt_description_text_size"
+            tools:text="@string/verification_prompt_short_description"
+            tools:textColor="@color/deepTealSecondaryTextColor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verifyNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verifyLaterBtn"
+        android:layout_marginStart="@dimen/verification_prompt_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/verification_prompt_button_horizontal_margin"
+        style="@style/NewPrimaryButton"
+        tools:text="@string/action_verify_now"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        tools:background="@drawable/rounded_button_background"
+        tools:backgroundTint="@color/deepTealAccentColor"/>
+
+    <Button
+        android:id="@+id/verifyLaterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/verification_prompt_verify_later_btn_margin_top"
+        android:layout_marginBottom="@dimen/verification_prompt_verify_later_btn_margin_bottom"
+        android:layout_marginStart="@dimen/verification_prompt_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/verification_prompt_button_horizontal_margin"
+        style="@style/NewPrimaryButton"
+        tools:text="@string/action_verify_later"
+        tools:textColor="@color/deepTealSecondaryTextColor"
+        tools:background="@drawable/bordered_button_background"/>
+
+</RelativeLayout>

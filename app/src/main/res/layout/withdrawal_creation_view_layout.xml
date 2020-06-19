@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <TextView
+        android:id="@+id/addressLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/withdrawal_creation_view_label_bottom_margin"
+        android:textSize="@dimen/withdrawal_creation_view_label_text_size"
+        tools:text="@string/address"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/addressIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:etHintText="@string/required"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorUserAdmissionInputViewHintColor"/>
+
+    <TextView
+        android:id="@+id/extraLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/withdrawal_creation_view_label_top_margin"
+        android:layout_marginBottom="@dimen/withdrawal_creation_view_label_bottom_margin"
+        android:textSize="@dimen/withdrawal_creation_view_label_text_size"
+        android:visibility="gone"
+        tools:text="Payment ID"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/extraIv"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        tools:etHintText="@string/optional"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorUserAdmissionInputViewHintColor"/>
+
+    <TextView
+        android:id="@+id/amountLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/withdrawal_creation_view_label_top_margin"
+        android:layout_marginBottom="@dimen/withdrawal_creation_view_label_bottom_margin"
+        android:textSize="@dimen/withdrawal_creation_view_label_text_size"
+        tools:text="@string/amount"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.InputView
+        android:id="@+id/amountIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:etHintText="@string/required"
+        tools:labelText="@string/all"
+        tools:etTextColor="@color/white"
+        tools:etHintTextColor="@color/colorUserAdmissionInputViewHintColor"/>
+
+    <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+        android:id="@+id/minAmountSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/withdrawal_creation_view_min_amount_smv_margin_top"
+        app:titleSize="@dimen/withdrawal_creation_view_smv_text_size"
+        app:valueSize="@dimen/withdrawal_creation_view_smv_text_size"
+        tools:titleText="@string/min_amount"
+        tools:valueText="21 XRP"
+        tools:titleColor="@color/deepTealSecondaryTextColor"
+        tools:valueColor="@color/deepTealPrimaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+        android:id="@+id/feeSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/withdrawal_creation_view_smv_margin_top"
+        app:titleSize="@dimen/withdrawal_creation_view_smv_text_size"
+        app:valueSize="@dimen/withdrawal_creation_view_smv_text_size"
+        tools:titleText="@string/fee"
+        tools:valueText="0.1 XRP"
+        tools:titleColor="@color/deepTealSecondaryTextColor"
+        tools:valueColor="@color/deepTealPrimaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.mapviews.SimpleMapView
+        android:id="@+id/finalAmountSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/withdrawal_creation_view_smv_margin_top"
+        app:titleSize="@dimen/withdrawal_creation_view_smv_text_size"
+        app:valueSize="@dimen/withdrawal_creation_view_smv_text_size"
+        tools:titleText="@string/final_amount"
+        tools:valueText="20.9 XRP"
+        tools:titleColor="@color/deepTealSecondaryTextColor"
+        tools:valueColor="@color/deepTealPrimaryTextColor"/>
+
+</merge>

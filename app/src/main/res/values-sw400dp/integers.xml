@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PriceChartView -->
+    <integer name="price_chart_view_min_candle_stick_count_for_zooming_in">17</integer>
+
+    <!-- OrderbookView -->
+    <integer name="orderbook_view_amount_max_chars_length">13</integer>
+
+</resources>

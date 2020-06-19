@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/background">
+
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:topLeftRadius="@dimen/button_corner_radius"
+                android:topRightRadius="@dimen/button_corner_radius"
+                android:bottomLeftRadius="@dimen/button_corner_radius"
+                android:bottomRightRadius="@dimen/button_corner_radius"/>
+
+            <stroke
+                android:width="@dimen/bordered_button_background_stroke_width"
+                android:color="@color/deepTealSecondaryTextColor"/>
+
+        </shape>
+
+    </item>
+
+    <item
+        android:id="@+id/foreground">
+
+        <ripple android:color="?attr/colorControlHighlight">
+
+            <item android:id="@android:id/mask">
+
+                <shape android:shape="rectangle">
+
+                    <solid android:color="@color/white"/>
+
+                    <corners
+                        android:topLeftRadius="@dimen/button_corner_radius"
+                        android:topRightRadius="@dimen/button_corner_radius"
+                        android:bottomLeftRadius="@dimen/button_corner_radius"
+                        android:bottomRightRadius="@dimen/button_corner_radius"/>
+
+                </shape>
+
+            </item>
+
+        </ripple>
+
+    </item>
+
+</layer-list>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/user_admission_app_horizontal_margin"
+    android:paddingEnd="@dimen/user_admission_app_horizontal_margin"
+    tools:context=".ui.registration.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/icStexLogoIv"
+        android:layout_marginTop="@dimen/user_admission_app_title_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_stex_logo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appMottoTv"
+        style="@style/UserAdmissionAppMotto"
+        android:layout_below="@+id/icStexLogoIv"
+        tools:text="@string/app_motto"
+        tools:textColor="@color/deepTealPrimaryTextColor" />
+
+    <com.stocksexchange.android.ui.registration.views.RegistrationCredentialsView
+        android:id="@+id/credentialsView"
+        app:inputViewPasswordVisibleIcon="@drawable/ic_eye_on"
+        app:inputViewPasswordHiddenIcon="@drawable/ic_eye_off"
+        app:inputViewReferralCodeIcon="@drawable/ic_question"
+        android:layout_above="@+id/secondaryBtn"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/appMottoTv"
+        tools:inputViewHintTextColor="@color/colorLoginEditTextHintColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/registrationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/secondaryBtn"
+        android:layout_below="@+id/appMottoTv"
+        android:layout_marginBottom="@dimen/user_admission_input_view_title_bottom_margin"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textSize="@dimen/user_admission_text_size"
+        tools:text="@string/registration_account_verification_dialog_message"
+        tools:textColor="@color/deepTealSecondaryTextColor" />
+
+    <com.stocksexchange.android.ui.views.UserAdmissionButton
+        android:id="@+id/secondaryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/user_admission_app_horizontal_margin"
+        android:layout_above="@+id/primaryBtn"
+        tools:buttonText="@string/action_resend_verification_email"
+        tools:buttonTextColor="@color/white"/>
+
+    <com.stocksexchange.android.ui.views.UserAdmissionButton
+        android:id="@+id/primaryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/user_admission_button_vertical_margin"
+        android:layout_alignParentBottom="true"
+        tools:buttonText="@string/action_register"
+        tools:buttonTextColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationDashboardProfile"
+    app:startDestination="@+id/profileDest">
+
+    <fragment
+        android:id="@+id/profileDest"
+        android:name="com.stocksexchange.android.ui.profile.ProfileFragment"
+        tools:layout="@layout/profile_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/settingsDest"
+        android:name="com.stocksexchange.android.ui.settings.SettingsFragment"
+        tools:layout="@layout/settings_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/inboxDest"
+        android:name="com.stocksexchange.android.ui.inbox.InboxFragment"
+        tools:layout="@layout/inbox_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/languageDest"
+        android:name="com.stocksexchange.android.ui.language.LanguageFragment"
+        tools:layout="@layout/language_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/referralDest"
+        android:name="com.stocksexchange.android.ui.referral.ReferralFragment"
+        tools:layout="@layout/referral_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/verificationDest"
+        android:name="com.stocksexchange.android.ui.verification.selection.VerificationSelectionFragment"
+        tools:layout="@layout/verification_selection_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/helpDest"
+        android:name="com.stocksexchange.android.ui.help.HelpFragment"
+        tools:layout="@layout/help_fragment_layout"/>
+
+    <fragment
+        android:id="@+id/aboutDest"
+        android:name="com.stocksexchange.android.ui.about.AboutFragment"
+        tools:layout="@layout/about_fragment_layout"/>
+
+</navigation>

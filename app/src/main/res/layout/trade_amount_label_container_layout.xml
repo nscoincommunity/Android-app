@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <TextView
+        android:id="@+id/labelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/trade_amount_label_container_label_text_size"
+        style="@style/SingleLineTextView"
+        tools:text="Amount"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="@dimen/trade_amount_label_container_seek_bar_width"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/seekBarPercentLabelTv"
+        android:layout_alignTop="@id/labelTv"
+        android:layout_alignBottom="@id/labelTv"/>
+
+    <TextView
+        android:id="@+id/seekBarPercentLabelTv"
+        android:layout_width="@dimen/trade_amount_label_container_seek_bar_percent_label_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/trade_amount_label_container_seek_bar_percent_label_text_size"
+        android:gravity="end"
+        style="@style/SingleLineTextView"
+        tools:text="100%"
+        tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+</merge>

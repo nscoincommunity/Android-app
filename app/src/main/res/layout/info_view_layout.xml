@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:layout_gravity="center_horizontal"
+    tools:background="@color/deepTealContentContainerColor"
+    tools:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="@dimen/info_view_icon_size"
+        android:layout_height="@dimen/info_view_icon_size"
+        android:layout_gravity="center_horizontal"
+        tools:layout_marginBottom="@dimen/info_view_margin_bottom"
+        tools:srcCompat="@drawable/ic_search"
+        tools:tint="@color/deepTealSecondaryTextColor"/>
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/info_view_caption_horizontal_margin"
+        android:layout_marginEnd="@dimen/info_view_caption_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/info_view_caption_text_size"
+        tools:text="Please check your network connection."
+        tools:textColor="@color/deepTealInfoViewColor"/>
+
+</merge>

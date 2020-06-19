@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- OnePlus 7 Pro -->
+
+    <!-- NewPrimaryButton -->
+    <dimen name="new_primary_button_vertical_padding">14dp</dimen>
+
+    <!-- PinEntryKeypad -->
+    <dimen name="pin_entry_keypad_button_size">65dp</dimen>
+    <dimen name="pin_entry_keypad_digit_button_horizontal_margin">25dp</dimen>
+    <dimen name="pin_entry_keypad_digit_button_text_size">30sp</dimen>
+
+    <!-- AuthenticationActivity -->
+    <dimen name="authentication_activity_message_text_size">16sp</dimen>
+    <dimen name="authentication_activity_help_button_text_size">16sp</dimen>
+
+    <!-- PinRecoveryActivity -->
+    <dimen name="pin_recovery_app_motto_text_size">20sp</dimen>
+    <dimen name="pin_recovery_title_text_size">18sp</dimen>
+    <dimen name="pin_recovery_subtitle_text_size">16sp</dimen>
+
+    <!-- VerificationPromptActivity -->
+    <dimen name="verification_prompt_icon_width">150dp</dimen>
+    <dimen name="verification_prompt_icon_height">142dp</dimen>
+    <dimen name="verification_prompt_title_text_size">18sp</dimen>
+    <dimen name="verification_prompt_description_text_size">16sp</dimen>
+
+    <!-- HelpItem -->
+    <dimen name="help_item_icon_size">35dp</dimen>
+    <dimen name="help_item_arrow_icon_width">15dp</dimen>
+    <dimen name="help_item_arrow_icon_height">27dp</dimen>
+    <dimen name="help_item_title_text_size">20sp</dimen>
+    <dimen name="help_item_subtitle_text_size">16sp</dimen>
+
+    <!-- ReferenceButtonView -->
+    <dimen name="reference_button_view_icon_size">45dp</dimen>
+    <dimen name="reference_button_view_subtitle_text_size">10sp</dimen>
+    <dimen name="reference_button_view_title_text_size">15sp</dimen>
+
+    <!-- AboutFragment -->
+    <dimen name="about_fragment_app_motto_margin_top">25dp</dimen>
+    <dimen name="about_fragment_app_motto_text_size">20sp</dimen>
+    <dimen name="about_fragment_reference_button_view_width">240dp</dimen>
+    <dimen name="about_fragment_reference_button_view_height">53dp</dimen>
+    <dimen name="about_fragment_reference_button_view_margin_top">20dp</dimen>
+    <dimen name="about_fragment_reference_button_visit_website_margin_top">30dp</dimen>
+    <dimen name="about_fragment_social_media_buttons_container_margin_bottom">20dp</dimen>
+    <dimen name="about_fragment_social_media_button_size">50dp</dimen>
+    <dimen name="about_fragment_footer_text_view_text_size">14sp</dimen>
+    <dimen name="about_fragment_company_name_width">220dp</dimen>
+    <dimen name="about_fragment_company_name_height">16dp</dimen>
+
+    <!-- ReferralFragment -->
+    <dimen name="referral_fragment_title_text_size">20sp</dimen>
+    <dimen name="referral_fragment_subtitle_text_size">16sp</dimen>
+    <dimen name="referral_fragment_referral_qr_code_image_size">220dp</dimen>
+    <dimen name="referral_fragment_referral_link_text_size">17sp</dimen>
+    <dimen name="referral_fragment_notice_text_size">16sp</dimen>
+
+    <!-- DepositCreationView -->
+    <dimen name="deposit_creation_view_parameter_title_text_size">16sp</dimen>
+    <dimen name="deposit_creation_view_parameter_value_text_size">16sp</dimen>
+    <dimen name="deposit_creation_view_smv_text_size">16sp</dimen>
+
+    <!-- DepositCreationFragment -->
+    <dimen name="deposit_creation_fragment_info_view_top_margin">40dp</dimen>
+    <dimen name="deposit_creation_fragment_warning_text_size">14sp</dimen>
+
+    <!-- ProtocolSelectionItem -->
+    <dimen name="protocol_selection_item_name_text_size">16sp</dimen>
+
+    <!-- WithdrawalCreationView -->
+    <dimen name="withdrawal_creation_view_label_text_size">16sp</dimen>
+    <dimen name="withdrawal_creation_view_smv_text_size">16sp</dimen>
+
+    <!-- WithdrawalCreationFragment -->
+    <dimen name="withdrawal_creation_fragment_available_balance_title_text_size">16sp</dimen>
+
+    <!-- VerificationSelectionFragment -->
+    <dimen name="verification_selection_item_text_size">16sp</dimen>
+
+    <!-- TradeFragment -->
+    <dimen name="trade_user_balance_view_height">80dp</dimen>
+    <dimen name="trade_user_balance_view_title_size">12sp</dimen>
+    <dimen name="trade_user_balance_view_subtitle_size">19sp</dimen>
+    <dimen name="trade_trade_types_tab_layout_height">44dp</dimen>
+    <dimen name="trade_trade_types_tab_text_size">14sp</dimen>
+    <dimen name="trade_order_types_sov_title_text_size">14sp</dimen>
+
+    <!-- ChartViews -->
+    <dimen name="chart_view_tab_height">34dp</dimen>
+    <dimen name="chart_view_tab_text_size">11sp</dimen>
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_tab_layout_height">36dp</dimen>
+    <dimen name="currency_market_preview_tab_layout_text_size">13sp</dimen>
+
+</resources>
